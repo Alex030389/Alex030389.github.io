@@ -71,7 +71,7 @@
     justify-content: center;
     align-items: center;
 
-    background: url(/img/bg.jpg) center center no-repeat;
+    background: url("../img/bg.jpg") center center no-repeat;
     background-size: cover;
 
     -webkit-box-align: center;
