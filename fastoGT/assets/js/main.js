@@ -17,11 +17,11 @@ $(".lang").click(function () {
     if($(".lang__span_rus").hasClass("lang__span_selected")) {
         console.log("rus");
         //ссылка для переключения на русский
-        window.location = "../index.html";
+        window.location = "index.html";
     } else {
         console.log("eng");
         //ссылка для переключения на английский
-        window.location = "../index.html";
+        window.location = "index.html";
     }
 });
 
