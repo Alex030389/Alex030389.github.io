@@ -1,8 +1,28 @@
 "use strict";
 
+// preloader
+setInterval(function () {
+    var p = $(".preloader");
+    p.css("opacity", 0);
+    setInterval(function () {
+        p.remove();
+    }, 1000);
+}, 400);
+
+// lang
 $(".lang").click(function () {
     $(".lang__switch").toggleClass("lang__switch_rus");
     $(".lang__span").toggleClass("lang__span_selected");
+
+    if($(".lang__span_rus").hasClass("lang__span_selected")) {
+        console.log("rus");
+        //ссылка для переключения на русский
+        window.location = "../index.html";
+    } else {
+        console.log("eng");
+        //ссылка для переключения на английский
+        window.location = "../index.html";
+    }
 });
 
 // scroll
@@ -48,7 +68,7 @@ $('.testimonial').slick({
     nextArrow: "<button type='button' class='slick-next pull-right'></button>"
 });
 
-// open and close project
+// open and close projects
 var projects = $(".projects__btn");
 projects.click(function () {
     console.log(1);
@@ -58,4 +78,37 @@ projects.click(function () {
         projects.text("All projects");
     }
     $(".projects__link:nth-child(n+4)").fadeToggle("200");
+});
+
+// Ajax
+$('#form').submit(function (event) {
+    event.preventDefault();
+
+    $.ajax({
+        url: $(this).attr('action'),
+        type: $(this).attr('method'),
+        contentType: false,
+        cache: false,
+        dataType: "json",
+        data: $(this).serialize(),
+        success: function () {
+            $('#form').trigger('reset');
+            $(".popup").fadeIn();
+            $(".popup__success").fadeIn();
+        },
+        error: function () {
+            $(".popup__error").fadeIn();
+            $(".popup").fadeIn();
+        }
+    })
+});
+
+$(".popup p::after").click(function() {
+    $(".popup").fadeOut();
+    $(".popup p").fadeOut();
+});
+
+$(".popup").click(function() {
+    $(".popup").fadeOut();
+    $(".popup p").fadeOut();
 });
