@@ -1,13 +1,16 @@
 "use strict";
 
 // preloader
-setInterval(function () {
-    var p = $(".preloader");
-    p.css("opacity", 0);
+window.onload = function() {
     setInterval(function () {
-        p.remove();
-    }, 1000);
-}, 400);
+        var p = $(".preloader");
+        p.css("opacity", 0);
+        setInterval(function () {
+            p.remove();
+        }, 1000);
+    }, 400);
+}
+
 
 // lang
 $(".lang").click(function () {
