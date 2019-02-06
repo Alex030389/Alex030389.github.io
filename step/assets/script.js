@@ -7,7 +7,7 @@ setInterval(function () {
     setInterval(function () {
         p.remove();
     }, 1000);
-}, 400);
+}, 2000);
 
 // scroll
 $("#menu").on("click", "a", function (event) {
@@ -43,7 +43,27 @@ $(".menu__link").click(function () {
     $(".menu").fadeToggle(200);
 });
 
+// Resize window addClass
+$(window).resize(function () {
+    if ($(window).width() <= '550') {
+        $('.header').addClass('active');
+        $('.menu').addClass('menu_small');
+    } else {
+        $('.header').removeClass('active');
+        $('.menu').removeClass('menu_small');
+    }
+});
+
 // Menu position fixed
+$(document).scroll(function () {
+    if ($(document).scrollTop()>= 200 ) {
+        $('.header').addClass('active');
+        $('.menu').addClass('menu_small');
+    } else if ($(document).scrollTop() < 200 && $(window).width() > '550') {
+        $('.header').removeClass('active');
+        $('.menu').removeClass('menu_small');
+    }
+});
 
 
 // Ajax
@@ -69,12 +89,12 @@ $('#form').submit(function (event) {
     })
 });
 
-$(".popup p::after").click(function() {
+$(".popup p::after").click(function () {
     $(".popup").fadeOut();
     $(".popup p").fadeOut();
 });
 
-$(".popup").click(function() {
+$(".popup").click(function () {
     $(".popup").fadeOut();
     $(".popup p").fadeOut();
 });
