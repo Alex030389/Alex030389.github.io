@@ -7,13 +7,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #000;
+  color: rgb(73, 73, 73);
   font-size: 16px;
   font-weight: 300;
 }
 
 h3 {
   font-size: 16px;
+  color: #000;
+  font-weight: 400;
 }
 
 header,
@@ -62,9 +64,10 @@ input::-moz-focus-inner {
 
 .title {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 30px;
+  color: #000;
 }
 
 .subtitle {
@@ -258,6 +261,22 @@ input::-moz-focus-inner {
   left: 0;
 }
 
+.protection-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.protection-item:nth-child(even) {
+  flex-direction: row;
+}
+
+.protection-item:nth-child(odd) .slick-next  {
+  left: 0;
+}
+
+.protection-item:nth-child(even) .slick-next  {
+  left: auto;
+}
+
 .type-item__slider {
   max-width: 580px;
   width: 100%; 
@@ -291,7 +310,7 @@ input::-moz-focus-inner {
 }
 
 .type-item__text {
-  padding: 20px;
+  padding: 16px 20px;
 }
 
 .type-item__text h3 {
@@ -300,6 +319,16 @@ input::-moz-focus-inner {
 
 .type-item__text p {
   margin-bottom: 0;
+}
+
+.type-item__text_black {
+  color: black;
+  font-weight: 400;
+}
+
+.type-item__text a {
+  color: #ff5000;
+  line-height: 2.5;
 }
 
 .download-catalog {
@@ -410,13 +439,16 @@ input::-moz-focus-inner {
   font-size: 20px;
 }
 
+.products-item__text-prices p {
+  font-size: 18px;
+}
+
 .products-item__text-prices p span {
   color: #FF5000;
 }
 
 .prices-item__icon {
-  max-width: 310px;
-  height: 140px;
+  max-width: 290px;
 }
 
 /* ============================================= contacts */
@@ -555,7 +587,6 @@ input::-moz-focus-inner {
 .footer-certificate__text p {
   margin-bottom: 0;
 }
-
 
 .footer-currency {
   width: 340px;
