@@ -1,0 +1,188 @@
+@media screen and (max-width: 1490px) {
+
+  /* ================================================ banner */
+  .banner-content__title {
+    line-height: 1.2;
+  }
+
+  .banner-content__subtitle {
+    line-height: 1.2;
+  }
+
+  .banner-content__text {
+    line-height: 1.2;
+  }
+
+  .banner-content {
+    padding: 30px;
+  }
+}
+
+/* ==================================== */
+/* =============== 1360 =============== */
+/* ==================================== */
+@media screen and (max-width: 1360px) {
+
+  /* ============================================= header */
+  .header-top {
+    margin-bottom: 30px;
+  }
+
+  .header-top__nav {
+    display: none;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  /* ================================================ features */
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+}
+
+/* ==================================== */
+/* =============== 1200 =============== */
+/* ==================================== */
+@media screen and (max-width: 1200px) {
+
+  /* ================================================ banner */
+  .banner-content {
+    width: 70%;
+  }
+
+  /* ================================================ contacts */
+  .contacts {
+    flex-direction: column-reverse;
+  }
+
+  .contacts-form {
+    margin-right: 0;
+  }
+}
+
+
+/* ==================================== */
+/* ================ 992 =============== */
+/* ==================================== */
+@media screen and (max-width: 992px) {
+
+  /* =================================================== common */
+  .wrap {
+    padding: 30px 15px;
+  }
+
+  /* =================================================== type */
+  .wrap_type {
+    padding: 30px 0;
+  }
+  .type-item__slider {
+    margin-top: 20px;
+  }
+
+  .type-item {
+    flex-direction: column;
+  }
+
+  .type-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  /* ============================================= cloth */
+  .wrap_cloth {
+    padding: 30px 0;
+  }
+}
+
+
+/* ==================================== */
+/* ================ 768 =============== */
+/* ==================================== */
+@media screen and (max-width: 768px) {
+
+  /* ================================================ banner */
+  .banner-content {
+    width: 100%;
+  }
+
+  /* ============================================= cloth */
+  .cloth__text {
+    padding: 70px 30px;
+  }
+
+  /* =================================================== contacts */
+  .managers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+}
+
+
+/* ==================================== */
+/* ================ 576 =============== */
+/* ==================================== */
+@media screen and (max-width: 576px) {
+
+  /* ============================================= header */
+  .header-top__logo {
+    margin-right: 20px;
+  }
+
+  /* ============================================== banner */
+  .banner-slider {
+    height: 370px;
+  }
+
+  .banner-content {
+    padding: 15px;
+  }
+
+  .banner-content__title {
+    font-size: 26px;
+  }
+
+  .banner-content__subtitle {
+    font-size: 18px;
+  }
+
+  .banner-content__text {
+    font-size: 16px;
+  }
+
+  .banner-content__control {
+    display: none;
+  }
+
+  /* ============================================= cloth */
+  .cloth {
+    width: 100%;
+    background: url(./img/cloth.png) no-repeat center center;
+    background-size: cover;
+    margin: 0 -15px 50px 0;
+  }
+
+  .cloth__text {
+    font-size: 18px;
+  }
+}
+
+/* ==================================== */
+/* ================ 400 =============== */
+/* ==================================== */
+/* ================================================ banner */
+@media screen and (max-width: 400px) {
+  .banner-content__title {
+    font-size: 20px;
+  }
+
+  .banner-content__subtitle {
+    font-size: 16px;
+    max-width: 650px;
+  }
+}
