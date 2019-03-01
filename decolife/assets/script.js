@@ -1,3 +1,20 @@
+// hamgurger;
+var hamburger = $(".hamburger");
+hamburger.click(function () {
+  hamburger.toggleClass("is-active");
+  $(".hamburger-nav-wrap").toggleClass("hamburger-nav-wrap_active");
+  // disable scrolling when the menu is active
+  if (hamburger.hasClass("is-active")) {
+
+    var winScrollTop = $(window).scrollTop();
+    $(window).bind("scroll", function () {
+      $(window).scrollTop(winScrollTop);
+    });
+  } else {
+    $(window).off("scroll");
+  }
+});
+
 // banner-slider
 $('.banner-slider').slick({});
 
@@ -25,8 +42,7 @@ $('#products').slick({
   autoplaySpeed: 2000,
   prevArrow: '<button class="slick-prev slick-arrow" style=""></button>',
   nextArrow: '<button class="slick-next slick-arrow" style=""></button>',
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1470,
       settings: {
         slidesToShow: 5
@@ -64,8 +80,7 @@ $('#prices').slick({
   slidesToScroll: 1,
   prevArrow: '<button class="slick-prev slick-arrow" style=""></button>',
   nextArrow: '<button class="slick-next slick-arrow" style=""></button>',
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1200,
       settings: {
         slidesToShow: 3
