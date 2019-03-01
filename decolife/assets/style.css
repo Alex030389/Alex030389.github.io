@@ -19,6 +19,7 @@ footer {
 
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 ul {
@@ -146,7 +147,7 @@ input::-moz-focus-inner {
 .hamburger-nav-wrap {
   position: fixed;
   top: 108px;
-  right: -2000px;
+  right: -5000px;
   z-index: 1000;
 
   display: -webkit-box;
@@ -568,7 +569,7 @@ input::-moz-focus-inner {
   width: 100%;
   margin-bottom: 50px;
 
-  background: url(./img/cloth.jpg) no-repeat center center;
+  background: url(./img/cloth.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -609,7 +610,7 @@ input::-moz-focus-inner {
 
 /* ============================================= contacts */
 .section_contacts {
-  background: url(./img/contacts/bg-contacts.jpg) no-repeat center center;
+  background: url(./img/contacts/bg-contacts.png) no-repeat center center;
   background-size: cover;
 }
 
