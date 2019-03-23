@@ -13,8 +13,7 @@ h3 {
 }
 
 header,
-section,
-footer {
+section {
   position: relative;
 
   max-width: 1920px;
@@ -240,7 +239,12 @@ input::-moz-focus-inner {
 /* ============================================= banner */
 .banner {
   margin-bottom: 70px;
-  overflow: hidden;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
 }
 
 .banner-content {
@@ -268,6 +272,10 @@ input::-moz-focus-inner {
   -ms-flex-pack: justify;
 }
 
+.banner-content p {
+  margin-bottom: 0;
+}
+
 .banner-content__title {
   max-width: 650px;
 
@@ -281,41 +289,19 @@ input::-moz-focus-inner {
 }
 
 .banner-content__control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  font-size: 20px;
 }
 
 .banner-content__control div {
-  position: relative;
-
+  display: inline-block;
   width: 20px;
-  height: 40px;
+  margin-right: 20px;
 
   cursor: pointer;
 }
 
-.banner-content__control div::after {
-  content: "";
-  position: absolute;
-
-  display: block;
-  width: 20px;
-  height: 40px;
-}
-
-.banner-content__control-left {
-  margin-right: 30px;
-}
-
-.banner-content__control-left::after {
-  background: url(./img/arrow/left.png) no-repeat center center;
-}
-
-.banner-content__control-right::after {
-  background: url(./img/arrow/right.png) no-repeat center center;
+.banner-content__control img {
+  width: 100%;
+  height: auto;
 }
 
 .banner-content__text {
@@ -329,16 +315,14 @@ input::-moz-focus-inner {
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex;  
   justify-content: center;
-  margin: 0 -10px;
-
   -webkit-box-pack: center;
   -ms-flex-pack: center;
 }
 
 .features-item {
-  max-width: 210px;
+  width: 210px;
   height: 210px;
   margin: 10px;
   padding: 5px 15px 20px;
@@ -363,6 +347,7 @@ input::-moz-focus-inner {
 
 /* ============================================= type */
 .type {
+  margin: 0 auto;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -417,12 +402,13 @@ input::-moz-focus-inner {
 }
 
 .type-item__slider {
-  width: 100%;
   max-width: 580px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .type-item__slider img {
-  width: 100%;
+  width: 580px;
   height: auto;
 }
 
@@ -454,6 +440,8 @@ input::-moz-focus-inner {
 
 .type-item__text {
   padding: 16px 20px;
+  max-width: 840px;
+  min-width: 840px;
 }
 
 .type-item__text p {
@@ -610,8 +598,9 @@ input::-moz-focus-inner {
 
 /* ============================================= contacts */
 .section_contacts {
-  background: url(./img/contacts/bg-contacts.png) no-repeat center center;
+  background: url(./img/contacts/bg-contacts.jpg) no-repeat center center;
   background-size: cover;
+  max-width: 100%;
 }
 
 .contacts {
@@ -744,6 +733,7 @@ input::-moz-focus-inner {
 /* ============================================= footer */
 .footer {
   background-color: #e1e0e0;
+  max-width: 100%;
 }
 
 .footer_wrap {
@@ -798,27 +788,31 @@ input::-moz-focus-inner {
   border: 2px solid #717070;
 }
 
-
-
 /* =================================================== */
 /* ============================================= media */
 /* =================================================== */
-@media screen and (max-width: 1490px) {
+@media screen and (max-width: 1600px) {
   /* ============================================= banner */
-  .banner-content__title {
-    line-height: 1.2;
-  }
-
-  .banner-content__subtitle {
-    line-height: 1.2;
-  }
-
-  .banner-content__text {
-    line-height: 1.2;
-  }
-
   .banner-content {
     padding: 30px;
+  }
+}
+
+/* ==================================== */
+/* =============== 1410 =============== */
+/* ==================================== */
+@media screen and (max-width: 1410px) {
+  /* ============================================= banner */
+  .banner-content {
+    padding: 10px 30px;
+  }
+
+  .banner-content__title {
+    font-size: 30px;
+  }
+  
+  .banner-content__subtitle {
+    font-size: 20px;
   }
 }
 
@@ -845,60 +839,21 @@ input::-moz-focus-inner {
 
   /* ============================================= features */
   .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-      flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 -10px;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    max-width: 700px;
+    margin: 0 auto;
     -ms-flex-wrap: wrap;
-  }
-}
-
-/* ==================================== */
-/* =============== 1200 =============== */
-/* ==================================== */
-@media screen and (max-width: 1200px) {
-  /* ============================================= banner */
-  .banner-content {
-    width: 70%;
+        flex-wrap: wrap;
   }
 
-  /* ============================================= contacts */
-  .contacts {
-    -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
-
-    -webkit-box-direction: reverse;
-    -webkit-box-orient: vertical;
-  }
-
-  .contacts-form {
-    margin-right: 0;
-  }
-}
-
-/* ==================================== */
-/* ================ 992 =============== */
-/* ==================================== */
-@media screen and (max-width: 992px) {
-  /* ============================================= common */
-  .wrap {
-    padding: 30px 15px;
-  }
-
-  /* ============================================= type */
-  .wrap_type {
-    padding: 30px 0;
-  }
-  .type-item__slider {
-    margin-top: 20px;
+   /* ============================================= type */
+  .type {
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .type-item {
+    padding: 30px 0 20px;
     -ms-flex-direction: column;
       flex-direction: column;
 
@@ -922,6 +877,94 @@ input::-moz-focus-inner {
     -webkit-box-orient: vertical;
   }
 
+  .type-item__slider {
+    max-width: 580px;
+    width: 100%;
+    overflow: visible;
+  }
+  
+  .type-item__slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  .type-item__text {
+    padding: 16px 20px;
+    min-width: 100%;
+  }
+}
+
+/* ==================================== */
+/* =============== 1250 =============== */
+/* ==================================== */
+@media screen and (max-width: 1250px) {
+  /* ============================================= banner */
+  .banner-content__title {
+    font-size: 24px;
+  }
+
+  .banner-content__subtitle {
+    font-size: 18px;
+  }
+
+  .banner-content__control div {
+    width: 15px;
+  }
+}
+
+/* ==================================== */
+/* =============== 1200 =============== */
+/* ==================================== */
+@media screen and (max-width: 1200px) {
+  /* ============================================= contacts */
+  .contacts {
+    -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+  }
+
+  .contacts-form {
+    margin-right: 0;
+  }
+}
+
+/* ==================================== */
+/* =============== 1100 =============== */
+/* ==================================== */
+@media screen and (max-width: 1100px) {
+  /* ============================================= banner */
+  .banner-content {
+    width: 70%;
+  }
+
+  .banner-content__title {
+    font-size: 20px;
+  }
+
+  .banner-content__subtitle {
+    font-size: 16px;
+  }
+
+  .banner-content__control div {
+    width: 10px;
+  }
+
+  .banner-content__text {
+    font-size: 16px;
+  }
+}
+
+/* ==================================== */
+/* ================ 992 =============== */
+/* ==================================== */
+@media screen and (max-width: 992px) {
+  /* ============================================= common */
+  .wrap {
+    padding: 30px 15px;
+  }
+
   /* ============================================= cloth */
   .wrap_cloth {
     padding: 30px 0;
@@ -929,14 +972,35 @@ input::-moz-focus-inner {
 }
 
 /* ==================================== */
-/* ================ 768 =============== */
+/* =============== 850 =============== */
 /* ==================================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   /* ============================================= banner */
   .banner-content {
     width: 100%;
   }
 
+  .banner-content__title {
+    font-size: 20px;
+  }
+
+  .banner-content__subtitle {
+    font-size: 16px;
+  }
+
+  .banner-content__control div {
+    width: 10px;
+  }
+
+  .banner-content__text {
+    font-size: 16px;
+  }
+}
+
+/* ==================================== */
+/* ================ 768 =============== */
+/* ==================================== */
+@media screen and (max-width: 768px) {
   /* ============================================= cloth */
   .cloth__text {
     padding: 70px 30px;
@@ -944,14 +1008,31 @@ input::-moz-focus-inner {
 
   /* ============================================= contacts */
   .managers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-      flex-wrap: wrap;
-    justify-content: space-around;
-
     -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 400px;
+  }
+}
+
+/* ==================================== */
+/* =============== 750 =============== */
+/* ==================================== */
+@media screen and (max-width: 750px) {
+  /* ============================================= banner */
+  .banner-content__text {
+    display: none;
+  }
+}
+
+/* ==================================== */
+/* =============== 660 =============== */
+/* ==================================== */
+@media screen and (max-width: 660px) {
+  /* ============================================= banner */
+  .banner-content__subtitle {
+    display: none;
   }
 }
 
@@ -982,28 +1063,33 @@ input::-moz-focus-inner {
   }
 
   /* ============================================= banner */
-  .banner-slider {
-    height: 370px;
+  .banner {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
   }
 
-  .banner-content {
-    padding: 15px;
+  .banner-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 576px;
+    height: 180px;
   }
 
   .banner-content__title {
-    font-size: 26px;
-  }
-
-  .banner-content__subtitle {
     font-size: 18px;
+    line-height: 1.1;
   }
 
-  .banner-content__text {
-    font-size: 16px;
+  .banner-content__control div img {
+    width: 100%;
+    height: auto;
   }
 
-  .banner-content__control {
-    display: none;
+  /* ============================================= type */
+  .wrap_type {
+    padding: 30px 0;
   }
 
   /* ============================================= cloth */
@@ -1021,17 +1107,16 @@ input::-moz-focus-inner {
 }
 
 /* ==================================== */
-/* ================ 400 =============== */
+/* ================ 430 =============== */
 /* ==================================== */
-/* ============================================= banner */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
+  /* ============================================= banner */
   .banner-content__title {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.1;
   }
 
-  .banner-content__subtitle {
-    max-width: 650px;
-
-    font-size: 16px;
+  .banner-slider {
+    left: -50px;
   }
 }
