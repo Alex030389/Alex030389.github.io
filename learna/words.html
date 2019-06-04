@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+
+  <title>Start template</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
+  <!-- <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"/> -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#fff">
+
+  <!-- Style css -->
+
+  <!-- <link rel="stylesheet" href="./static/libs/normalize.css/normalize.css"> -->
+  <link rel="stylesheet" href="./static/css/styles.min.css">
+
+</head>
+
+<body>
+  <!-- отличия от header -->
+  <!-- ================= -->
+  <!-- header = -js-header +header_theme_lang -->
+  
+  <header class="header js-lang-header">
+    <div class="header-wrap wrap">
+      <button class="hamburger">
+        <svg>
+          <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#hamburger">
+        </svg>
+      </button>
+      <div class="header-logo js-header-logo logo">
+        <a class="logo__link" href="index.html">
+          <div class="logo__icon"></div>
+        </a>
+      </div>
+  
+      <div class="overlay"></div>
+      
+      <div class="nav-box js-nav-box">
+        <button class="nav-box__mobile-hamburger">
+          <svg>
+            <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#arrow-pointing-down">
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Blog</a>
+            </li>
+            <li class="nav__item subnav">
+              <button class="subnav-btn">Learn</button>
+              <ul class="subnav__list">
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--English" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">English</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--English" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">L’anglais</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--English" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Inglés</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Spanish" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Spanish</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--French" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">French</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Italian" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Italian</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--German" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">German</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Chinese" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Chinese</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Russian" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Russian</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Arabic" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Arabic</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Portuguese" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Portuguese</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Swedish" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Swedish</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Hebrew" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Hebrew</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Latin" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Latin</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Greek" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Greek</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Turkish" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Turkish</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Norwegian" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Norwegian</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Danish" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Danish</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Korean" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Korean</span>
+                  </a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link" href="learn.html">
+                    <span class="subnav__icon">
+                      <svg>
+                        <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--Dutch" />
+                      </svg>
+                    </span>
+                    <span class="subnav__lang">Dutch</span>
+                  </a>
+                </li>
+  
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+  
+      <div class="header-form-box js-header-form-box">
+        <form class="header-form js-header-form" action="" method="GET">
+          <input class="header-form__input js-header-form__input" type="text" name="search">
+          <button class="header-form__btn btn" type="submit">Search</button>
+        </form>
+        <button class="header-form-box__btn-close">+</button>
+      </div>
+  
+      <button class="header-search-btn">
+        <svg>
+          <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#search">
+        </svg>
+      </button>
+  
+    </div>
+  </header>
+  <ul class="breadcrumb">
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="#">Home /</a></li>
+    <li class="breadcrumb__item">
+      <a class="breadcrumb__link" href="#">Spanish /</a></li>
+    <li class="breadcrumb__item">Words</li>
+  </ul>
+  <div class="lang-menu">
+    <div class="wrap">
+      <ul class="header-menu">
+        <li class="header-menu__item">
+          <a class="header-menu__link header-menu__link_active" href="learn.html">Learn Spanish</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="words.html">Words</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="verbs.html">Verbs</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="phrases.html">Phrases</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="blog.html">Video Blog</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="dictionary.html">Dictionary</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="culture.html">Culture</a>
+        </li>
+        <li class="header-menu__item">
+          <a class="header-menu__link" href="courses.html">Courses</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ============================================================ main -->
+  <main>
+    <div class="wrap">
+
+      <div class="like-social-box like-social-box_top">
+        <div class="like like_active">
+          <button class="like__icon">
+            <svg>
+              <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#like" />
+            </svg>
+          </button>
+          <div class="like__counter">101</div>
+        </div>
+        <ul class="social-list social-list_vertical social-list_theme_blue">
+          <li class="social-list__item">
+            <a class="social-list__link link-reset" href="">
+              <svg>
+                <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#twitter">
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link link-reset" href="">
+              <svg>
+                <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#instagram">
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link link-reset" href="">
+              <svg>
+                <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#facebook">
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link link-reset" href="">
+              <svg>
+                <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#linkedin">
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="inner">
+        <div class="lang lang-parse lang-words">
+          <h1>
+            <span class="lang__flag">
+              <svg>
+                <use xlink:href="static/images/sprite/svgc/symbol/sprite.svg#flags--English" />
+              </svg>
+            </span>
+            Spanish Words
+          </h1>
+          <p>Learn Spanish words in many categories with free Spanish flash cards and the dangerously addictive Lingo
+            Dingo review game. The flash cards and the Lingo Dingo will teach you basic Spanish words with audio from
+            native speakers.</p>
+          <h2>Learn Spanish Words - Pick a Topic Below</h2>
+          <p>Even if you're a beginner, you'll be surprised at how easy it is to become conversational using our free
+            audio Spanish lessons, free downloadable software, or if you are a teacher we have Spanish PowerPoint
+            lessons.</p>
+
+          <ul class="lang-list-link">
+            <li><a href="animals.php" title=" Animals"> Animals</a></li>
+            <li><a href="car-parts.php" title=" Car Parts"> Car Parts</a></li>
+            <li><a href="living-room.php" title=" Living Room"> Living Room</a></li>
+            <li><a href="spanish-alphabet.php" title=" Spanish Alphabet"> Spanish Alphabet</a></li>
+            <li><a href="appliances.php" title=" Appliances"> Appliances</a></li>
+            <li><a href="cleaning-supplies.php" title=" Cleaning Supplies"> Cleaning Supplies</a></li>
+            <li><a href="military.php" title=" Military"> Military</a></li>
+            <li><a href="sports.php" title=" Sports"> Sports</a></li>
+            <li><a href="at-a-party.php" title=" At A Party"> At A Party</a></li>
+            <li><a href="clothes.php" title=" Clothes"> Clothes</a></li>
+            <li><a href="months-and-days.php" title=" Months And Days"> Months And Days</a></li>
+            <li><a href="technology.php" title=" Technology"> Technology</a></li>
+            <li><a href="at-the-beach.php" title=" At The Beach"> At The Beach</a></li>
+            <li><a href="colors.php" title=" Colors"> Colors</a></li>
+            <li><a href="music.php" title=" Music"> Music</a></li>
+            <li><a href="time-and-seasons.php" title=" Time And Seasons"> Time And Seasons</a></li>
+            <li><a href="at-the-mall.php" title=" At The Mall"> At The Mall</a></li>
+            <li><a href="countries-and-continents.php" title=" Countries And Continents"> Countries And Continents</a></li>
+            <li><a href="nature.php" title=" Nature"> Nature</a></li>
+            <li><a href="tools.php" title=" Tools"> Tools</a></li>
+            <li><a href="at-the-store.php" title=" At The Store"> At The Store</a></li>
+            <li><a href="family.php" title=" Family"> Family</a></li>
+            <li><a href="numbers.php" title=" Numbers"> Numbers</a></li>
+            <li><a href="travel.php" title=" Travel"> Travel</a></li>
+            <li><a href="bank-and-finance.php" title=" Bank And Finance"> Bank And Finance</a></li>
+            <li><a href="food-I.php" title=" Food I"> Food I</a></li>
+            <li><a href="outside.php" title=" Outside"> Outside</a></li>
+            <li><a href="types-of-restaurants.php" title=" Types Of Restaurants"> Types Of Restaurants</a></li>
+            <li><a href="bathroom.php" title=" Bathroom"> Bathroom</a></li>
+            <li><a href="food-II.php" title=" Food II"> Food II</a></li>
+            <li><a href="professions.php" title=" Professions"> Professions</a></li>
+            <li><a href="vehicles.php" title=" Vehicles"> Vehicles</a></li>
+            <li><a href="bedroom.php" title=" Bedroom"> Bedroom</a></li>
+            <li><a href="furniture.php" title=" Furniture"> Furniture</a></li>
+            <li><a href="restaurant-table.php" title=" Restaurant Table"> Restaurant Table</a></li>
+            <li><a href="weather.php" title=" Weather"> Weather</a></li>
+            <li><a href="body-parts-I.php" title=" Body Parts I"> Body Parts I</a></li>
+            <li><a href="government.php" title=" Government"> Government</a></li>
+            <li><a href="school-and-science.php" title=" School And Science"> School And Science</a></li>
+            <li><a href="body-parts-II.php" title=" Body Parts II"> Body Parts II</a></li>
+            <li><a href="kitchen.php" title=" Kitchen"> Kitchen</a></li>
+            <li><a href="school-supplies.php" title=" School Supplies"> School Supplies</a></li>
+          </ul>
+              
+          <h2>Spanish Vocabulary</h2>
+          <p>Hopefully you have learned many new Spanish vocabulary words after you have visited each of these pages.
+            There is certainly no shortage of Sp
+            nouns that you can learn. Because it is important for you to learn Spanish from native speakers, the audio
+            that you hear in the flash cards and
+            Lingo Dingo comes from native speakers. In addition to all of the categories of Spanish words found on this
+            page, there are many more page
+            Spanish words and lessons to help you learn Spanish. For example, be sure to visit the Spanish phrases page
+            to learn important survival
+            greetings and more. You can also visit the Spanish verbs page to learn over 350 verbs as well as learn how
+            you can conjugate them.</p>
+
+        </div>
+        <!--lang end-->
+
+        <div class="like-social-box like-social-box_bottom">
+          <div class="like">
+            <button class="like__icon">
+              <svg>
+                <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#like" />
+              </svg>
+            </button>
+            <div class="like__counter">101</div>
+          </div>
+          <ul class="social-list social-list_vertical social-list_theme_blue">
+            <li class="social-list__item">
+              <a class="social-list__link link-reset" href="">
+                <svg>
+                  <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#twitter">
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link link-reset" href="">
+                <svg>
+                  <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#instagram">
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link link-reset" href="">
+                <svg>
+                  <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#facebook">
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link link-reset" href="">
+                <svg>
+                  <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#linkedin">
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lang-btn-box">
+          <a class="lang-btn lang-btn_prev" href="#">
+            <div>
+              <svg>
+                <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#arrow-pointing-down" />
+              </svg>
+            </div>
+            <span>Learn Spanish</span>
+          </a>
+          <a class="lang-btn lang-btn_next" href="#">
+            <span>Verbs</span>
+            <div>
+              <svg>
+                <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#arrow-pointing-down" />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <!--inner end-->
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <button class="footer-top__btn js-footer-top__btn">
+        <svg>
+          <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#arrow-pointing-down">
+        </svg>
+      </button>
+      <div class="footer-top__decor">      
+        <svg>
+          <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#footer-decor">
+        </svg>
+      </div>
+    </div>
+    <div class="footer-wrap wrap">
+      <div class="footer-box">
+        <div class="footer-first footer__item">
+          <div class="footer-first__logo logo">
+            <a class="logo__link" href="index.html">
+              <div class="logo__icon"></div>
+            </a>
+          </div>
+          <div class="footer-copy-top">
+            <span class="footer-copy">© 2019 U.S. Institute of Languages. Tous droits reserves</span>
+          </div>          
+        </div>
+  
+        <div class="footer-language footer__item">
+          <div class="footer__title">Learn Language Online:</div>
+          <ul class="footer-language__list">
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item list-reset">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+            <li class="footer-language__item">
+              <a class="footer-language__link footer__link" href="">English</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="footer-menu footer__item">
+          <div class="footer__title">LearnLanguages:</div>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer__link" href="">About Us</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer__link" href="">Contact Us</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer__link" href="">Sitemap</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer__link" href="">Learning Classes</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer__link" href="">Privacy</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer__link" href="">Terms</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link footer__link" href="">Refund</a>
+            </li>
+          </ul>
+  
+        </div>
+  
+        <div class="footer-contact footer__item">
+          <div class="footer__title">Contact us by Email</div>
+          <a class="footer-contact__link footer__link"
+            href="mailto:support@learnlanguage.com">support@learnlanguage.com</a>
+          <div class="footer-contact__social">
+            <div class="footer__title">Connect with us:</div>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link link-reset" href="">
+                  <svg>
+                    <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#twitter">
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link link-reset" href="">
+                  <svg>
+                    <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#instagram">
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link link-reset" href="">
+                  <svg>
+                    <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link link-reset" href="">
+                  <svg>
+                    <use xlink:href="static/images/sprite/svg/symbol/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+  
+    </div>
+  
+    <div class="footer-copy-bottom">
+      <span class="footer-copy">© 2019 U.S. Institute of Languages. Tous droits reserves</span>
+    </div>
+    
+  </footer>
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/libs.min.js"></script>
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>
