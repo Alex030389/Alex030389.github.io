@@ -101,6 +101,15 @@ $('.overlay').click(function() {
 });
 
 
+// события при наведении
+$('.blog-list__title-h3').mouseenter(function() {
+  $('.blog-list__img-overlay').css('opacity', '.2');
+});
+
+$('.blog-list__title-h3').mouseleave(function() {
+  $('.blog-list__img-overlay').css('opacity', '0');
+});
+
 
 // popup
 $('.banner-content__btn').click(function () {
