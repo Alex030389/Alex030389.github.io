@@ -1,0 +1,48 @@
+{
+  "_from": "fixed-header-table",
+  "_id": "fixed-header-table@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha1-YmqUZWrQGAo0d4PsizqLk0QOG+E=",
+  "_location": "/fixed-header-table",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "fixed-header-table",
+    "name": "fixed-header-table",
+    "escapedName": "fixed-header-table",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fixed-header-table/-/fixed-header-table-1.3.0.tgz",
+  "_shasum": "626a94656ad0180a347783ec8b3a8b93440e1be1",
+  "_spec": "fixed-header-table",
+  "_where": "D:\\Alex\\testking\\learnalanguage\\learna",
+  "author": {
+    "name": "Mark Malek",
+    "email": "mark@mmalek.com"
+  },
+  "bugs": {
+    "url": "https://github.com/markmalek/Fixed-Header-Table/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "jQuery plugin for tables with fixed headers",
+  "homepage": "https://github.com/markmalek/Fixed-Header-Table",
+  "license": "MIT",
+  "main": "jquery.fixedheadertable.js",
+  "name": "fixed-header-table",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markmalek/Fixed-Header-Table.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.3.0"
+}
