@@ -120,7 +120,10 @@ $(window).resize(function () {
   langHight();
 });
 
-langHight();
+
+setTimeout(function() {
+  langHight();
+}, 200);
 
 function langHight() {
   var languageItemHeight = Math.floor($('.language__item:nth-child(2)').outerHeight());
@@ -183,6 +186,96 @@ $('.blog-list').slick({
   ]
 });
 
+$('.pp-carousel__list').slick({
+  centerMode: true,
+  // centerPadding: '120px',
+  slidesToShow: 7,
+  infinite: true,
+  speed: 300,
+  // autoplay: true,
+  autoplaySpeed: 2000,
+  prevArrow: '<button class="gallery__list-arrow gallery__list-arrow_prev" type="button"><svg><use xlink:href="static/images/sprite/svg/symbol/sprite.svg#arrow-pointing-down"></svg></button>',
+  nextArrow: '<button class="gallery__list-arrow gallery__list-arrow_next" type="button"><svg><use xlink:href="static/images/sprite/svg/symbol/sprite.svg#arrow-pointing-down"></button>',
+  responsive: [{
+    breakpoint: 1150,
+    settings: {
+      slidesToShow: 5
+    }
+  },
+  {
+    breakpoint: 800,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  {
+    breakpoint: 576,
+    settings: {
+      centerPadding: '160px',
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 500,
+    settings: {
+      centerPadding: '140px',
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 450,
+    settings: {
+      centerPadding: '110px',
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 400,
+    settings: {
+      centerPadding: '70px',
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 350,
+    settings: {
+      centerPadding: '50px',
+      slidesToShow: 1
+    }
+  }
+]
+});
+
+$(".pp-carousel__list").on("init", function(event, slick) {
+  if (slick.currentSlide + 1 < 10) {
+    $(".gallery__current-item").text('0' + parseInt(slick.currentSlide + 1));
+  } else {
+    $(".gallery__current-item").text(parseInt(slick.currentSlide + 1));
+  };
+  if (slick.slideCount < 10) {
+    $(".gallery__all-items").text('0' + parseInt(slick.slideCount));
+  } else {
+    $(".gallery__all-items").text(parseInt(slick.slideCount));
+  };
+});
+
+$(".pp-carousel__list").on("afterChange", function(event, slick, currentSlide) {
+  if (slick.currentSlide + 1 < 10) {
+    $(".gallery__current-item").text('0' + parseInt(slick.currentSlide + 1));
+  } else {
+    $(".gallery__current-item").text(parseInt(slick.currentSlide + 1));
+  };
+  if (slick.slideCount < 10) {
+    $(".gallery__all-items").text('0' + parseInt(slick.slideCount));
+  } else {
+    $(".gallery__all-items").text(parseInt(slick.slideCount));
+  };
+});
+
+
+
+
+
 // таблицы
 
 // наложение тени на фиксированную колонку таблицы
@@ -197,8 +290,9 @@ try {
   $(window).resize(function () {
     tableScroll();
   });
-} catch {
-  console.log(1);
+} catch (err) {
+
+  // console.log(1);
 }
 
 function tableScroll() {
@@ -279,6 +373,25 @@ function tableScroll() {
 
   initFlipping('.angle', 'header', 'footer');
 })();
+
+
+// selectric стилизация select
+
+$('.checkout-form__select').selectric();
+$('.checkout-form__select2').selectric();
+
+$( ".checkout-form__select" ).change(function() {
+  if($(".checkout-form__select").val() != '') {
+    $('.selectric-checkout-form__select.selectric-below .label').css({'color': '#173857', 'font-size': '14px' });
+  }
+});
+
+$( ".checkout-form__select2" ).change(function() {
+  if($(".checkout-form__select2").val() != '') {
+    $('.selectric-checkout-form__select2.selectric-below .label').css({'color': '#173857', 'font-size': '14px' });
+  }
+});
+  
 
 
 // =============================== конвертер таблиц
