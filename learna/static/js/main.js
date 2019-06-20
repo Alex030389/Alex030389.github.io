@@ -145,6 +145,20 @@ $('.popup__btn').click(function () {
 });
 
 
+// mini-course-popup__close
+$('.mini-course__info').click(function() {
+  $('.mini-course-popup-overlay').fadeToggle(200);
+});
+
+$('.mini-course-popup__close').click(function() {
+  $('.mini-course-popup-overlay').fadeToggle(200);
+});
+
+$('.mini-course-popup__btn').click(function() {
+  $('.mini-course-popup-overlay').fadeToggle(200);
+});
+
+
 // кнопка наверх
 $('.js-footer-top__btn').click(function () {
   $('body,html').animate({
@@ -186,8 +200,12 @@ $('.blog-list').slick({
   ]
 });
 
+
 $('.pp-carousel__list').slick({
   centerMode: true,
+  focusOnSelect: true,
+  accessibility: false,
+  // edgeFriction: '0',
   // centerPadding: '120px',
   slidesToShow: 7,
   infinite: true,
@@ -271,8 +289,6 @@ $(".pp-carousel__list").on("afterChange", function(event, slick, currentSlide) {
     $(".gallery__all-items").text(parseInt(slick.slideCount));
   };
 });
-
-
 
 
 
