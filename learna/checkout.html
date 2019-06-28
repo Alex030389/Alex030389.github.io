@@ -11,9 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
-  <!-- <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"/> -->
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
+  <link rel="shortcut icon" type="image/png" href="static/images/favicon/favicon.png"/>
 
   <!-- Custom Browsers Color Start -->
   <meta name="theme-color" content="#fff">
@@ -60,7 +58,7 @@
               <a class="nav__link" href="#">Contact Us</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Blog</a>
+              <a class="nav__link" href="blog.html">Blog</a>
             </li>
             <li class="nav__item subnav">
               <button class="subnav-btn">Learn</button>
@@ -307,7 +305,7 @@
                 Purchase</span></h1>
             <form class="checkout-form" action="#" method="POST" autocomplete="on">
               <h2 class="checkout-form__h2">Billing Address</h2>
-              <div class="checkout-form__one-box">
+              <div class="checkout-form__box">
                 <p><input type="text" name="name-card" placeholder="Name on Card" required></p>
                 <p><input type="text" name="state-province" placeholder="State/Province" required></p>
                 <p><input type="text" name="address" placeholder="Address" required></p>
@@ -562,7 +560,7 @@
                 <p><input type="text" name="e-mail" placeholder="E-mail Address" required></p>
               </div>
               <h2 class="checkout-form__h2">Billing Details</h2>
-              <div class="checkout-form__two-box">
+              <div class="checkout-form__box">
                 <p><select class="checkout-form__select2" name="card-type" required>
                     <option disabled selected value="">Card Type</option>
                     <option value="VISA">Visa</option>
@@ -584,6 +582,15 @@
               </div>
             </form>
 
+            <div class="checkout-card lang">
+                <div class="checkout-card__img">
+                  <img src="static/images/card/card.png" alt="">
+                </div>
+                <p class="checkout-card__text">Your purchase with LearnALanguage is safe and fast. Your products will be
+                  available for immediate download after your payment has been received. The LearnALanguage website is
+                  protected by 256-bit SSL from McAfee, the leader in online security.</p>
+            </div>
+
             <!-- checkout-wrap end -->
           </div>
 
@@ -592,15 +599,7 @@
         <!--inner end-->
       </div>
       <!--wrap end-->
-    </div>
-    <div class="checkout-card lang">
-      <div class="checkout-card__img">
-        <img src="static/images/card/card.png" alt="">
-      </div>
-      <p class="checkout-card__text">Your purchase with LearnALanguage is safe and fast. Your products will be
-        available for immediate download after your payment has been received. The LearnALanguage website is
-        protected by 256-bit SSL from McAfee, the leader in online security.</p>
-    </div>
+    </div>    
   </main>
 
   <footer class="footer">
@@ -773,9 +772,7 @@
     </div>
     
   </footer>
-  <script src="static/js/jquery-3.3.1.min.js"></script>
-  <script src="static/js/libs.min.js"></script>
-  <script src="static/js/main.js"></script>
+  <script src="static/js/scripts.min.js"></script>
 </body>
 
 </html>
