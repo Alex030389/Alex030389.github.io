@@ -24,21 +24,21 @@
       <div class="header__top">
   
         <div class="header__hamburger-search-box">
-          <button class="js header__button-hamburger">
+          <button class="header__button js header__button-hamburger">
             <svg aria-hidden="true">
               <use xlink:href="static/img/sprite/symbol/sprite.svg#menu"></use>
             </svg>
           </button>
   
-          <button class="header__button-search js open-search">
+          <button class="header__button js header__button-open-search">
             <svg aria-hidden="true">
-              <use xlink:href="static/img/sprite/symbol/sprite.svg#search1"></use>
+              <use xlink:href="static/img/sprite/symbol/sprite.svg#search"></use>
             </svg>
           </button>
         </div>
   
         <div class="header__logo logo">
-          <a href="#">
+          <a href="index.html">
             <img src="static/img/logo/logo.svg" alt="logo">
           </a>
         </div>
@@ -60,7 +60,7 @@
                   <h3 class="subnav__h3">vendors</h3>
                   <ul class="subnav__list">
                     <li class="subnav__item">
-                      <a href="#" class="subnav__link">Apple</a>
+                      <a href="product.html" class="subnav__link">Apple</a>
                     </li>
                     <li class="subnav__item">
                       <a href="#" class="subnav__link">Avaya</a>
@@ -156,29 +156,34 @@
           </ul>
         </nav>
   
-        <form class="header__main-search main-search">
-          <label for="search">Search</label>
-          <input type="text" id="search" placeholder="Enter your request">
+        <form class="header__search-form search-form">
+          <label class="search-form__label">Search</label>
+          <input class="search-form__input" type="text" name="search" placeholder="Enter your request">
+          <button class="search-form__button" type="submit">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/sprite/symbol/sprite.svg#search"></use>
+            </svg>
+          </button>
         </form>
   
         <div class="header__user-cart-box">
-          <button class="header__button-search js open-search">
+          <button class="header__button js header__button-open-search">
             <svg aria-hidden="true">
-              <use xlink:href="static/img/sprite/symbol/sprite.svg#search2"></use>
+              <use xlink:href="static/img/sprite/symbol/sprite.svg#search"></use>
             </svg>
           </button>
   
-          <button class="header__button-user">
+          <a href="" class="header__button header__button-user">
             <svg aria-hidden="true">
               <use xlink:href="static/img/sprite/symbol/sprite.svg#user"></use>
             </svg>
-          </button>
+          </a>
   
-          <button class="header__button-cart">
+          <a href="#" class="header__button header__button-cart">
             <svg aria-hidden="true">
               <use xlink:href="static/img/sprite/symbol/sprite.svg#cart"></use>
             </svg>
-          </button>
+          </a>
           <!-- /nav__user-box -->
         </div>
   
@@ -186,11 +191,11 @@
       </div>
   
       <div class="header__bottom">
-        <form class="header__mobile-search js main-search">
-          <input type="text" id="search" placeholder="Enter your request">
-          <button type="submit" class="header__button-search start-search">
+        <form class="header__search-form search-form">
+          <input class="search-form__input" type="text" name="search" placeholder="Enter your request">
+          <button class="search-form__button" type="submit">
             <svg aria-hidden="true">
-              <use xlink:href="static/img/sprite/symbol/sprite.svg#search3"></use>
+              <use xlink:href="static/img/sprite/symbol/sprite.svg#search"></use>
             </svg>
           </button>
         </form>
@@ -209,44 +214,44 @@
 
         <div class="best-solution__tab tab">
 
-          <div class="tab__item active">
-            <div class="tab__img">
+          <button class="tab__item active" onclick="activate(event, 0)">
+            <span class="tab__img">
               <img src="static/img/tab/girl.png" alt="girl">
               <img src="static/img/tab/girl-red.png" alt="girl-color">
-            </div>
-            <button class="tab__button" onclick="activate(event, 0)">
+            </span>
+            <span class="tab__btn">
               <svg aria-hidden="true">
                 <use xlink:href="static/img/sprite/symbol/sprite.svg#reload"></use>
               </svg>
               <span>Recently Updated</span>
-            </button>
-          </div>
+            </span>
+          </button>
 
-          <div class="tab__item">
-            <div class="tab__img">
+          <button class="tab__item" onclick="activate(event, 1)">
+            <span class="tab__img">
               <img src="static/img/tab/boy.png" alt="boy">
               <img src="static/img/tab/boy-red.png" alt="boy-color">
-            </div>
-            <button class="tab__button" onclick="activate(event, 1)">
+            </span>
+            <span class="tab__btn">
               <svg aria-hidden="true">
                 <use xlink:href="static/img/sprite/symbol/sprite.svg#heart"></use>
               </svg>
               <span>Top Exams</span>
-            </button>
-          </div>
+            </span>
+          </button>
 
-          <div class="tab__item">
-            <div class="tab__img">
+          <button class="tab__item" onclick="activate(event, 2)">
+            <span class="tab__img">
               <img src="static/img/tab/man.png" alt="man">
               <img src="static/img/tab/man-red.png" alt="man-color">
-            </div>
-            <button class="tab__button" onclick="activate(event, 2)">
+            </span>
+            <span class="tab__btn">
               <svg aria-hidden="true">
                 <use xlink:href="static/img/sprite/symbol/sprite.svg#star"></use>
               </svg>
               <span>New Exams</span>
-            </button>
-          </div>
+            </span>
+          </button>
 
           <!-- /best-solution__tab -->
         </div>
@@ -486,7 +491,7 @@
     <!-- ====================================================== features -->
     <section class="section features">
       <div class="wrap">
-        <h2 class="h2">Pass4sure Features</h2>
+        <h2>Pass4sure Features</h2>
         <div class="features__box">
 
           <div class="features__box-list-reviews">
@@ -582,76 +587,76 @@
 
   <footer class="footer">
     <div class="wrap">
-      <ul class="footer__s-nav s-nav">
+      <ul class="footer__f-nav f-nav">
   
-        <li class="s-nav__box">
-          <h3 class="s-nav__h3">Pass4sure Exam</h3>
-          <ul class="s-nav__list">
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Home</a>
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Pass4sure Exam</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Home</a>
             </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">All Vendors</a>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">All Vendors</a>
             </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Admission Tests</a>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Admission Tests</a>
             </li>
           </ul>
         </li>
   
-        <li class="s-nav__box">
-          <h3 class="s-nav__h3">Why us</h3>
-          <ul class="s-nav__list">
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Guarantee</a>
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Why us</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Guarantee</a>
             </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Contact Us</a>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Contact Us</a>
             </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Unlimited Exam Access</a>
-            </li>
-          </ul>
-        </li>
-  
-        <li class="s-nav__box">
-          <h3 class="s-nav__h3">Using pass4sure</h3>
-          <ul class="s-nav__list">
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Login/Register</a>
-            </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Privacy Statement</a>
-            </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">FAQs</a>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Unlimited Exam Access</a>
             </li>
           </ul>
         </li>
   
-        <li class="s-nav__box">
-          <h3 class="s-nav__h3">Become Partner</h3>
-          <ul class="s-nav__list">
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Site Licensing</a>
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Using pass4sure</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Login/Register</a>
             </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Affiliates</a>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Privacy Statement</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">FAQs</a>
             </li>
           </ul>
         </li>
   
-        <li class="s-nav__box">
-          <h3 class="s-nav__h3">Top vendors</h3>
-          <ul class="s-nav__list">
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">CompTIA</a>
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Become Partner</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Site Licensing</a>
             </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">Juniper</a>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Affiliates</a>
             </li>
-            <li class="s-nav__item">
-              <a href="#" class="s-nav__link">VMware</a>
+          </ul>
+        </li>
+  
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Top vendors</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">CompTIA</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Juniper</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">VMware</a>
             </li>
           </ul>
         </li>
@@ -686,6 +691,7 @@
       <!-- /wrap -->
     </div>
   </footer>
+  
   <script src="static/js/libs.min.js"></script>
   <script src="static/js/main.min.js"></script>
 
