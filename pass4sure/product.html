@@ -236,13 +236,14 @@
               2019</p>
 
             <form class="product__form" action="#">
+              <input type="hidden" name="exam-code" value="6002.1">
               <table class="product__table">
                 <tr class="product__tr product__tr_select">
                   <td class="product__check">
                     <svg class="product__icon" aria-hidden="true">
                       <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
                     </svg>
-                    <input class="product__radio" type="radio" checked id="product-set-1" name="product-set">
+                    <input class="product__radio visually-hidden" type="radio" checked id="product-set-1" name="product-set">
                   </td>
                   <td class="product__set">PDF + Testing Engine</td>
                   <td class="product__price">$149.99</td>
@@ -253,7 +254,7 @@
                     <svg class="product__icon" aria-hidden="true">
                       <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
                     </svg>
-                    <input class="product__radio" type="radio" id="product-set-2" name="product-set">
+                    <input class="product__radio visually-hidden" type="radio" id="product-set-2" name="product-set">
                   </td>
                   <td class="product__set">Testing Engine (only)</td>
                   <td class="product__price">$119.99</td>
@@ -264,26 +265,29 @@
                     <svg class="product__icon" aria-hidden="true">
                       <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
                     </svg>
-                    <input class="product__radio" type="radio" id="product-set-3" name="product-set">
+                    <input class="product__radio visually-hidden" type="radio" id="product-set-3" name="product-set">
                   </td>
                   <td class="product__set">PDF (only)</td>
                   <td class="product__price">$79.99</td>
                   <td class="product__old-price">$89.99</td>
                 </tr>
               </table>
+
               <div class="product__btn-box">
-                <button href="#" class="btn btn_red" type="submit">
+                <!-- <button class="product__btn-cart btn btn_red" type="submit"> -->
+                <button class="product__btn-cart btn btn_red">
                   <svg aria-hidden="true">
                     <use xlink:href="static/img/sprite/symbol/sprite.svg#cart"></use>
                   </svg>
                   <span>Add to Cart</span>
                 </button>
-                <button class="btn btn_light">
+                <a class="product__btn-demo btn btn_light">
                   <svg aria-hidden="true">
                     <use xlink:href="static/img/sprite/symbol/sprite.svg#hourglass"></use>
                   </svg>
                   <span>Download Demo</span>
-                </button>
+                </a>
+                <!-- /product__btn-box -->
               </div>
             </form>
           </div>
@@ -296,8 +300,8 @@
     <section class="section">
       <div class="wrap">
 
-        <h2>6002.1 Training Course</h2>
-        <div class="prod-course">
+        <h2 class="prod-course-h2">6002.1 Training Course</h2>
+        <a href="#" class="prod-course">
           <div class="prod-course__img">
             <img src="static/img/prod-course/1.jpg" alt="course">
             <span class="prod-course__price">11.99$</span>
@@ -338,7 +342,7 @@
             <!-- /prod-course__info -->
           </div>
           <!-- /prod-course -->
-        </div>
+        </a>
 
         <!-- /wrap -->
       </div>
@@ -568,6 +572,119 @@
       <!-- /wrap -->
     </div>
   </footer>
+  
+  <div class="modal modal-discount">
+    <div class="wrap">
+      <div class="modal__content">
+        <div class="modal__img">
+          <img class="modal__img-product" src="static/img/product/product-1.png" alt="product">
+          <img class="modal__img-boy" src="static/img/modal/boy.png" alt="boy">
+        </div>
+        <div class="modal__text">
+          <span class="modal__title">Get <span>20%</span> Discount on Your Purchase When You Sign Up for E-mail</span>
+          <p class="modal__p">Enter Your Email Address to Receive Tour 20% OFF Discount Code Plus... Our Exclusive Weekly Deals </p>
+          <div class="modal__img">
+            <img class="modal__img-product" src="static/img/product/product-1.png" alt="product">
+          </div>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
+              </svg>
+              <span>Customizable, interactive testing engine</span>
+            </li>
+            <li class="modal__item">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
+              </svg>
+              <span>Simulates real exam environment</span>
+            </li>
+            <li class="modal__item">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
+              </svg>
+              <span>Instant download</span>
+            </li>
+          </ul>
+  
+          <form class="modal__form form" action="#">
+            <label for="modal-email" class="modal__input-label">Email Address (You will use this to log in to your
+              account)</label>
+            <div class="modal__box-input-btn">
+              <input class="form__input" type="email" id="modal-email" name="email" placeholder="Enter your request">
+              <a class="modal__btn btn btn_light">Get Discount Code</a>
+            </div>
+          </form>
+          <p class="modal__footer-text">Our demo shows only a few questions from Cisco 400-101 exam for evaluating
+            purposes</p>
+  
+          <!-- /modal__text -->
+        </div>
+  
+        <button class="modal__close">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/sprite/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+  
+        <!-- /modal__content -->
+      </div>
+      <!-- /wrap -->
+    </div>
+  
+  </div>
+
+  <div class="modal modal-demo">
+    <div class="wrap">
+      <div class="modal__content">
+        <div class="modal__img-people">
+          <img src="static/img/modal/people.png" alt="people">
+        </div>
+        <span class="modal__title">Download Free Apple 9L0-012 Testing Engine Demo</span>
+        <p class="modal__p">Experience Testking Cisco 400-101 exam Q&A testing engine for yourself. Simply submit your
+          e-mail address below to get started with our interactive software demo of your Cisco 400-101 exam.</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
+            </svg>
+            <span>Customizable, interactive testing engine</span>
+          </li>
+          <li class="modal__item">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
+            </svg>
+            <span>Simulates real exam environment</span>
+          </li>
+          <li class="modal__item">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
+            </svg>
+            <span>Instant download</span>
+          </li>
+        </ul>
+  
+        <form class="modal__form form" action="#">
+          <label for="modal-email" class="modal__input-label">Email Address (You will use this to log in to your
+            account)</label>
+          <div class="modal__box-input-btn">
+            <input class="form__input" type="email" id="modal-email" name="email" placeholder="Enter your request">
+            <a class="modal__btn btn btn_light">Download Demo</a>
+          </div>
+        </form>
+        <p class="modal__footer-text">Our demo shows only a few questions from Cisco 400-101 exam for evaluating purposes
+        </p>
+  
+        <button class="modal__close">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/sprite/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <!-- /modal__content -->
+      </div>
+      <!-- /wrap -->
+    </div>
+  </div>
 
   <script src="static/js/libs.min.js"></script>
   <script src="static/js/main.min.js"></script>
