@@ -102,7 +102,7 @@
                   <h3 class="subnav__h3">Certifications</h3>
                   <ul class="subnav__list">
                     <li class="subnav__item">
-                      <a href="#" class="subnav__link">Apple</a>
+                      <a href="certifications.html" class="subnav__link">Apple</a>
                     </li>
                     <li class="subnav__item">
                       <a href="#" class="subnav__link">Avaya</a>
@@ -274,20 +274,18 @@
               </table>
 
               <div class="product__btn-box">
-                <!-- <button class="product__btn-cart btn btn_red" type="submit"> -->
-                <a class="product__btn-cart btn btn_red">
+                <button type="submit" class="product__btn-cart btn btn_red">
                   <svg aria-hidden="true">
                     <use xlink:href="static/img/sprite/symbol/sprite.svg#cart"></use>
                   </svg>
                   <span>Add to Cart</span>
-                </a>
-                <a class="product__btn-demo btn btn_light">
+                </button>
+                <button type="button" class="product__btn-demo btn btn_light">
                   <svg aria-hidden="true">
                     <use xlink:href="static/img/sprite/symbol/sprite.svg#hourglass"></use>
                   </svg>
                   <span>Download Demo</span>
-                </a>
-                <!-- /product__btn-box -->
+                </button>                
               </div>
             </form>
           </div>
@@ -573,67 +571,7 @@
     </div>
   </footer>
   
-  <div class="modal modal-discount">
-    <div class="wrap">
-      <div class="modal__content">
-        <div class="modal__img">
-          <img class="modal__img-product" src="static/img/product/product-1.png" alt="product">
-          <img class="modal__img-boy" src="static/img/modal/boy.png" alt="boy">
-        </div>
-        <div class="modal__text">
-          <span class="modal__title">Get <span>20%</span> Discount on Your Purchase When You Sign Up for E-mail</span>
-          <p class="modal__p">Enter Your Email Address to Receive Tour 20% OFF Discount Code Plus... Our Exclusive Weekly Deals </p>
-          <div class="modal__img">
-            <img class="modal__img-product" src="static/img/product/product-1.png" alt="product">
-          </div>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <svg aria-hidden="true">
-                <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
-              </svg>
-              <span>Customizable, interactive testing engine</span>
-            </li>
-            <li class="modal__item">
-              <svg aria-hidden="true">
-                <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
-              </svg>
-              <span>Simulates real exam environment</span>
-            </li>
-            <li class="modal__item">
-              <svg aria-hidden="true">
-                <use xlink:href="static/img/sprite/symbol/sprite.svg#check"></use>
-              </svg>
-              <span>Instant download</span>
-            </li>
-          </ul>
-  
-          <form class="modal__form form" action="#">
-            <label for="modal-email" class="modal__input-label">Email Address (You will use this to log in to your
-              account)</label>
-            <div class="modal__box-input-btn">
-              <input class="form__input" type="email" id="modal-email" name="email" placeholder="Enter your request">
-              <a class="modal__btn btn btn_light">Get Discount Code</a>
-            </div>
-          </form>
-          <p class="modal__footer-text">Our demo shows only a few questions from Cisco 400-101 exam for evaluating
-            purposes</p>
-  
-          <!-- /modal__text -->
-        </div>
-  
-        <button class="modal__close">
-          <svg aria-hidden="true">
-            <use xlink:href="static/img/sprite/symbol/sprite.svg#close"></use>
-          </svg>
-        </button>
-  
-        <!-- /modal__content -->
-      </div>
-      <!-- /wrap -->
-    </div>
-  
-  </div>
-
+  <!-- ========================================================== modal -->
   <div class="modal modal-demo">
     <div class="wrap">
       <div class="modal__content">
@@ -669,7 +607,7 @@
             account)</label>
           <div class="modal__box-input-btn">
             <input class="form__input" type="email" id="modal-email" name="email" placeholder="Enter your request">
-            <a class="modal__btn btn btn_light">Download Demo</a>
+            <button class="modal__btn btn btn_light">Download Demo</button>
           </div>
         </form>
         <p class="modal__footer-text">Our demo shows only a few questions from Cisco 400-101 exam for evaluating purposes
