@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="static/css/main.min.css">
 </head>
 
+
 <body>
 
   <header class="header">
@@ -221,66 +222,153 @@
         <!-- /breadcrumb -->
       </ul>
     </div>
-    <section class="section reg forgot">
+    <section class="section req-exam">
       <div class="wrap">
 
-        <div class="reg__inner">
-          <h1 class="reg__h1">Forgot Password</h1>
-          <p class="reg__desc">NOTE: To make sure that you can receive a reply from Pass4Sure, add the "Pass4Sure.com"
-            domain to your e-mail "safe list" or add email address <a href="mailto:support@Pass4Sure.com">support@Pass4Sure.com </a> to your
-            address book.</p>
+        <h1 class="req-exam__h1">Didn’t Find Your Exam on Pass4sure? Request Exam</h1>
+        <p>Request your exam here and Pass4sure will get you notified when the exam gets released at the site.</p>
+        <p>Please provide code of the exam you are interested in and your email address so we can inform you when
+          requested exam will become available. Thanks!</p>
 
-          <form class="forgot-form reg__form form" action="#">
-            <p>
-              <label>Email*
-                <input class="form__input" type="email" name="email" placeholder="Enter your email">
-              </label>
-            </p>
-            <button class="reg__btn-submit btn btn_red" type="submit">Send Password</button>
-          </form>
+        <form class="req-exam__form reg__form form">
+          <p>
+            <label>
+              Exam Code
+              <input class="form__input" type="code" name="code" placeholder="code">
+            </label>
+          </p>
+          <p>
+            <label>
+              Enter Your Email Address
+              <input class="form__input" type="email" name="email" placeholder="email">
+            </label>
+          </p>
+          <p>
+            <label>
+              Your phone
+              <input class="form__input" type="tel" id="phone-flags" name="phone">
+            </label>
+          </p>
 
-          <!-- reg__inner -->
+          <button class="req-exam__btn btn btn_light" type="submit">Request Exam</button>
+
+        </form>
+
+        <div class="req-exam__img">
+          <img src="static/img/request-exam/didnt-find.png" alt="didn't find">
         </div>
-
-
-        <p class="reg__footer">If you do not receive a response in your "inbox" within 10 minutes, check your "bulk
-          mail" or "junk mail" folders.</p>
 
         <!-- wrap -->
       </div>
     </section>
   </main>
 
-  <footer class="footer _small">
-      <div class="wrap">
-    
-        <div class="footer__copy-nav-box">
-          <p class="footer__copy">Copyright © 2019 pass4sureexam All Rights Reserved</p>
-          <nav class="footer__main-nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Home</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Privacy Policies</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Guarantee</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Contact</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Cookie Policy</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- /footer__copy-nav-box -->
-        </div>
-    
-        <!-- /wrap -->
+  <footer class="footer">
+    <div class="wrap">
+      <ul class="footer__f-nav f-nav">
+  
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Pass4sure Exam</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Home</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="vendor.html" class="f-nav__link">All Vendors</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Admission Tests</a>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Why us</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Guarantee</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Contact Us</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Unlimited Exam Access</a>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Using pass4sure</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Login/Register</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Privacy Statement</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">FAQs</a>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Become Partner</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Site Licensing</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Affiliates</a>
+            </li>
+          </ul>
+        </li>
+  
+        <li class="f-nav__box">
+          <h3 class="f-nav__h3">Top vendors</h3>
+          <ul class="f-nav__list">
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">CompTIA</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">Juniper</a>
+            </li>
+            <li class="f-nav__item">
+              <a href="#" class="f-nav__link">VMware</a>
+            </li>
+          </ul>
+        </li>
+  
+        <!-- /footer-menu -->
+      </ul>
+  
+      <div class="footer__copy-nav-box">
+        <p class="footer__copy">Copyright © 2019 pass4sureexam All Rights Reserved</p>
+        <nav class="footer__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Privacy Policies</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Guarantee</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Contact</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Cookie Policy</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /footer__copy-nav-box -->
       </div>
-    </footer>
+  
+      <!-- /wrap -->
+    </div>
+  </footer>
 
   <script src="static/js/libs.min.js"></script>
   <script src="static/libs/intl-tel-input/js/utils.js"></script>
