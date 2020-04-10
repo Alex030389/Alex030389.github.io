@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+  <meta name="description" content="">
+  <base href="./host03">
+
+  <link rel="icon" href="design/img/favicon/favicon.png">
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <link rel="stylesheet" href="design/css/libs.min.css">
+  <link rel="stylesheet" href="design/css/main.min.css">
+</head>
+
+<body class="d-flex flex-column">
+<header class="header">
+  <div class="container">
+    <div class="header__top">
+      <div class="header__top-inner-1">
+        <div class="flex-shrink-0 d-block d-xl-none">
+          <button class="header__mobile-btn _hamburger _green">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#hamburger"></use>
+            </svg>
+          </button>
+          <button class="header__mobile-btn _search _green">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <a class="header__logo logo" href="home.html">
+          <img src="/design/img/ui/logo.svg" alt="logo">
+        </a>
+        <form class="header__search-form search-form d-none d-xl-flex" action="f.html">
+          <input class="input _focus_green" placeholder="Enter your text" type="text">
+          <button class="btn _ml_-8">Search</button>
+        </form>
+        <nav class="header__nav-user nav-user d-none d-xl-block">
+          <ul>
+            <li>
+              <a href="#">
+                <svg aria-hidden="true">
+                  <use xlink:href="/design/img/symbol/sprite.svg#sign-up"></use>
+                </svg>
+                <span>Sign up</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg aria-hidden="true">
+                  <use xlink:href="/design/img/symbol/sprite.svg#log-in"></use>
+                </svg>
+                <span>Log in</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg aria-hidden="true">
+                  <use xlink:href="/design/img/symbol/sprite.svg#question"></use>
+                </svg>
+                <span>How it works</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg aria-hidden="true">
+                  <use xlink:href="/design/img/symbol/sprite.svg#cart"></use>
+                </svg>
+                <span>Cart</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex-shrink-0 d-block d-xl-none">
+          <button class="header__mobile-btn _yellow">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#sign-up"></use>
+            </svg>
+          </button>
+          <button class="header__mobile-btn _yellow">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#cart"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__top-inner-2  d-none d-xl-none">
+        <form class="header__search search" action="ff.html">
+          <button class="search__btn-back" type="button">back</button>
+          <input class="search__input" type="text">
+          <button class="search__btn-search">serch</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav-main d-none d-xl-block">
+    <div class="container">
+      <ul>
+        <li>
+          <a class="_current" href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#home"></use>
+            </svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#home"></use>
+            </svg>
+            <span>UNLIMITED ACCESS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#files"></use>
+            </svg>
+            <span>Free files</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#files"></use>
+            </svg>
+            <span>Premium Files</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#files"></use>
+            </svg>
+            <span>New Files</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#course"></use>
+            </svg>
+            <span>Video Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#request"></use>
+            </svg>
+            <span>Request Exam</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#student"></use>
+            </svg>
+            <span>Join Reseller</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#jobs"></use>
+            </svg>
+            <span>Jobs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="nav-exams">
+    <div class="nav-exams__container container d-flex align-items-center">
+      <div class="nav-exams__title d-none d-xl-flex">
+        Practice exams:
+      </div>
+      <ul>
+        <li>
+          <a href="#">Microsoft</a>
+        </li>
+        <li>
+          <a href="#">Cisco</a>
+        </li>
+
+        <li>
+          <a href="#">Microsoft</a>
+        </li>
+        <li>
+          <a href="#">Cisco</a>
+        </li>
+        <li>
+          <a href="#">Cisco</a>
+        </li>
+        <li>
+          <a href="#">Microsoft</a>
+        </li>
+        <li>
+          <a href="#">Cisco</a>
+        </li>
+        <li class="d-block d-lg-none d-xl-block">
+          <a href="#">Microsoft</a>
+        </li>
+        <li class="d-block d-lg-none d-xl-block">
+          <a href="#">Cisco</a>
+        </li>
+        <li class="d-block d-lg-none d-xl-block">
+          <a href="#">Microsoft</a>
+        </li>
+        <li class="d-block d-xl-none d-sxl-block">
+          <a href="#">Cisco</a>
+        </li>
+        <li class="d-block d-xl-none d-sxl-block">
+          <a href="#">Microsoft</a>
+        </li>
+        <li class="d-block d-xl-none d-sxl-block">
+          <a href="#">Cisco</a>
+        </li>
+        <li>
+          <a href="#">View All</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="nav-mbl d-none">
+    <div class="nav-mbl__body">
+      <button class="nav-mbl__btn-close">
+        <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+          <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+        </svg>
+        <span>Menu</span>
+      </button>
+      <ul>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/apple.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/hp.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/ibm.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/apple.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/hp.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/ibm.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/apple.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/hp.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/ibm.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/apple.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/hp.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/ibm.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/apple.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/hp.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/ibm.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/cisco.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/apple.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/hp.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav-mbl__wrap-img">
+              <img src="/design/img/vendor/1x/ibm.png" alt="alt">
+            </div>
+            <span>Cisco</span>
+            <svg class="nav-mbl__arrow-svg" aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#arrow-mbl"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+<main class="main flex-shrink-0 flex-grow-1">
+  <div class="container">
+    <div class="row pt-4 pt-lg-5 pb-3">
+      <div class="col-12 col-lg-6 pb-5">
+        <h1 class="title mb-3 mb-lg-4">PrepAway <span class="c-orange-2">Premium Subscription</span></h1>
+        <p class="fz-19">Download Quality. PrepAway Certified.</p>
+        <p class="fz-19">Get <span class="c-blue-1">Unlimited Access</span> to the all PrepAway PREMIUM ETE files!</p>
+        <p class="fz-19 mb-4">Take advantage of premium ETE Files which are guaranteed by PrepAway!</p>
+
+        <ul class="list _maw_570px">
+          <li>Guaranteed to have REAL Exam Questions</li>
+          <li>100% Accurate & Verified Answers</li>
+          <li>Fast Free Updates to Cover Latest Pool of Questions</li>
+          <li>Instant Download</li>
+          <li>98.6% Pass Rate</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-6 pb-4 pb-sm-5">
+        <div class="slider-2">
+          <div class="slider-2__discount-label discount-label">
+            <div class="discount-label__price">40%</div>
+            <img src="/design/img/save.png" alt="alt">
+          </div>
+          <!-- <div class="slider-2__btn-scale">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#scale"></use>
+            </svg>
+          </div> -->
+          <div class="slider-2__list">
+            <img class="slider-2__item" src="/design/img/content/slider-premium/1.jpg" alt="alt">
+            <img class="slider-2__item" src="/design/img/content/slider-premium/2.jpg" alt="alt">
+            <img class="slider-2__item" src="/design/img/content/slider-premium/3.jpg" alt="alt">
+            <img class="slider-2__item" src="/design/img/content/slider-premium/4.jpg" alt="alt">
+            <img class="slider-2__item" src="/design/img/content/slider-premium/5.jpg" alt="alt">
+          </div>
+        </div>
+      </div>
+    </div><!--row-->
+
+    <h2 class="title mb-2 mb-sm-4">Subscription Options</h2>
+    <p class="fz-19 mb-4">Please select your perferred subscription below:</p>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 pb-3 pb-sm-4">
+      <div class="col pb-4">
+        <div class="subs-opt _active">
+          <h3 class="subs-opt__title">Pay Quarterly</h3>
+          <div class="subs-opt__desc">Billed every  3 months </div>
+          <div class="subs-opt__old">$59.99</div>
+          <div class="subs-opt__current">$35.99</div>
+          <div class="subs-opt__month">/month</div>
+        </div>
+      </div>
+
+      <div class="col pb-4">
+        <div class="subs-opt">
+          <h3 class="subs-opt__title">Pay Quarterly</h3>
+          <div class="subs-opt__desc">Billed every  3 months </div>
+          <div class="subs-opt__old">$59.99</div>
+          <div class="subs-opt__current">$35.99</div>
+          <div class="subs-opt__month">/month</div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 pb-4">
+        <div class="subs-opt">
+          <h3 class="subs-opt__title">Pay Quarterly</h3>
+          <div class="subs-opt__desc">Billed every  3 months </div>
+          <div class="subs-opt__old">$59.99</div>
+          <div class="subs-opt__current">$35.99</div>
+          <div class="subs-opt__month">/month</div>
+        </div>
+      </div>
+    </div>
+  </div><!--container-->
+
+  <div class="premium-total">
+    <div class="container">
+      <div class="row pt-4 pt-sm-5 pb-3 align-items-center">
+        <div class="col-12 col-md-6 col-lg-4 pb-5">
+          <div class="premium-total__total-box">
+            <div class="premium-total__total">Total Due: <span class="fw-700 c-blue-1">$107.98</span></div>
+            <button class="premium-total__btn btn-2">
+              <span>GET PREMIUM</span>
+              <div class="premium-total__wrap-btn-svg">
+                <svg>
+                  <use xlink:href="/design/img/symbol/sprite.svg#rating"></use>
+                </svg>
+              </div>
+            </button>
+          </div><!--premium-total__total-box-->
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 pb-5">
+          <div class="premium-total__support-box">
+            <a class="premium-total__link-support" href="">
+              <div class="premium-total__wrap-link-svg">
+                <svg>
+                  <use xlink:href="/design/img/symbol/sprite.svg#question-2"></use>
+                </svg>
+              </div>
+              <div class="premium-total__text-support">
+                <div class="c-blue-1">Need Help? Contact Us!</div>
+                <div class="c-green-1 fw-700">Customer Support</div>
+              </div>
+            </a>
+            <div>Your Premium Subscription gives you unlimited access to all premium .ete files. However, this does not replace the need for a .ete reader. To download your .ete reader <a class="link" href="#">click here</a></div>
+          </div><!--premium-total__support-box-->
+        </div>
+
+        <div class="col-12 col-lg-4 pb-5">
+          <div class="premium-total__card-box">
+            <img src="/design/img/ui/cards.png" alt="cards">
+            <div>Your purchase with PrepAway is safe and fast. Your products will be available for immediate download after your payment has been received.</div>
+          </div><!--premium-total__card-box-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</main>
+
+<footer class="footer">
+  <div class="container pt-5">
+    <div class="row align-items-center justify-content-lg-center">
+      <div class="col-12 col-md-3 col-lg-2 pb-2 pb-md-3">
+        <a class="footer__logo logo" href="home.html">
+          <img src="/design/img/ui/logo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="col-12 col-md-9 col-lg-8 col-xl-6 pb-2 pb-md-3">
+        <nav class="footer__nav">
+          <ul>
+            <li>
+              <a class="link-2 _pb_4" href="#">Upload ETE File</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">Request Exam</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">Archive</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">FAQ</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">IT Courses</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">IT Training</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">RSS</a>
+            </li>
+            <li>
+              <a class="link-2 _pb_4" href="#">Facebook</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__copyright">© 2020 PrepAway.com</div>
+  </div>
+</footer>
+
+<div class="btn-up">
+  <svg aria-hidden="true">
+    <use xlink:href="/design/img/symbol/sprite.svg#slider-arrow-next"></use>
+  </svg>
+</div>
+<div id="modal-1" class="modal mfp-hide">
+  <button class="modal__btn-close">
+    <svg aria-hidden="true">
+      <use xlink:href="/design/img/symbol/sprite.svg#close"></use>
+    </svg>
+  </button>
+  <div class="modal__header">
+    <div class="modal__title">Get <span>40% Discount</span> on All Your Purchases</div>
+    <div class="modal__subtitle">This is <b>ONE TIME OFFER</b></div>
+  </div>
+  <div class="modal__body">
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="modal__box-img-label">
+          <img class="modal__img-bundle" src="/design/img/content/bundle-label.png" alt="bundle.png">
+          <div class="modal__label">40%</div>
+        </div>        
+      </div>
+      <div class="col-12 col-lg-7">
+        <form class="modal__form" action="#">
+          <p class="fz-26 fw-700">Enter your email address to receive your 40% off discount code:</p>
+          <div class="modal__box-input">
+            <svg aria-hidden="true">
+              <use xlink:href="/design/img/symbol/sprite.svg#icon_email"></use>
+            </svg>
+            <input class="modal__input input" type="text">
+          </div>
+          <p>A <b>confirmation link</b> will be sent to this email address to verify your login.</p>
+          <button class="modal__btn btn-2 fz-22 w-100">GET YOUR DISCOUNT CODE</button>
+          <p>* We value your privacy. We will not rent or sell your email address.</p>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="design/js/libs.min.js"></script>
+  <script src="design/js/main.min.js"></script>
+
+</body>
+</html>
