@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<meta name="description" content="description">
+	<link rel="icon" href="static/img/favicon/favicon.png">
+	
+  <link rel="preload" href="static/css/libs.min.css" as="style">
+  <link rel="preload" href="static/css/main.min.css" as="style">
+
+	<link rel="stylesheet" href="static/css/libs.min.css">
+	<link rel="stylesheet" href="static/css/main.min.css">
+	<!-- <script src="static/js/jquery-3.5.1.min.js"></script> -->
+</head>
+<body>
+
+<header class="header">
+	<div class="header__container container _large">
+		<div class="header__box-m-btn">
+			<button class="header__m-btn btn-reset" data-m-btn="open" aria-label="open mobile menu">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#hamburger"></use>
+				</svg>
+			</button>
+			<button class="header__m-btn btn-reset" aria-label="open search" data-btn="open-search">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#search"></use>
+				</svg>
+			</button>
+		</div><!--/header__box-m-btn-->
+		<a class="header__logo logo" href="#">
+			<img src="static/img/logo/logo.png" alt="logo">
+		</a>
+		<nav class="header__main-nav main-nav" data-nav="main">
+			<ul class="main-nav__list">
+				<li class="main-nav__item _dropdown">
+					<a class="main-nav__link" href="#">
+						<span>Products</span>
+						<svg class="main-nav__arrow arrow-dropdown" aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+						</svg>
+					</a>
+					<ul class="main-nav__sub-nav sub-nav">
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+					</ul>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Samples</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Guarantee</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Testimonials</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Power Packs</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Partners</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Contact Us</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">About Us</a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="header__user-menu user-menu">
+			<li class="user-menu__item">
+				<button class="user-menu__btn btn-reset" aria-label="open search" data-btn="open-search">
+					<svg class="header__icon" aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#search"></use>
+					</svg>
+				</button>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn link-reset" href="#">
+					<svg class="header__icon" aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+					</svg>
+					<span class="user-menu__cart-quantity">(0)</span>
+				</a>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn link-reset" data-reg="sign-in" href="register.html">Sign in</a>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn _border link-reset" data-reg="sign-up" href="register.html">Sign up</a>
+			</li>
+		</ul>
+		
+
+		
+		<div class="header__box-m-btn">
+			<a class="header__m-btn" href="#" aria-label="cart link">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+				</svg>
+			</a>
+			<a class="header__m-btn" href="#" aria-label="user account link">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#user"></use>
+				</svg>
+			</a>
+		</div><!--/header__box-m-btn-->
+	</div><!--/container-->
+
+	<div class="header__search main-search" data-js="main-search">
+		<div class="main-search__inner">
+			<form class="main-search__form" action="#">
+				<button class="main-search__btn-back btn-reset" data-btn="search-close" type="button" aria-label="button close search">
+					<svg aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#arrow-large"></use>
+					</svg>
+				</button>
+				<input class="main-search__form-control form-control _h_sm" type="text" data-js="main-search-input">
+				<button class="main-search__btn-search btn-reset btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- mobile nav -->
+	<nav class="header__main-m-nav main-m-nav" data-nav="main-m-nav">
+		<div class="main-m-nav__inner" data-nav="m-nav-inner">
+			<button class="main-m-nav__btn-close btn-reset" data-m-btn="close" aria-label="close mobile nav">
+				<svg class="icon-close" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<ul class="main-m-nav__list" data-nav="main-m-list">
+				<li class="main-m-nav__item" >
+					<button class="main-m-nav__link btn-reset" data-btn="open-m-sub-nav">
+						<span>Products</span>
+						<svg class="main-m-nav__arrow arrow-dropdown" aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+						</svg>
+					</button>
+					<ul class="main-m-nav__sub-nav sub-m-nav" data-nav="sub-m-nav">
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">All products</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+					</ul>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Samples</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Guarantee</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Testimonials</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Power Packs</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Partners</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Contact Us</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
+<main class="main">
+	<ul class="breadcrumb">
+	<li class="breadcrumb__item">
+		<a class="breadcrumb__link link" href="#">Home</a>
+	</li>
+	<li class="breadcrumb__item">
+		<a class="breadcrumb__link link" href="#">CompTIA</a>
+	</li>
+	<li class="breadcrumb__item _current">220-1001</li>
+</ul>
+
+
+	<!-- ////////////////////////////////////////////////////////// partnership -->
+	<section class="partnership">
+		<div class="container">
+			<h1 class="visually-hidden">Partnership</h1>
+			<div class="partnership__row">
+				<div class="partnership__col">
+					<div class="partnership__box box-style">
+						<h2 class="partnership__title">Licensing for Institutes/Corporate</h2>
+						<ul class="list">
+							<li class="list__item">Access Unlimited RealTests Products</li>
+							<li class="list__item">Get highest discounts</li>
+							<li class="list__item">3 months, 6 months and 1 Year Testing Engine Access Options</li>
+							<li class="list__item">Personalized Customer Support</li>
+						</ul>
+					</div><!--/partnership__box-->
+				</div><!--/col-->
+				<div class="partnership__col">
+					<div class="partnership__box box-style">
+						<h2 class="partnership__title">RealTests Reseller Program</h2>
+						<ul class="list">
+							<li class="list__item">Institutes/trainers sell RealTests Products to students</li>
+							<li class="list__item">Earn 25% commission on all RealTests Sales</li>
+							<li class="list__item">Assign Unlimited Products to users anytime</li>
+						</ul>
+					</div><!--/partnership__box-->
+				</div><!--/col-->
+				<div class="partnership__col">
+					<div class="partnership__box box-style">
+						<h2 class="partnership__title">RealTests Affiliate</h2>
+						<ul class="list">
+							<li class="list__item">Simple &amp; Easy for Webmasters</li>
+							<li class="list__item">Add link to RealTests website</li>
+							<li class="list__item">Send Traffic to RealTests</li>
+							<li class="list__item">Earn Commission on Sales</li>
+							<li class="list__item">Get Paid as you like</li>
+						</ul>
+					</div><!--/partnership__box-->
+				</div><!--/col-->
+				<div class="partnership__col _large">
+					<div class="partnership__box _large">
+						<form class="form" action="#">
+							<h2 class="partnership__title-2">Please fill out your information below and Certkiller Partner Program Manager will get back to you with best solution according to your requirements.</h2>
+							<div class="form__row _space_sm _mb_lg">
+								<div class="form__col _space_sm _2 form-group _mb_md">
+									<label class="form-label" for="email">Contact Name*</label>
+									<input class="form-control" id="email" type="text" placeholder="Contact Name">
+								</div>
+								<div class="form__col _space_sm _2 form-group _mb_md">
+									<label class="form-label" for="email">Email Address*</label>
+									<input class="form-control" id="email" type="text" placeholder="Email Address">
+								</div>
+								<div class="form__col _space_sm _2 form-group _mb_md">
+									<label class="form-label" for="email">Country*</label>
+									<input class="form-control" id="email" type="text" placeholder="Country">
+								</div>
+								<div class="form__col _space_sm _2 form-group _mb_md">
+									<label class="form-label" for="email">Valid Phone Number*</label>
+									<input class="form-control" id="email" type="text" placeholder="Valid Phone Number">
+								</div>
+								<div class="form__col _space_sm _2 form-group _mb_md">
+									<label class="form-label" for="email">Company Name</label>
+									<input class="form-control" id="email" type="text" placeholder="Company Name">
+								</div>
+								<div class="form__col _space_sm _2 form-group _mb_md">
+									<label class="form-label" for="email">Web Site URL</label>
+									<input class="form-control" id="email" type="text" placeholder="Web Site URL">
+								</div>
+							</div><!--form__row-->
+							<h2 class="partnership__title-2">Tell us about your requirements:</h2>
+							<div class="form__row">
+								<div class="form__col form-group _mb_md">
+									<label class="form-label" for="vendor">I would like more information on</label>
+									<select class="form-control _select _placeholder" data-js="selectric" name="vendor" id="vendor">
+										<option value="" disabled selected hidden>Please Choose...</option>
+										<option value="Licensing">Licensing</option>
+										<option value="Reseller">Reseller</option>
+										<option value="Affiliate">Affiliate</option>
+										<option value="Multiple_Accounts">Multiple User Accounts</option>
+									</select>
+								</div>
+								<div class="form__col form-group _mb_md">
+									<label class="form-label" for="exam">Additional Comments</label>
+									<textarea class="form-control _textarea" rows="4" placeholder="Please add comments about your requirements regarding Realtests products."></textarea>
+								</div>
+								<div class="form__col form-group _mb_xl">
+									<label class="form-label" for="email">Security Code*</label>
+									<div class="security-code">
+										<div class="security-code__form-control-box">
+											<input class="security-code__form-control form-control" id="email" type="text" placeholder="Code">
+											<img class="security-code__img" src="static/img/ui/code.png" alt="code">
+										</div>
+										<span class="security-code__info d-sm-none">Please enter security code exactly as shown.</span>
+									</div><!--/security-code-->
+								</div>
+								<div class="form__col form-group">
+									<button class="partnership__btn btn _primary _h_lg">Submit Now</button>
+								</div>
+							</div><!--form__row-->
+						</form>
+
+					</div><!--/partnership__box-->
+				</div><!--/col-->
+				<div class="partnership__col">
+					<div class="partnership__box _h_auto box-style">
+						<h2 class="partnership__title">Why Choose RealTests?</h2>
+						<ul class="list">
+							<li class="list__item">1283 Satisfied Licensors</li>
+							<li class="list__item">100% Success Guarantee</li>
+							<li class="list__item">Money secured by Refund Policy</li>
+							<li class="list__item">Flexible Testing Engine Access</li>
+						</ul>
+						<div class="partnership__text">
+							<p>There are many ways you can partner with RealTests and develop new personal revenue streams, promote popular or favorite products, or simply save time and money for your company with licensed solutions.</p>
+							<p>RealTests is more than a provider of certification exam training materials, we can also assist you in developing a preparation plan for your IT professionals on staff. Grow your existing certified team of coworkers into a work force that will elevate your business as they develop.</p>
+						</div>
+					</div><!--/partnership__box-->
+				</div><!--/col-->
+			</div><!--/partnership__content-->
+		</div><!--/containe-->
+	</section>
+
+</main>
+
+<footer class="footer">
+	<div class="footer__top">
+		<div class="footer__row container">
+			<div class="footer__col">
+				<h3 class="footer__title">Products</h3>
+				<a class="footer__link" href="#">Demo</a>
+				<a class="footer__link" href="#">Testing Engine</a>
+				<a class="footer__link" href="#">Search Exams</a>
+				<a class="footer__link" href="#">Admission Tests</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Company Info</h3>
+				<a class="footer__link" href="#">Contact Us</a>
+				<a class="footer__link" href="#">About Us</a>
+				<a class="footer__link" href="#">Customer Feedbacks</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Security &amp; Privacy</h3>
+				<a class="footer__link" href="#">Privacy</a>
+				<a class="footer__link" href="#">Disclaimer</a>
+				<a class="footer__link" href="#">Terms &amp; Conditions</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Servicy &amp; Support</h3>
+				<a class="footer__link" href="#">Payment &amp; Shipping</a>
+				<a class="footer__link" href="#">FAQs</a>
+				<a class="footer__link" href="#">Guarantee</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Partners Profram</h3>
+				<a class="footer__link" href="#">Multiuser</a>
+				<a class="footer__link" href="#">Reseller</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container">
+			Copyright &copy; 2006-2020 passguide.com , All Rights Reserved. Passguide.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
+		</div>
+	</div>
+</footer>
+
+<button class="up" aria-label="scroll page to top">
+  <svg aria-hidden="true">
+    <use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+  </svg>
+</button>
+
+	<script src="static/js/jquery-3.5.1.min.js"></script>
+	<script src="static/js/libs.min.js"></script>
+	<script src="static/js/main.min.js"></script>
+</body>
+</html>
+

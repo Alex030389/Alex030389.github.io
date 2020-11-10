@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<meta name="description" content="description">
+	<link rel="icon" href="static/img/favicon/favicon.png">
+	
+  <link rel="preload" href="static/css/libs.min.css" as="style">
+  <link rel="preload" href="static/css/main.min.css" as="style">
+
+	<link rel="stylesheet" href="static/css/libs.min.css">
+	<link rel="stylesheet" href="static/css/main.min.css">
+	<!-- <script src="static/js/jquery-3.5.1.min.js"></script> -->
+</head>
+<body>
+
+<header class="header">
+	<div class="header__container container _large">
+		<div class="header__box-m-btn">
+			<button class="header__m-btn btn-reset" data-m-btn="open" aria-label="open mobile menu">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#hamburger"></use>
+				</svg>
+			</button>
+			<button class="header__m-btn btn-reset" aria-label="open search" data-btn="open-search">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#search"></use>
+				</svg>
+			</button>
+		</div><!--/header__box-m-btn-->
+		<a class="header__logo logo" href="#">
+			<img src="static/img/logo/logo.png" alt="logo">
+		</a>
+		<nav class="header__main-nav main-nav" data-nav="main">
+			<ul class="main-nav__list">
+				<li class="main-nav__item _dropdown">
+					<a class="main-nav__link" href="#">
+						<span>Products</span>
+						<svg class="main-nav__arrow arrow-dropdown" aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+						</svg>
+					</a>
+					<ul class="main-nav__sub-nav sub-nav">
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+					</ul>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Samples</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Guarantee</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Testimonials</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Power Packs</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Partners</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Contact Us</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">About Us</a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="header__user-menu user-menu">
+			<li class="user-menu__item">
+				<button class="user-menu__btn btn-reset" aria-label="open search" data-btn="open-search">
+					<svg class="header__icon" aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#search"></use>
+					</svg>
+				</button>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn link-reset" href="#">
+					<svg class="header__icon" aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+					</svg>
+					<span class="user-menu__cart-quantity">(0)</span>
+				</a>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn link-reset" data-reg="sign-in" href="register.html">Sign in</a>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn _border link-reset" data-reg="sign-up" href="register.html">Sign up</a>
+			</li>
+		</ul>
+		
+
+		
+		<div class="header__box-m-btn">
+			<a class="header__m-btn" href="#" aria-label="cart link">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+				</svg>
+			</a>
+			<a class="header__m-btn" href="#" aria-label="user account link">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#user"></use>
+				</svg>
+			</a>
+		</div><!--/header__box-m-btn-->
+	</div><!--/container-->
+
+	<div class="header__search main-search" data-js="main-search">
+		<div class="main-search__inner">
+			<form class="main-search__form" action="#">
+				<button class="main-search__btn-back btn-reset" data-btn="search-close" type="button" aria-label="button close search">
+					<svg aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#arrow-large"></use>
+					</svg>
+				</button>
+				<input class="main-search__form-control form-control _h_sm" type="text" data-js="main-search-input">
+				<button class="main-search__btn-search btn-reset btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- mobile nav -->
+	<nav class="header__main-m-nav main-m-nav" data-nav="main-m-nav">
+		<div class="main-m-nav__inner" data-nav="m-nav-inner">
+			<button class="main-m-nav__btn-close btn-reset" data-m-btn="close" aria-label="close mobile nav">
+				<svg class="icon-close" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<ul class="main-m-nav__list" data-nav="main-m-list">
+				<li class="main-m-nav__item" >
+					<button class="main-m-nav__link btn-reset" data-btn="open-m-sub-nav">
+						<span>Products</span>
+						<svg class="main-m-nav__arrow arrow-dropdown" aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+						</svg>
+					</button>
+					<ul class="main-m-nav__sub-nav sub-m-nav" data-nav="sub-m-nav">
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">All products</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+					</ul>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Samples</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Guarantee</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Testimonials</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Power Packs</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Partners</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Contact Us</a>
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
+<main class="main">
+	<ul class="breadcrumb">
+	<li class="breadcrumb__item">
+		<a class="breadcrumb__link link" href="#">Home</a>
+	</li>
+	<li class="breadcrumb__item">
+		<a class="breadcrumb__link link" href="#">CompTIA</a>
+	</li>
+	<li class="breadcrumb__item _current">220-1001</li>
+</ul>
+
+
+	<!-- ////////////////////////////////////////////////////////// exam -->
+	<section class="s _lite-gray box-exam-downl">
+		<div class="box-exam-downl__container container">
+			<h1 class="box-exam-downl__title title-2 _lh_32 d-none d-lg-block">CompTIA 220-1001 Questions &amp; Answers</h1>
+			<div class="box-exam-downl__inner">
+				<div class="box-exam-downl__exam exam">
+					<div class="exam__box-img-btn">
+						<img class="exam__img" src="static/img/course/course.png" alt="img">
+						<button class="exam__btn-downl btn _border-primary _h_md d-lg-none" type="button">Download Demo</button>
+					</div>
+					<div class="exam__content">
+						<h1 class="exam__title title-2 _lh_32 d-lg-none">CompTIA 220-1001 Questions &amp; Answers</h1>
+						<p class="exam__p">
+							<a class="link" href="#">CompTIA</a> - 220-1001 - CompTIA A+ Certification Exam: Core 1</p>
+						<p class="exam__p">143 Questions</p>
+						<p class="exam__p">Last Update: Jun 19, 2020</p>
+						<ul class="exam__list _pt_lg list d-sm-none">
+							<li class="list__item">The latest 220-1001 questions &amp; answers</li>
+							<li class="list__item">Ready for an instant download</li>
+							<li class="list__item">Free updates for 90 days</li>
+							<li class="list__item">Fully backed by our <button class="link btn-reset" type="button">100% Pass Guarantee</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box-exam-downl__inst-downl inst-downl">
+					<div class="inst-downl__header d-lg-none">Instant Download</div>
+					<div class="inst-downl__body _box-exam">
+						<div class="inst-downl__box-price">
+							<div class="inst-downl__old-price">Price: $76.99</div>
+							<div class="inst-downl__new-price">Today: $69.99</div>
+						</div>
+						<div class="inst-downl__box-btn">
+							<button class="inst-downl__btn btn _primary _h_md">Add to Cart</button>
+							<button class="inst-downl__btn btn _border-primary _h_md d-none d-lg-block">Download Demo</button>
+						</div>
+						<div class="inst-downl__info">
+							<div class="inst-downl__info-text">Added To Cart</div>
+							<a class="inst-downl__info-link link" href="#">Checkout</a>
+						</div>
+					</div>
+				</div>
+			</div><!--/box-exam-downl-->
+		</div>
+	</section>
+
+	<!-- ////////////////////////////////////////////////////////// contact -->
+	<section class="s _gray contact">
+		<div class="contact__container container">
+			<h2 class="visually-hidden">Contact and Take our Testing Engine Simulator Tour</h2>
+			<p class="contact__p">Buying 2 or more licences? Then our partner program is probably for you. <a class="link" href="#">Contact us here</a></p>
+			<a class="contact__link link" href="#">Take our Testing Engine Simulator Tour</a>
+		</div>
+	</section>
+
+	<!-- ////////////////////////////////////////////////////////// testimonial -->
+	<section class="container testsimbox">
+		<h2 class="title _fz_36 _mb_2">Testimonials</h2>
+		<p class="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua equat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+		<div class="slider _pt_2" data-slider="1">
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+				<div class="slider__item _mw_487">
+					<div class="costumer box-style">
+						<div class="costumer__header">
+							<div class="costumer__wrap-img">
+								<img src="static/img/avatar/avatar.jpg" alt="alt">
+							</div>
+							<div class="costumer__box-name-star">
+								<div class="costumer__name">Currier 1</div>
+								<div class="costumer__star star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+									<img src="static/img/icon/star.svg" alt="star">
+								</div>
+							</div>
+						</div>
+						<div class="costumer__body">
+							I am very happy with Realtests product. I passed the Cisco 646-578 exam with 95% score. Without Realtests it would never have been possible. Thanks a lot. I think no other study guide could help me like Realtests practice test. The examples used in Cisco exam are like real test that helped me to move on right direction. I got 94% score in Cisco Specialist exam and I am really obliged to Realtests.
+						</div>
+					</div><!--/costumer-->
+				</div>
+			
+		</div>
+	</section>
+
+</main>
+
+<footer class="footer">
+	<div class="footer__top">
+		<div class="footer__row container">
+			<div class="footer__col">
+				<h3 class="footer__title">Products</h3>
+				<a class="footer__link" href="#">Demo</a>
+				<a class="footer__link" href="#">Testing Engine</a>
+				<a class="footer__link" href="#">Search Exams</a>
+				<a class="footer__link" href="#">Admission Tests</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Company Info</h3>
+				<a class="footer__link" href="#">Contact Us</a>
+				<a class="footer__link" href="#">About Us</a>
+				<a class="footer__link" href="#">Customer Feedbacks</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Security &amp; Privacy</h3>
+				<a class="footer__link" href="#">Privacy</a>
+				<a class="footer__link" href="#">Disclaimer</a>
+				<a class="footer__link" href="#">Terms &amp; Conditions</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Servicy &amp; Support</h3>
+				<a class="footer__link" href="#">Payment &amp; Shipping</a>
+				<a class="footer__link" href="#">FAQs</a>
+				<a class="footer__link" href="#">Guarantee</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Partners Profram</h3>
+				<a class="footer__link" href="#">Multiuser</a>
+				<a class="footer__link" href="#">Reseller</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container">
+			Copyright &copy; 2006-2020 passguide.com , All Rights Reserved. Passguide.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
+		</div>
+	</div>
+</footer>
+
+<button class="up" aria-label="scroll page to top">
+  <svg aria-hidden="true">
+    <use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+  </svg>
+</button>
+
+	<script src="static/js/jquery-3.5.1.min.js"></script>
+	<script src="static/js/libs.min.js"></script>
+	<script src="static/js/main.min.js"></script>
+</body>
+</html>
+
