@@ -207,168 +207,108 @@
     <li class="breadcrumb__item">All Vendors</li>
   </ul>
 </div>
-  <!-- //////////////////////////////////////////////////// cart -->
-  <section class="cart cart_pb_0 section">
-    <div class="container">
-      <h1 class="title title-2_mb_sm">Review Your Order</h1>
-      <p class="cart__subtitle">The following items have been added to your shopping cart. Now, please enter your billing information below, as it appears on your credit card statement.<br>
-        <button class="link link_btn">Need help with your purchase?</button>
-      </p>
 
+  <!-- ///////////////////////////////////////////////////// thanks -->
+  <section class="thanks section">
+    <div class="container">
+      <h1 class="title title_mb_md">Thank you, purchase complete</h1>
+      <div class="thanks__row row">
+        <div class="thanks__col-form col">
+          <form class="thanks__form" action="#">
+            <h2 class="thanks__form-title">Sign In</h2>
+            <p class="thanks__form-subtitle">(to download your purchase or print a receipt)</p>
+            <div class="thanks__form-group form-group">
+              <label class="form-label" for="email">Your Email Address:</label>
+              <input class="form-control" id="email" name="email" type="text">
+            </div>
+            <div class="thanks__form-group form-group">
+              <label class="form-label" for="password">Password:</label>
+              <input class="form-control" id="password" type="text">
+            </div>
+            <div class="thanks__form-box-btn form-group form-group_btn-col">
+              <button class="thanks__form-btn btn btn_primary btn_lg btn_w_320">Sign In</button>
+              <a class="link link_blue" href="#">Forgot your password?</a>
+            </div>
+          </form>
+        </div>
+        <div class="thanks__col-text col">
+          <p>Your Purchase was successful.</p>
+          <p>Please <a href="#" class="link">Log In</a> to your account to <a href="#" class="link">access your purchases</a> or <a href="#" class="link">print a receipt</a> in your User Center.</p>
+          <p>If you didn't have an account with test-inside.com before then it was created automatically, password of the account was emailed to .</p>
+          <p>A receipt for this purchase has been emailed to . You can also print a receipt in the Member's Account.</p>
+          <p>Please feel free to <a href="#" class="link">email us</a> to check your status. Thanks for your understanding.</p>
+        </div>
+      </div><!--/thanks__col-->
+    </div><!--/container-->
+  </section>
+
+  <!-- //////////////////////////////////////////////////// cart -->
+  <section class="cart section section_lite_grey">
+    <div class="container">
+      <h2 class="title-2 title-2_mb_md">Your Order Summary</h2>
       <table class="cart__table table">
         <thead class="cart__table-thead">
           <tr>
-            <th>Item Description</th>
+            <th>Product</th>
             <th>Qty</th>
-            <th>Price</th>
-            <th class="cart__th-remove"></th>
+            <th>Subtotal</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="cart__td-exam">
-              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
-              <span class="cart__info cart__info_red">$9.00 Instant Discount</span>
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
             </td>
             <td class="cart__td-qty">
               2
             </td>
             <td class="cart__td-price">$89.99</td>
-            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
           </tr>
           <tr>
             <td class="cart__td-exam">
-              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
-              <span class="cart__info cart__info_red">$9.00 Instant Discount</span>
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
             </td>
             <td class="cart__td-qty">
-              1
+              2
             </td>
             <td class="cart__td-price">$89.99</td>
-            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
           </tr>
           <tr>
             <td class="cart__td-exam">
-              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
-              <span class="cart__info cart__info_red">$9.00 Instant Discount</span>
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
             </td>
             <td class="cart__td-qty">
-              3
+              2
             </td>
             <td class="cart__td-price">$89.99</td>
-            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td class="cart__td-promo" colspan="4">
-              <div class="cart__promo promo">
-                <div class="promo__info">Promotion code 'ваыв' that you entered is incorrect.   </div>
-                <form class="promo__form form" action="#">
-                  <div class="promo__form-group form-group">
-                    <input class="promo__form-control form-control" id="promo" placeholder="Promotion Code" type="text">
-                  </div>
-                  <button class="promo__btn btn btn_primary">Apply</button>
-                </form>
-              </div><!--/promo-->
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4" class="cart__td-total">
-              <span class="cart__total">Total $394.95</span>              
+            <td colspan="3" class="cart__td-total">
+              <span class="cart__total">Total $394.95</span>
             </td>
           </tr>
         </tfoot>
       </table>
-      <div class="cart__box-bottom-btn">
-        <a class="btn btn_primary btn_lg" href="#">Keep shopping</a>
-        <button class="btn btn_lg btn_secondary">Go to checkout</button>
-      </div>
-
-    </div><!--/container-->
+    </div>
+    <!--/container-->
   </section>
 
-  <!-- ////////////////////////////////////// guarant cert -->
-<section class="guarant-cert section">
-  <div class=" container">
-    <div class="guarant-cert__box">
-      <h2 class="guarant-cert__title">Guaranteed Certification</h2>
-      <p class="guarant-cert__p">TestInside has a remarkable Candidate Success record. We're confident of our products and provide a no hassle money back guarantee. Thats how confident we are!</p>
-    </div>
-  </div>
-</section>
-  <!-- ////////////////////////////////////////// why choose -->
-<section class="why-choose section section_lite_blue">
-  <div class="container">
-    <h2 class="title-2 title-2_mb_md">
-      Why Choose TestInside
-    </h2>
-    <ul class="benefits list-reset">
-      <li class="benefits__item box-style">
-        5 Years experience with Almost 50,000 Satisified Customers
-      </li>
-      <li class="benefits__item box-style">
-        Free updates: To ensure that you always get most updated questions, we provide 90 days of updates absolutely free!
-      </li>
-      <li class="benefits__item box-style">
-        Instant download after purchase, with 24/7 Customer Support.
-      </li>
-      <li class="benefits__item benefits__item_lg box-style">
-        Questions & Answers are based on real exam questions, formatted questions and accurate answers provided by experts!
-      </li>
-      <li class="benefits__item benefits__item_lg box-style">
-        Real exam environment testing engine, covers drag and drop, simulations, type in questions - train yourself for the real exam!
-      </li>
-    </ul>
-  </div>
-</section>
-  <!-- //////////////////////////////////////// testimonials -->
-<section class="testimonials section">
-  <div class="container">
-    <h2 class="title-2 title-2_mb_lg">Success with TestInside</h2>
-    <div class="testimonials__list" data-slider="1">
-      <div class="testimonials__item">
-        <figure class="testimonials__box-ava">
-          <img src="./design/img/avatar/ava-1.jpg" alt="ava">
-        </figure>
-        <div class="testimonials__content">
-          <p class="testimonials__name">Jonnahan Paul</p>
-          <p class="testimonials__p">"After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much!"</p>
-        </div>
-      </div><!--/testimonials__item-->
-      
-      <div class="testimonials__item">
-        <figure class="testimonials__box-ava">
-          <img src="./design/img/avatar/ava-1.jpg" alt="ava">
-        </figure>
-        <div class="testimonials__content">
-          <p class="testimonials__name">Jonnahan Paul</p>
-          <p class="testimonials__p">"After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much!"</p>
-        </div>
-      </div><!--/testimonials__item-->
 
-      <div class="testimonials__item">
-        <figure class="testimonials__box-ava">
-          <img src="./design/img/avatar/ava-1.jpg" alt="ava">
-        </figure>
-        <div class="testimonials__content">
-          <p class="testimonials__name">Jonnahan Paul</p>
-          <p class="testimonials__p">"After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much! After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much!"</p>
-        </div>
-      </div><!--/testimonials__item-->
-    </div><!--/testimonials__list-->
-  </div>  
-</section>
-  <!-- ///////////////////////////////////////////// need-help -->
-<section class="need-help section section_lite_grey">
-  <div class="container">
-    <div class="need-help__box">
-      <h2 class="title-2 title-2_mb_sm">Need Help</h2>
-      <p class="need-help__p">TestInside has a remarkable Candidate Success record. We're confident of our products and provide a no hassle money back guarantee. Thats how confident we are!</p>
-      <a class="need-help__btn btn btn_primary" href="#">Customer Support</a>
-    </div>
-  </div>
-</section>
 </main>
 
 <footer class="footer">

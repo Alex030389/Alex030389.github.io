@@ -199,176 +199,106 @@
 </header>
 
 <main class="main">
-  <div class="container">
-  <ul class="breadcrumb list-reset">
-    <li class="breadcrumb__item">
-      <a class="breadcrumb__link link" href="#">Home</a>
-    </li>
-    <li class="breadcrumb__item">All Vendors</li>
-  </ul>
-</div>
-  <!-- //////////////////////////////////////////////////// cart -->
-  <section class="cart cart_pb_0 section">
+  <!-- ////////////////////////////////////////////////////////// user -->
+
+  <div class="user section">
     <div class="container">
-      <h1 class="title title-2_mb_sm">Review Your Order</h1>
-      <p class="cart__subtitle">The following items have been added to your shopping cart. Now, please enter your billing information below, as it appears on your credit card statement.<br>
-        <button class="link link_btn">Need help with your purchase?</button>
-      </p>
-
-      <table class="cart__table table">
-        <thead class="cart__table-thead">
-          <tr>
-            <th>Item Description</th>
-            <th>Qty</th>
-            <th>Price</th>
-            <th class="cart__th-remove"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="cart__td-exam">
-              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
-              <span class="cart__info cart__info_red">$9.00 Instant Discount</span>
-            </td>
-            <td class="cart__td-qty">
-              2
-            </td>
-            <td class="cart__td-price">$89.99</td>
-            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
-          </tr>
-          <tr>
-            <td class="cart__td-exam">
-              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
-              <span class="cart__info cart__info_red">$9.00 Instant Discount</span>
-            </td>
-            <td class="cart__td-qty">
-              1
-            </td>
-            <td class="cart__td-price">$89.99</td>
-            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
-          </tr>
-          <tr>
-            <td class="cart__td-exam">
-              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
-              <span class="cart__info cart__info_red">$9.00 Instant Discount</span>
-            </td>
-            <td class="cart__td-qty">
-              3
-            </td>
-            <td class="cart__td-price">$89.99</td>
-            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td class="cart__td-promo" colspan="4">
-              <div class="cart__promo promo">
-                <div class="promo__info">Promotion code 'ваыв' that you entered is incorrect.   </div>
-                <form class="promo__form form" action="#">
-                  <div class="promo__form-group form-group">
-                    <input class="promo__form-control form-control" id="promo" placeholder="Promotion Code" type="text">
-                  </div>
-                  <button class="promo__btn btn btn_primary">Apply</button>
-                </form>
-              </div><!--/promo-->
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4" class="cart__td-total">
-              <span class="cart__total">Total $394.95</span>              
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-      <div class="cart__box-bottom-btn">
-        <a class="btn btn_primary btn_lg" href="#">Keep shopping</a>
-        <button class="btn btn_lg btn_secondary">Go to checkout</button>
+      <div class="user__box row">
+        <nav class="user__nav col">
+  <ul class="user__menu list-reset">
+    <li class="user__menu-item">
+      <a class="user__menu-link user__menu-link_current" href="#">My Products</a>
+    </li>
+    <li class="user__menu-item">
+      <a class="user__menu-link" href="#">Order/Invoice</a>
+    </li>
+    <li class="user__menu-item">
+      <a class="user__menu-link" href="#">Account Settings</a>
+    </li>
+    <li class="user__menu-item">
+      <a class="user__menu-link" href="#">Log Out</a>
+    </li>
+  </ul>
+</nav>
+        
+          <!-- /////////////////////////////////////////////// u-invoices -->
+          <div class="user__content col">
+            <h1 class="title-2 title-2_mb_sm">Orders / Invoices</h1>
+  
+            <table class="u-invoices table">
+              <thead class="u-invoices__thead">
+                <tr>
+                  <th class="u-invoices__td-description">Invoice / Order #</th>
+                  <th class="u-invoices__td-invoice">Order Date</th>
+                  <th class="u-invoices__td-order">Amount</th>
+                  <th class="u-invoices__td-btn"></th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class="u-invoices__tr">
+                    <td class="u-invoices__td-description">
+                      <a class="link link_fw_500" href="#">83174</a>
+                    </td>
+                    <td class="u-invoices__td-invoice">
+                      <span class="d-none d-md-inline">Order Date:</span> Nov 11,20
+                    </td>
+                    <td class="u-invoices__td-order">
+                      <span class="d-none d-md-inline">Amount:</span> $25.99</td>
+                    <td class="u-invoices__td-btn">
+                      <button class="u-invoices__btn btn btn_secondary">View Now</button>
+                      <button class="u-invoices__btn btn btn_secondary">Print</button>
+                  </tr>
+                
+                  <tr class="u-invoices__tr">
+                    <td class="u-invoices__td-description">
+                      <a class="link link_fw_500" href="#">83174</a>
+                    </td>
+                    <td class="u-invoices__td-invoice">
+                      <span class="d-none d-md-inline">Order Date:</span> Nov 11,20
+                    </td>
+                    <td class="u-invoices__td-order">
+                      <span class="d-none d-md-inline">Amount:</span> $25.99</td>
+                    <td class="u-invoices__td-btn">
+                      <button class="u-invoices__btn btn btn_secondary">View Now</button>
+                      <button class="u-invoices__btn btn btn_secondary">Print</button>
+                  </tr>
+                
+                  <tr class="u-invoices__tr">
+                    <td class="u-invoices__td-description">
+                      <a class="link link_fw_500" href="#">83174</a>
+                    </td>
+                    <td class="u-invoices__td-invoice">
+                      <span class="d-none d-md-inline">Order Date:</span> Nov 11,20
+                    </td>
+                    <td class="u-invoices__td-order">
+                      <span class="d-none d-md-inline">Amount:</span> $25.99</td>
+                    <td class="u-invoices__td-btn">
+                      <button class="u-invoices__btn btn btn_secondary">View Now</button>
+                      <button class="u-invoices__btn btn btn_secondary">Print</button>
+                  </tr>
+                
+                  <tr class="u-invoices__tr">
+                    <td class="u-invoices__td-description">
+                      <a class="link link_fw_500" href="#">83174</a>
+                    </td>
+                    <td class="u-invoices__td-invoice">
+                      <span class="d-none d-md-inline">Order Date:</span> Nov 11,20
+                    </td>
+                    <td class="u-invoices__td-order">
+                      <span class="d-none d-md-inline">Amount:</span> $25.99</td>
+                    <td class="u-invoices__td-btn">
+                      <button class="u-invoices__btn btn btn_secondary">View Now</button>
+                      <button class="u-invoices__btn btn btn_secondary">Print</button>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div><!--/user__content-->
       </div>
-
     </div><!--/container-->
-  </section>
-
-  <!-- ////////////////////////////////////// guarant cert -->
-<section class="guarant-cert section">
-  <div class=" container">
-    <div class="guarant-cert__box">
-      <h2 class="guarant-cert__title">Guaranteed Certification</h2>
-      <p class="guarant-cert__p">TestInside has a remarkable Candidate Success record. We're confident of our products and provide a no hassle money back guarantee. Thats how confident we are!</p>
-    </div>
-  </div>
-</section>
-  <!-- ////////////////////////////////////////// why choose -->
-<section class="why-choose section section_lite_blue">
-  <div class="container">
-    <h2 class="title-2 title-2_mb_md">
-      Why Choose TestInside
-    </h2>
-    <ul class="benefits list-reset">
-      <li class="benefits__item box-style">
-        5 Years experience with Almost 50,000 Satisified Customers
-      </li>
-      <li class="benefits__item box-style">
-        Free updates: To ensure that you always get most updated questions, we provide 90 days of updates absolutely free!
-      </li>
-      <li class="benefits__item box-style">
-        Instant download after purchase, with 24/7 Customer Support.
-      </li>
-      <li class="benefits__item benefits__item_lg box-style">
-        Questions & Answers are based on real exam questions, formatted questions and accurate answers provided by experts!
-      </li>
-      <li class="benefits__item benefits__item_lg box-style">
-        Real exam environment testing engine, covers drag and drop, simulations, type in questions - train yourself for the real exam!
-      </li>
-    </ul>
-  </div>
-</section>
-  <!-- //////////////////////////////////////// testimonials -->
-<section class="testimonials section">
-  <div class="container">
-    <h2 class="title-2 title-2_mb_lg">Success with TestInside</h2>
-    <div class="testimonials__list" data-slider="1">
-      <div class="testimonials__item">
-        <figure class="testimonials__box-ava">
-          <img src="./design/img/avatar/ava-1.jpg" alt="ava">
-        </figure>
-        <div class="testimonials__content">
-          <p class="testimonials__name">Jonnahan Paul</p>
-          <p class="testimonials__p">"After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much!"</p>
-        </div>
-      </div><!--/testimonials__item-->
-      
-      <div class="testimonials__item">
-        <figure class="testimonials__box-ava">
-          <img src="./design/img/avatar/ava-1.jpg" alt="ava">
-        </figure>
-        <div class="testimonials__content">
-          <p class="testimonials__name">Jonnahan Paul</p>
-          <p class="testimonials__p">"After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much!"</p>
-        </div>
-      </div><!--/testimonials__item-->
-
-      <div class="testimonials__item">
-        <figure class="testimonials__box-ava">
-          <img src="./design/img/avatar/ava-1.jpg" alt="ava">
-        </figure>
-        <div class="testimonials__content">
-          <p class="testimonials__name">Jonnahan Paul</p>
-          <p class="testimonials__p">"After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much! After 3 weeks of prepping for my exam, I finally nailed my Network+! I combined the QnA along with the study guide and labs and flew through the actual test. I studied fast, but actually learned the material! Thank you so much!"</p>
-        </div>
-      </div><!--/testimonials__item-->
-    </div><!--/testimonials__list-->
-  </div>  
-</section>
-  <!-- ///////////////////////////////////////////// need-help -->
-<section class="need-help section section_lite_grey">
-  <div class="container">
-    <div class="need-help__box">
-      <h2 class="title-2 title-2_mb_sm">Need Help</h2>
-      <p class="need-help__p">TestInside has a remarkable Candidate Success record. We're confident of our products and provide a no hassle money back guarantee. Thats how confident we are!</p>
-      <a class="need-help__btn btn btn_primary" href="#">Customer Support</a>
-    </div>
-  </div>
-</section>
+  </div><!--/user-->
+  
 </main>
 
 <footer class="footer">
