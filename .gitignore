@@ -1,0 +1,6 @@
+/.git/
+/.idea/
+/**/debug.log
+/**/_backstage
+/**/Thumbs.db
+/**/*.DS_Store
