@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>заглавие услуги страницы</title>
+  <meta name="description" content="описание услуги страницы">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#2B2E35">
+
+  <link rel="stylesheet" href="./static/css/libs.min.css">
+  <link rel="stylesheet" href="./static/css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__logo" href="#">
+    <picture>
+      <source media="(max-width: 991.98px)" srcset="./static/img/logo/logo-bear_mob.png">
+      <img class="header__logo-img" src="./static/img/logo/logo-bear.png" width="166" height="126" alt="logo">
+    </picture>
+  </a>
+  <div class="header__container container">
+    <nav class="header__menu main-menu">
+      <ul class="main-menu__list list-reset">
+        <li class="main-menu__item">
+          <a class="main-menu__link " href="/">Главная</a>
+        </li>
+        <li class="main-menu__item main-menu__item--dropdown">
+          <button class="main-menu__link  main-menu__link--dropdown btn-reset" type="button">Услуги</button>
+          <ul class="main-menu__dropdown list-reset">
+            <li class="main-menu__dropdown-item">
+              <a class="main-menu__dropdown-link" href="./type-group.html">Групповые тренировки</a>
+            </li>
+            <li class="main-menu__dropdown-item">
+              <a class="main-menu__dropdown-link" href="#">Занятия для детей</a>
+            </li>
+            <li class="main-menu__dropdown-item">
+              <a class="main-menu__dropdown-link" href="#">Индивидуальные тренировки</a>
+            </li>
+            <li class="main-menu__dropdown-item">
+              <a class="main-menu__dropdown-link" href="#">Тренировки для женщин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link " href="./prices-and-timetable.html">Цены</a>
+        </li>
+        <li class="main-menu__item main-menu__item--ml--auto">
+          <a class="main-menu__link main-menu__link--current" href="./gallery.html">Галерея</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link " href="./blog.html">Блог</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link @@contact" href="./contact.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div><!--/container-->
+  <button class="header__btn-menu btn-reset">
+    <img class="header__btn-menu-icon" src="./static/img/icon/menu.svg" alt="menu">
+  </button>
+</header>
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// gallery -->
+  <section class="gallery section section--pt--xl">
+    <div class="container">
+      <h1 class="visually-hidden">Галерея фотографий и видео боксерского клуба "“МЕДВЕДЬ”"</h1>
+      <div class="gallery__tab-box-btn">
+        <button class="gallery__tab-btn gallery__tab-btn--active title btn-reset" data-tab-btn="0">Фото</button>
+        <button class="gallery__tab-btn title btn-reset" data-tab-btn="1">Видео</button>      
+      </div>
+
+      <div class="gallery__tab-content gallery__tab-content--active" data-tab-content="0">
+        <div class="gallery__list list-reset row" data-js="magnific">
+          <a class="gallery__item col" href="./static/img/gallery/image/1.jpg" title="Тестовое описание картинки">
+            <img class="gallery__img" src="./static/img/gallery/image/1.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/2.jpg" title="Тестовое описание картинки 2">
+            <img class="gallery__img" src="./static/img/gallery/image/2.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/3.jpg" title="Тестовое описание картинки 3">
+            <img class="gallery__iml" src="./static/img/gallery/image/3.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/4.jpg" title="Тестовое описание картинки 4">
+            <img class="gallery__img" src="./static/img/gallery/image/4.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/1.jpg" title="Тестовое описание картинки 5">
+            <img class="gallery__img" src="./static/img/gallery/image/1.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/2.jpg" title="Тестовое описание картинки 6">
+            <img class="gallery__img" src="./static/img/gallery/image/2.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/3.jpg" title="Тестовое описание картинки 7">
+            <img class="gallery__iml" src="./static/img/gallery/image/3.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/4.jpg" title="Тестовое описание картинки 8">
+            <img class="gallery__img" src="./static/img/gallery/image/4.jpg" alt="img">
+          </a>
+          <a class="gallery__item col" href="./static/img/gallery/image/4.jpg" title="Тестовое описание картинки 9">
+            <img class="gallery__img" src="./static/img/gallery/image/4.jpg" alt="img">
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery__tab-content" data-tab-content="1">
+        <ul class="gallery__list list-reset row">
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/1.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/2.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/3.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/1.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/2.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/3.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/1.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/2.mp4" type='video/mp4;'>
+             </video>
+          </li>
+          <li class="gallery__item col">
+            <video class="gallery__video" controls="controls">
+              <source src="./static/img/gallery/video/3.mp4" type='video/mp4;'>
+             </video>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer ">
+  <div class="footer__inner">
+    <div class="footer__container container">
+      <div class="footer__copy">© 2020 БK  “МЕДВЕДЬ”</div>
+      <ul class="footer__menu list-reset">
+        <li class="footer__item">
+          <a class="footer__link" href="/">Главная</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="./prices-and-timetable.html">Цены</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="./gallery.html">Галерея</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="./blog.html">Блог</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="./contact.html">Контакты</a>
+        </li>
+      </ul>
+    </div><!--/container-->
+  </div><!--/footer__inner-->
+</footer>
+
+<button class="up btn-reset" data-btn="up" aria-label="scroll page to top"></button>
+  <script src="./static/js/libs.min.js"></script>
+  <script src="./static/js/main.min.js"></script>
+</body>
+</html>
