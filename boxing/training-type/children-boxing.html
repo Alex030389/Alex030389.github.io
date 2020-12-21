@@ -7,32 +7,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>заглавие услуги страницы</title>
   <meta name="description" content="описание услуги страницы">
-  <link rel="icon" href="/static/img/favicon/favicon.png">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
 
-  <base href="https://alex030389.github.io/boxing/">
+  <!-- <base href="https://alex030389.github.io/boxing/"> -->
 
   <!-- Custom Browsers Color Start -->
   <meta name="theme-color" content="#2B2E35">
 
-  <link rel="stylesheet" href="/static/css/libs.min.css">
-  <link rel="stylesheet" href="/static/css/main.min.css">
+  <link rel="stylesheet" href="..//static/css/libs.min.css">
+  <link rel="stylesheet" href="..//static/css/main.min.css">
 </head>
 <body>
 <header class="header">
   <a class="header__logo" href="/">
     <picture>
-      <source media="(max-width: 991.98px)" srcset="/static/img/logo/logo-bear_mob.png">
-      <img class="header__logo-img" src="/static/img/logo/logo-bear.png" width="166" height="126" alt="logo">
+      <source media="(max-width: 991.98px)" srcset="./static/img/logo/logo-bear_mob.png">
+      <img class="header__logo-img" src="..//static/img/logo/logo-bear.png" width="166" height="126" alt="logo">
     </picture>
   </a>
   <div class="header__container container">
     <nav class="header__menu main-menu">
       <ul class="main-menu__list list-reset">
         <li class="main-menu__item">
-          <a class="main-menu__link " href="/">Главная</a>
+          <a class="main-menu__link @@main" href="/">Главная</a>
         </li>
         <li class="main-menu__item main-menu__item--dropdown">
-          <button class="main-menu__link main-menu__link--current main-menu__link--dropdown btn-reset" type="button">Услуги</button>
+          <button class="main-menu__link @@services main-menu__link--dropdown btn-reset" type="button">Услуги</button>
           <ul class="main-menu__dropdown list-reset">
             <li class="main-menu__dropdown-item">
               <a class="main-menu__dropdown-link" href="/training-type/group-boxing.html">Групповые тренировки</a>
@@ -46,13 +46,13 @@
           </ul>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link " href="/prices.html">Цены</a>
+          <a class="main-menu__link @@price" href="/prices.html">Цены</a>
         </li>
         <li class="main-menu__item main-menu__item--ml--auto">
-          <a class="main-menu__link " href="/gallery.html">Галерея</a>
+          <a class="main-menu__link @@gallery" href="/gallery.html">Галерея</a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link " href="/blog.html">Блог</a>
+          <a class="main-menu__link @@blog" href="/blog.html">Блог</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link @@contact" href="/contact.html">Контакты</a>
@@ -61,7 +61,7 @@
     </nav>
   </div><!--/container-->
   <button class="header__btn-menu btn-reset">
-    <img class="header__btn-menu-icon" src="/static/img/icon/menu.svg" alt="menu">
+    <img class="header__btn-menu-icon" src="./static/img/icon/menu.svg" alt="menu">
   </button>
 </header>
 
@@ -70,7 +70,7 @@
   <section class="type section section--pt--xl">
     <div class="container">
       <div class="type__box-img-title">
-        <img class="type__img" src="/static/img/type-group.jpg" width="1146" height="450" alt="img">
+        <img class="type__img" src="../static/img/type-group.jpg" width="1146" height="450" alt="img">
         <h1 class="type__title"><span>Тренировки по боксу для детей</span></h1>
       </div>
       <div class="content">
@@ -120,7 +120,7 @@
 </footer>
 
 <button class="up btn-reset" data-btn="up" aria-label="scroll page to top"></button>
-  <script src="/static/js/libs.min.js"></script>
-  <script src="/static/js/main.min.js"></script>
+  <script src="..//static/js/libs.min.js"></script>
+  <script src="..//static/js/main.min.js"></script>
 </body>
 </html>
