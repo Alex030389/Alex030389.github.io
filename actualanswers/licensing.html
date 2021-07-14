@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <link rel="preload" href="./design/font/GothamPro/GothamPro.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin="">
+
+  <link rel="stylesheet" href="./design/css/libs.min.css">
+  <link rel="stylesheet" href="./design/css/main.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__top container">
+    <a class="header__logo-link" href="#">
+      <img class="header__logo" src="./design/images/logo/logo.svg" width="134" height="56" alt="logo">
+    </a>
+    <form class="header__search-form search-form">
+      <button class="search-form__btn" aria-label="search button" disabled data-js="search-form-btn">
+        <svg class="search-form__icon" aria-hidden="true" data-js="search-form-icon">
+          <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <input class="search-form__control" placeholder="Search" type="text" data-js="search-input">
+    </form>
+    <nav class="header__user-nav user-nav d-lg-none">
+      <ul class="user-nav__list">
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Sign In</a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Register</a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link user-nav__link--cart" href="#">
+            <svg class="user-nav__icon" aria-hidden="true">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+            Shopping Cart
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div><!--/header__top-->
+
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">CERTIFICATIONS</a>
+            <nav class="nav__subnav subnav">
+              <ul class="subnav__list">
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">EXAMS</a>
+            <nav class="nav__subnav subnav">
+              <ul class="subnav__list">
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">FAQs</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">SAMPLES</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">GUARANTEE</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__box-hamburger-cart">
+        <button class="header__hamburger" aria-label="button hamburger" data-js="btn-hamburger">
+          <svg class="header__icon" aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#hamburger"></use>
+          </svg>
+        </button>
+        <a class="header__cart" href="#" aria-label="button cart">
+          <svg class="header__icon" aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div><!--/container-->
+  </div><!--/header-bottom-->
+
+  <!-- ///////////////////////////////////////////// mobile menu -->
+  <nav class="m-nav" data-js="m-nav">
+    <div class="m-nav__box" data-js="m-nav-box">
+      <a class="m-nav__logo-link" href="#">
+        <img class="m-nav__logo" src="./design/images/logo/logo.svg" width="156px" height="65" alt="logo">
+      </a>
+
+      <button class="m-nav__btn-close" aria-label="close button" data-js="m-nav-btn-close">
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="m-nav__list m-nav__list--underline">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">HOME</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CERTIFICATIONS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">EXAMS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">FAQs</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">SAMPLES</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">GUARANTEE</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">ABOUT</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CONTACT</a>
+        </li>
+      </ul>
+
+      <ul class="m-nav__list">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Sign In</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Register</a>
+        </li>
+      </ul>
+    </div><!--/m-nav__box-->
+  </nav>
+</header>
+
+
+<main class="main">
+  <div class="container">
+    <!-- /////////////////////////////////////////////////// licensing -->
+    <section class="licensing">
+      <h1 class="visually-hidden">Licensing</h1>
+      <div class="licensing__item side-box">
+        <h3 class="side-box__title side-box__title--low">Licensing for Institutes/Corporate</h3>
+        <ul class="list">
+          <li class="list__item list__item--type-2">Access Unlimited ActualAnswers Products</li>
+          <li class="list__item list__item--type-2">Get highest discounts</li>
+          <li class="list__item list__item--type-2">3 months, 6 months and 1 Year ActualAnswers Engine Access Options</li>
+          <li class="list__item list__item--type-2">Personalized Customer Support</li>
+        </ul>
+      </div><!--/licensing__item-->
+
+      <div class="licensing__item side-box">
+        <h3 class="side-box__title side-box__title--low">ActualAnswers Reseller Program</h3>
+        <ul class="list">
+          <li class="list__item list__item--type-2">Institutes/trainers sell ActualAnswers Products to students</li>
+          <li class="list__item list__item--type-2">Earn 25% commission on all ActualAnswers Sales</li>
+          <li class="list__item list__item--type-2">Assign Unlimited Products to users anytime</li>
+          <li class="list__item list__item--type-2">Ensure Guaranteed Success</li>
+        </ul>
+      </div><!--/licensing__item-->
+
+      <div class="licensing__item side-box">
+        <h3 class="side-box__title side-box__title--low">ActualAnswers Affiliate</h3>
+        <ul class="list">
+          <li class="list__item list__item--type-2">Simple & Easy for Webmasters</li>
+          <li class="list__item list__item--type-2">Add link to ActualAnswers website</li>
+          <li class="list__item list__item--type-2">Send Traffic to ActualAnswers</li>
+          <li class="list__item list__item--type-2">Earn Commission on Sales</li>
+          <li class="list__item list__item--type-2">Get Paid as you like</li>
+        </ul>
+      </div><!--/licensing__item-->
+
+      <div class="licensing__item side-box">
+        <h3 class="side-box__title side-box__title--low">Why Choose ActualAnswers?</h3>
+        <ul class="side-box__list list">
+          <li class="list__item list__item--type-2">739 Satisfied Licensors</li>
+          <li class="list__item list__item--type-2">100% Success Guarantee</li>
+          <li class="list__item list__item--type-2">Money secured by Refund Policy</li>
+          <li class="list__item list__item--type-2">Flexible Testing Engine Access</li>
+          <li class="list__item list__item--type-2">Free Updates</li>
+        </ul>
+
+        <p class="side-box__p">There are many ways you can partner with ActualAnswers and develop new personal revenue streams, promote popular or favorite products, or simply save time and money for your company with licensed solutions.</p>
+
+        <p class="side-box__p">ActualAnswers is more than a provider of certification exam training materials, we can also assist you in developing a preparation plan for your IT professionals on staff. Grow your existing certified team of coworkers into a work force that will elevate your business as they develop.</p>
+      </div><!--/licensing__item-->
+
+      <div class="licensing__item licensing__item--wide gray-box">
+        <form class="licensing__form" action="#">
+          <div class="licensing__form-part">
+            <p class="licensing__title">Please fill out your information below and ActualAnswers Partner Program Manager will get back to you with best solution according to your requirements.</p>
+            <div class="licensing__row">
+              <div class="licensing__col">
+                <div class="licensing__form-group form-group">
+                  <label class="form-label form-label--required" for="email">Contact Name:</label>
+                  <input class="form-control" type="text" id="contact-name:" name="contact-name:">
+                </div>
+                <div class="licensing__form-group form-group">
+                  <label class="form-label form-label--required" for="email-address:">Email Address:</label>
+                  <input class="form-control" type="text" id="email" name="email">
+                </div>
+                <div class="licensing__form-group form-group">
+                  <label class="form-label form-label--required" for="email">Country:</label>
+                  <input class="form-control" type="text" id="country" name="country">
+                </div>
+                <div class="licensing__form-group form-group">
+                  <label class="form-label form-label--required" for="email">Valid Phone Number:</label>
+                  <input class="form-control" type="text" id="phone" name="phone">
+                </div>
+              </div><!--/licensing__col-->
+
+              <div class="licensing__col">
+                <div class="licensing__form-group form-group">
+                  <label class="form-label" for="email">Company Name:</label>
+                  <input class="form-control" type="text" id="company:" name="company">
+                </div>
+                <div class="licensing__form-group form-group">
+                  <label class="form-label" for="email">Web Site URL: </label>
+                  <input class="form-control" type="text" id="site" name="site">
+                </div>
+              </div><!--/licensing__col-->
+            </div><!--/licensing__row-->
+          </div><!--/licensing__form-box-->
+
+          <div class="licensing__form-part">
+            <p class="licensing__title">Tell us about your requirements:</p>
+            <div class="licensing__row">
+              <div class="licensing__col">
+                <div class="licensing__form-group form-group">
+                  <label class="form-label" for="certification">1. I would like more information on</label>
+                  <select class="form-control" data-js="selectric" name="certification" id="certification">
+                    <option value="1">ActualAnswers Licensing</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                  </select>
+                </div>
+
+                <div class="licensing__mondatory d-md-none">
+                  <span>*</span>represents a mandatory field
+                </div>
+              </div><!--/licensing__col-->
+
+              <div class="licensing__col licensing__col--wide">
+                <div class="licensing__form-group form-group">
+                  <label class="form-label" for="Comments">2. Additional Comments</label>
+                  <textarea class="form-control form-control--textarea" placeholder="Please, add comments about your requirements regarding ActualAnswers products." id="comments" name="comments"></textarea>
+                </div>
+
+                <div class="licensing__form-group licensing__form-group--code form-group">
+                  <label class="form-label form-label--secure form-label--required" for="email">Security Code:</label>
+                  <div class="code">
+                    <input class="code__form-control form-control" type="text" id="company:" name="company">
+                    <img class="code__img" src="../design/images/ui/captcha.png" alt="img">
+                    <div class="code__text">Please enter security code exactly as shown.</div>
+                  </div>
+                </div>
+
+                <div class="licensing__mondatory d-none d-md-block">
+                  <span>*</span>represents a mandatory field
+                </div>
+
+                <div class="licensing__wrap-btn">
+                  <button class="licensing__btn btn btn--violet">Submit Query</button>
+                </div>
+              </div><!--/licensing__col-->
+            </div><!--/licensing__row-->
+          </div>
+        </form><!--/licensing__form-->
+      </div><!--/licensing__item-->
+    </section>
+  </div><!--/container-->
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">Home</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Demo</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Certifications</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Exams</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">FAQ</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Testimonials</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Licensing</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Guarantee</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">About Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Contact Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Admission Tests</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">SiteMap</a>
+      </li>
+    </ul>
+    <div class="footer__bottom">
+      Copyright &copy; 2002-2021 ActualAnswers.com - All Rights Reserved. ActualAnswers.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
+    </div>
+  </div>
+</footer>
+
+<button class="up btn-reset" data-btn="up" aria-label="scroll page to top">
+  <svg class="up__icon" aria-hidden="true">
+    <use xlink:href="./design/images/symbol/sprite.svg#double-arrow"></use>
+  </svg>
+</button>
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
+  <script src="./design/js/libs.min.js"></script>
+  <script src="./design/js/main.min.js"></script>
+</body>
+</html>
+

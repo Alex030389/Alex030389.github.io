@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <link rel="preload" href="./design/font/GothamPro/GothamPro.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin="">
+
+  <link rel="stylesheet" href="./design/css/libs.min.css">
+  <link rel="stylesheet" href="./design/css/main.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__top container">
+    <a class="header__logo-link" href="#">
+      <img class="header__logo" src="./design/images/logo/logo.svg" width="134" height="56" alt="logo">
+    </a>
+    <form class="header__search-form search-form">
+      <button class="search-form__btn" aria-label="search button" disabled data-js="search-form-btn">
+        <svg class="search-form__icon" aria-hidden="true" data-js="search-form-icon">
+          <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <input class="search-form__control" placeholder="Search" type="text" data-js="search-input">
+    </form>
+    <nav class="header__user-nav user-nav d-lg-none">
+      <ul class="user-nav__list">
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Sign In</a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Register</a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link user-nav__link--cart" href="#">
+            <svg class="user-nav__icon" aria-hidden="true">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+            Shopping Cart
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div><!--/header__top-->
+
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">CERTIFICATIONS</a>
+            <nav class="nav__subnav subnav">
+              <ul class="subnav__list">
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">EXAMS</a>
+            <nav class="nav__subnav subnav">
+              <ul class="subnav__list">
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">FAQs</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">SAMPLES</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">GUARANTEE</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__box-hamburger-cart">
+        <button class="header__hamburger" aria-label="button hamburger" data-js="btn-hamburger">
+          <svg class="header__icon" aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#hamburger"></use>
+          </svg>
+        </button>
+        <a class="header__cart" href="#" aria-label="button cart">
+          <svg class="header__icon" aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div><!--/container-->
+  </div><!--/header-bottom-->
+
+  <!-- ///////////////////////////////////////////// mobile menu -->
+  <nav class="m-nav" data-js="m-nav">
+    <div class="m-nav__box" data-js="m-nav-box">
+      <a class="m-nav__logo-link" href="#">
+        <img class="m-nav__logo" src="./design/images/logo/logo.svg" width="156px" height="65" alt="logo">
+      </a>
+
+      <button class="m-nav__btn-close" aria-label="close button" data-js="m-nav-btn-close">
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="m-nav__list m-nav__list--underline">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">HOME</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CERTIFICATIONS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">EXAMS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">FAQs</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">SAMPLES</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">GUARANTEE</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">ABOUT</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CONTACT</a>
+        </li>
+      </ul>
+
+      <ul class="m-nav__list">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Sign In</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Register</a>
+        </li>
+      </ul>
+    </div><!--/m-nav__box-->
+  </nav>
+</header>
+
+
+<main class="main">
+    <!-- ////////////////////////////////////////////////////////// agitation -->
+  <section class="agitation">
+    <div class="container">
+      <div class="agitation__banner">
+        <div class="agitation__money-back">100% Money Back Guarantee</div>
+        <h1 class="agitation__title title">Pass ALL your exams - for just $129</h1>
+        <ul class="agitation__list list">
+          <li class="list__item">Unlimited lifetime access for one low fee</li>
+          <li class="list__item">Over 1,250 exams and counting</li>
+          <li class="list__item">The actual questions, with answers</li>
+          <li class="list__item">Future exams and updates included</li>
+          <li class="list__item">99% pass rate</li>
+          <li class="list__item">Over 100,000 satisfied customers</li>
+          <li class="list__item">No extra charges, EVER</li>
+          <li class="list__item">Money-back guarantee</li>
+        </ul>
+        <div class="agitation__wrap-btn">
+          <a class="btn btn--green" href="#">Join Now</a>
+        </div>
+      </div>
+    </div><!--/container-->
+  </section>
+
+
+  <div class="container">
+    <!-- ////////////////////////////////////////////////////////// download-->
+<section class="download">
+  <form class="download__form" action="#">
+    <h2 class="download__title">Download<br> Exams Now:</h2>
+    <div class="download__box-form-group">
+      <div class="download__form-group form-group">
+        <label class="visually-hidden" for="vendor">Select vendor</label>
+        <select class="download__form-control form-control" data-js="selectric" name="vendor" id="vendor">
+          <option value="1">Select Vendor</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+      </div><!--/dowlonad__form-group-->
+      <div class="download__form-group form-group">
+        <label class="visually-hidden" for="certification">Select certification</label>
+        <select class="download__form-control form-control" data-js="selectric" name="certification" id="certification">
+          <option value="1">Select Certification</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+      </div><!--/download__form-group-->
+      <div class="download__form-group form-group">
+        <label class="visually-hidden" for="exam">Select exam</label>
+        <select class="download__form-control form-control" data-js="selectric" name="exam" id="exam">
+          <option value="1">Select Exam</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+      </div><!--/download__form-group-->
+    </div>
+    <button class="download__btn btn btn--violet">GO</button>
+  </form>
+</section>
+
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <!-- ////////////////////////////////////////////////////////// faq -->
+        <section class="faq ">
+  <h2 class="faq__title title">Frequently Asked Questions</h2>
+  <ul class="faq__list">
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">What do I get for $129?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">You get unlimited access to download all our exams (including the actual exam questions and correct answers) for life. We currently offer over 1,000 popular exams and the number is growing rapidly. Nobody else offers so much for so little.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">Are there any monthly, annual or other recurring fees?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">No. It's strictly a one-time fee of $129. You will never be asked for another payment.
+      </div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">Is there a limit to how many exams I can download?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">No. You can download as many exams as you like, whenever you like.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">How accurate are the answers?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">All answers are provided by certified experts and double-checked for accuracy by at least one additional expert.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">How often are your exams updated?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">As often as necessary. We monitor exams weekly, and update whenever new questions are added.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">Will I learn anything from these exams?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">Yes, because we not only provide the correct answers to all questions, but we explain why the answers are correct (and why the incorrect answers are wrong). That said, our products are not intended as a substitute for studying.Think of them as insurance against failure.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">Do you have free samples?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">Yes, we provide demo exams so you can evaluate the quality of our products. You can download samples here</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">Are updates free or do I pay more for updated exams?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">All exam updates are included; you will never have to pay for updates.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">What about future exams? Are you adding more, and will I have to pay for them?
+        </span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">We are constantly adding new exams, and they are always FREE to members. You will never be asked to pay for updates or new exams.
+      </div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">How long will I have access to the exams I download?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">Forever. The downloads are PDF documents, they don't "expire". You can keep them, print them, whatever you like.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">Do I need to buy or install any software to view the exams?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">The exams are in zipped PDF format. You'll need an Adobe Acrobat Reader or similar software, but chances are you already have it. If not, you can download a free version. Also, if you have Google Docs, you can view the exams through its online reader.</div>
+    </li>
+    <li class="faq__item">
+      <button class="faq__q">
+        <span class="link-dark link-dark--hover-violet link-stretched">Do you guarantee I'll pass my exams?</span>
+        <span class="faq__arrow"></span>
+      </button>
+      <div class="faq__a">Yes. As we give you the actual exam questions along with all the correct answers, it would be pretty hard to fail. In the unlikely event of failure, just let us know and we'll refund your entire membership fee of $129 and close your account. We'll need to see a scan of your failed transcript. But again, it's not going to be an issue: you will pass. See the details of our Guarantee here.</div>
+    </li>
+  </ul>
+</section>
+
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        <div class="side-box">
+  <h3 class="side-box__title">Customers say</h3>
+  <p class="side-box__reviews">
+    <b>Bring it on 1z0-102</b>,<br>
+    "At first when I started studying for 1z0-102 i got worried since I found it hard to comprehend much of the given syllabus. I was in a desperate need to find a reliable source of studying as well as..."
+  </p>
+  <p class="side-box__reviews">
+    <b>Grateful To Actual Answers</b>.<br>
+    en on my parents. I knew they would never say it to me but affording my studies was something o..."
+  </p>
+  <p class="side-box__reviews">
+    <b>Take your success in your own hands with Actualanswers!</b><br>
+    "Actualanswers is one of those websites that can really help you study without making you take any stress for it. My friends and I were very worried before our Oracle exams but with the help of this..."
+  </p>
+</div>
+
+        <div class="side-box">
+  <h3 class="side-box__title">These companies use Actual Answers</h3>
+  <div class="side-box__companies">
+    <img class="side-box__companies-img" width="246" height="65" src="./design/images/ui/companies-1.png" alt="companies-1">
+    <img class="side-box__companies-img" width="235" height="53" src="./design/images/ui/companies-2.png" alt="companies-2">
+    <img class="side-box__companies-img" width="238" height="76" src="./design/images/ui/companies-3.png" alt="companies-3">
+    <img class="side-box__companies-img" width="208" height="61" src="./design/images/ui/companies-4.png" alt="companies-4">
+    <img class="side-box__companies-img" width="228" height="45" src="./design/images/ui/companies-5.png" alt="companies-5">
+  </div>
+</div>
+
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">Home</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Demo</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Certifications</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Exams</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">FAQ</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Testimonials</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Licensing</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Guarantee</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">About Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Contact Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Admission Tests</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">SiteMap</a>
+      </li>
+    </ul>
+    <div class="footer__bottom">
+      Copyright &copy; 2002-2021 ActualAnswers.com - All Rights Reserved. ActualAnswers.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
+    </div>
+  </div>
+</footer>
+
+<button class="up btn-reset" data-btn="up" aria-label="scroll page to top">
+  <svg class="up__icon" aria-hidden="true">
+    <use xlink:href="./design/images/symbol/sprite.svg#double-arrow"></use>
+  </svg>
+</button>
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
+  <script src="./design/js/libs.min.js"></script>
+  <script src="./design/js/main.min.js"></script>
+</body>
+</html>
+

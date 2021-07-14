@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./static/img/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <link rel="preload" href="./design/font/GothamPro/GothamPro.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin="">
+
+  <link rel="stylesheet" href="./design/css/libs.min.css">
+  <link rel="stylesheet" href="./design/css/main.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__top container">
+    <a class="header__logo-link" href="#">
+      <img class="header__logo" src="./design/images/logo/logo.svg" width="134" height="56" alt="logo">
+    </a>
+    <form class="header__search-form search-form">
+      <button class="search-form__btn" aria-label="search button" disabled data-js="search-form-btn">
+        <svg class="search-form__icon" aria-hidden="true" data-js="search-form-icon">
+          <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <input class="search-form__control" placeholder="Search" type="text" data-js="search-input">
+    </form>
+    <nav class="header__user-nav user-nav d-lg-none">
+      <ul class="user-nav__list">
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Sign In</a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">Register</a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link user-nav__link--cart" href="#">
+            <svg class="user-nav__icon" aria-hidden="true">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+            Shopping Cart
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div><!--/header__top-->
+
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">CERTIFICATIONS</a>
+            <nav class="nav__subnav subnav">
+              <ul class="subnav__list">
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">EXAMS</a>
+            <nav class="nav__subnav subnav">
+              <ul class="subnav__list">
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">11g</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">CISSP</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Mac OS X</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">Security+</a>
+                </li>
+                <li class="subnav__item">
+                  <a class="subnav__link nav-link" href="#">TOGAF</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">FAQs</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">SAMPLES</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">GUARANTEE</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__box-hamburger-cart">
+        <button class="header__hamburger" aria-label="button hamburger" data-js="btn-hamburger">
+          <svg class="header__icon" aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#hamburger"></use>
+          </svg>
+        </button>
+        <a class="header__cart" href="#" aria-label="button cart">
+          <svg class="header__icon" aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+          </svg>
+        </a>
+      </div>
+    </div><!--/container-->
+  </div><!--/header-bottom-->
+
+  <!-- ///////////////////////////////////////////// mobile menu -->
+  <nav class="m-nav" data-js="m-nav">
+    <div class="m-nav__box" data-js="m-nav-box">
+      <a class="m-nav__logo-link" href="#">
+        <img class="m-nav__logo" src="./design/images/logo/logo.svg" width="156px" height="65" alt="logo">
+      </a>
+
+      <button class="m-nav__btn-close" aria-label="close button" data-js="m-nav-btn-close">
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="m-nav__list m-nav__list--underline">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">HOME</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CERTIFICATIONS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">EXAMS</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">FAQs</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">SAMPLES</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">GUARANTEE</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">ABOUT</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">CONTACT</a>
+        </li>
+      </ul>
+
+      <ul class="m-nav__list">
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Sign In</a>
+        </li>
+        <li class="m-nav__item">
+          <a href="" class="m-nav__link">Register</a>
+        </li>
+      </ul>
+    </div><!--/m-nav__box-->
+  </nav>
+</header>
+
+
+<main class="main">
+    <!-- ////////////////////////////////////////////////////////// agitation -->
+  <section class="agitation">
+    <div class="container">
+      <div class="agitation__banner">
+        <div class="agitation__money-back">100% Money Back Guarantee</div>
+        <h1 class="agitation__title title">Pass ALL your exams - for just $129</h1>
+        <ul class="agitation__list list">
+          <li class="list__item">Unlimited lifetime access for one low fee</li>
+          <li class="list__item">Over 1,250 exams and counting</li>
+          <li class="list__item">The actual questions, with answers</li>
+          <li class="list__item">Future exams and updates included</li>
+          <li class="list__item">99% pass rate</li>
+          <li class="list__item">Over 100,000 satisfied customers</li>
+          <li class="list__item">No extra charges, EVER</li>
+          <li class="list__item">Money-back guarantee</li>
+        </ul>
+        <div class="agitation__wrap-btn">
+          <a class="btn btn--green" href="#">Join Now</a>
+        </div>
+      </div>
+    </div><!--/container-->
+  </section>
+
+
+  <div class="container">
+    <!-- ////////////////////////////////////////////////////////// download-->
+<section class="download">
+  <form class="download__form" action="#">
+    <h2 class="download__title">Download<br> Exams Now:</h2>
+    <div class="download__box-form-group">
+      <div class="download__form-group form-group">
+        <label class="visually-hidden" for="vendor">Select vendor</label>
+        <select class="download__form-control form-control" data-js="selectric" name="vendor" id="vendor">
+          <option value="1">Select Vendor</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+      </div><!--/dowlonad__form-group-->
+      <div class="download__form-group form-group">
+        <label class="visually-hidden" for="certification">Select certification</label>
+        <select class="download__form-control form-control" data-js="selectric" name="certification" id="certification">
+          <option value="1">Select Certification</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+      </div><!--/download__form-group-->
+      <div class="download__form-group form-group">
+        <label class="visually-hidden" for="exam">Select exam</label>
+        <select class="download__form-control form-control" data-js="selectric" name="exam" id="exam">
+          <option value="1">Select Exam</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+      </div><!--/download__form-group-->
+    </div>
+    <button class="download__btn btn btn--violet">GO</button>
+  </form>
+</section>
+
+
+    <!-- ////////////////////////////////////////////////////////// main-box -->
+    <div class="main-box">
+      <div class="main-box__content">
+        <!-- ////////////////////////////////////////////////////////// vendor -->
+        <section class="vendor section section--mb--lg">
+          <h2 class="vendor__title title">CompTIA Certifications</h2>
+          <p class="vendor__desc">We offer the comprehensive and up to date CompTIA certification materials. Available for immediate download.</p>
+
+          <div class="vendor__exam-box exam-box gray-box">
+            <h3 class="exam-box__title">CompTIA Certifications</h3>
+            <ul class="exam-box__list">
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+                <li class="exam-box__item">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">CompTIA Cloud Essentials</a>
+                </li>
+
+            </ul>
+          </div>
+
+          <div class="vendor__exam-box exam-box gray-box">
+            <h3 class="exam-box__title">Popular CompTIA Certification Exams</h3>
+            <ul class="exam-box__list">
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+                <li class="exam-box__item exam-box__item--col--6">
+                  <a class="exam-box__link link-dark link-dark--hover-violet" href="#">220-1001</a>
+                </li>
+
+            </ul>
+          </div>
+
+        </section>
+
+        <!-- ////////////////////////////////////////////////////////// customers feedbacks -->
+        <section class="feedbacks">
+          <h2 class="title">ActualAnswers CompTIA Customers Feedbacks</h2>
+          <div class="text-content">
+            <p class="listTit">This School Is The Green Signal for CompTIA diploma:</p>
+            <p>taking admission In to this study program is the first step towards achieving your CompTIA  diploma. actualanswers was my green signal for clearing the examination as it helps pass through the difficult check posts of the scrutiny of the examiners. This school helped me ace in the exam with really high marks; it was the perfect opportunity for me which I cleverly availed. I think every one who is willing to take a decision for one's CompTIA career should make an arrangement for it. Enrolling into actualanswers is the positive approach.<br>
+            Claudia raoush</p>
+            <p class="listTit">I Had No Choice But To Pass The CompTIA Exam:</p>
+            <p>at times in life you reach such a delicate position that it becomes crucial and essential for you to succeed in a particular purpose. I was at such a position when I applied for  CompTIA exam. I had no choice but to pass it because I urgently needed my license of CompTIA . I needed a good job which could satisfy the needs of my family. I had many expenditures to be met. Actualanswers made me a certified IT professional and now I can successfully meet the wants of my family.<br>
+            geisha james</p>
+            <p class="listTit"> CompTIA Degree Allowed Me To Get A Job In UAE:</p>
+            <p>my diploma in CompTIA proved to be valuable to me. I had a job in London but was not satisfied because my rank was quiet stationary in my office. I got my training through actualanswers for CompTIA exam and was taught according to the requirements of the testing procedure. With my diploma in hand, I applied for jobs in my country and in the Middle East. I was offered a fabulous post in a Software developing firm as they were particularly impressed by my qualifications. Now I'm earning really well. <br>
+            Pereira ghopzel</p>
+            <p class="listTit">Studying Is So Much Easier If The Teachers Are One's Favorites</p>
+            <p>the curriculum of  CompTIA is so difficult that an ordinary teaching system cannot lead the students during their preparation. Actualanswers has got the best teachers for teaching the tricky topics of this IT exam. I got my favorites from the field of IT as teachers in this school. They made studying for CompTIA exam so much easier and probable for me. I don't know how would I have managed to understand the taxing topics if I was taught by any other teachers. The teachers at actualanswers were made for me.<br>
+            Elaine Hansen</p>
+          </div>
+        </section>
+      </div><!--/main-box__content-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- ////////////////////////////////////////////////////////// main-row__sidebar -->
+      <aside class="main-box__sidebar">
+        <div class="side-box">
+  <h3 class="side-box__title">Customers say</h3>
+  <p class="side-box__reviews">
+    <b>Bring it on 1z0-102</b>,<br>
+    "At first when I started studying for 1z0-102 i got worried since I found it hard to comprehend much of the given syllabus. I was in a desperate need to find a reliable source of studying as well as..."
+  </p>
+  <p class="side-box__reviews">
+    <b>Grateful To Actual Answers</b>.<br>
+    en on my parents. I knew they would never say it to me but affording my studies was something o..."
+  </p>
+  <p class="side-box__reviews">
+    <b>Take your success in your own hands with Actualanswers!</b><br>
+    "Actualanswers is one of those websites that can really help you study without making you take any stress for it. My friends and I were very worried before our Oracle exams but with the help of this..."
+  </p>
+</div>
+
+        <div class="side-box">
+  <h3 class="side-box__title">These companies use Actual Answers</h3>
+  <div class="side-box__companies">
+    <img class="side-box__companies-img" width="246" height="65" src="./design/images/ui/companies-1.png" alt="companies-1">
+    <img class="side-box__companies-img" width="235" height="53" src="./design/images/ui/companies-2.png" alt="companies-2">
+    <img class="side-box__companies-img" width="238" height="76" src="./design/images/ui/companies-3.png" alt="companies-3">
+    <img class="side-box__companies-img" width="208" height="61" src="./design/images/ui/companies-4.png" alt="companies-4">
+    <img class="side-box__companies-img" width="228" height="45" src="./design/images/ui/companies-5.png" alt="companies-5">
+  </div>
+</div>
+
+      </aside>
+    </div><!--/main-box-->
+  </div><!--/container-->
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">Home</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Demo</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Certifications</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Exams</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">FAQ</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Testimonials</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Licensing</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Guarantee</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">About Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Contact Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Admission Tests</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">SiteMap</a>
+      </li>
+    </ul>
+    <div class="footer__bottom">
+      Copyright &copy; 2002-2021 ActualAnswers.com - All Rights Reserved. ActualAnswers.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
+    </div>
+  </div>
+</footer>
+
+<button class="up btn-reset" data-btn="up" aria-label="scroll page to top">
+  <svg class="up__icon" aria-hidden="true">
+    <use xlink:href="./design/images/symbol/sprite.svg#double-arrow"></use>
+  </svg>
+</button>
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
+  <script src="./design/js/libs.min.js"></script>
+  <script src="./design/js/main.min.js"></script>
+</body>
+</html>
+
