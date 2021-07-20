@@ -1,0 +1,3715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SLAM</title>
+  <meta name="description" content="description">
+  <link rel="icon" href="./design/images/favicon/favicon.png">
+
+  <!-- Custom Browsers Color Start -->
+  <!-- <meta name="theme-color" content="#fff"> -->
+
+  <!-- <link rel="preload" href="./design/" as="font" type="font/woff2" crossorigin> -->
+
+  <link rel="stylesheet" href="./design/css/libs.min.css">
+  <link rel="stylesheet" href="./design/css/main.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header__top-line">
+      <div class="header__top-line-inner">
+        <button class="header__btn-close-menu btn-reset">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="/design/images/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="header__menu menu">
+          <ul class="menu__list list-reset">
+            <li class="menu__item menu__item--dropdown">
+              <a class="menu__link menu__link--dropdown link" href="#">О компании</a>
+              <nav class="menu__submenu submenu">
+                <ul class="submenu__list list-reset">
+                  <li class="submenu__item">
+                    <a class="submenu__link link" href="#">Первая ссылка</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link link" href="#">Вторая ссылка</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link link" href="#">Третья ссылка</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link link" href="#">Четвертая ссылка</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Потребителям</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Магазины</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__menu-contact menu-contact list-reset">
+          <li class="menu-contact__item">
+            <a class="menu-contact__link menu-contact__link--mail link" href="mailto:info@info.com">
+              <svg aria-hidden="true" width="24" height="24">
+                <use xlink:href="/design/images/symbol/sprite.svg#letter"></use>
+              </svg>
+              <span>info@info.com</span>
+            </a>
+          </li>
+          <li class="menu-contact__item">
+            <a class="menu-contact__link link" href="tel:+375296461616">
+              <svg aria-hidden="true" width="24" height="24">
+                <use xlink:href="/design/images/symbol/sprite.svg#mts"></use>
+              </svg>
+              <svg aria-hidden="true" width="24" height="24">
+                <use xlink:href="/design/images/symbol/sprite.svg#a1"></use>
+              </svg>
+              <span>+375 (29) 646-16-16</span>
+            </a>
+          </li>
+          <li class="menu-contact__item">
+            <button class="menu-contact__link link link--underline btn-reset">
+              <svg aria-hidden="true" width="24" height="24">
+                <use xlink:href="/design/images/symbol/sprite.svg#phone"></use>
+              </svg>
+              <span>Обратный звонок</span>
+            </button>
+          </li>
+          <li class="menu-contact__item">
+            <a class="menu-contact__link link link--underline" href="#">
+              <svg aria-hidden="true" width="24" height="24">
+                <use xlink:href="/design/images/symbol/sprite.svg#login"></use>
+              </svg>
+              <span>Войти</span>
+            </a>
+          </li>
+        </ul>
+      </div><!--/header__top-line-inner-->
+    </div><!--/header__top-line-->
+
+    <div class="header__bottom-line">
+      <a class="header__wrap-logo" href="#">
+        <img class="header__logo" width="151" height="52" src="./design/images/logo/logo.svg" alt="img">
+      </a>
+
+      <div class="header__desc">
+        Разработка как спорт.<br>
+        Важен только результат.
+      </div>
+
+      <form class="header__form-search form-search" action="#">
+        <button class="form-search__btn btn-reset box-icon" aria-label="button search">
+          <svg aria-hidden="true" width="32" height="32">
+            <use xlink:href="/design/images/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input class="form-search__control" type="text" name="search" placeholder="Введите текст для поиска">
+        <button class="form-search__btn-clear btn-reset box-icon" type="button" aria-label="button reset search form">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="/design/images/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </form>
+
+      <button class="header__btn-open-menu box-icon btn-reset" aria-label="button open mobile menu">
+        <svg aria-hidden="true" width="36" height="36">
+          <use xlink:href="/design/images/symbol/sprite.svg#humburger"></use>
+        </svg>
+      </button>
+
+      <a class="header__link-2 link-2 box-icon" href="#">
+        <div class="box-icon__inner">
+          <svg aria-hidden="true" width="36" height="36">
+            <use xlink:href="/design/images/symbol/sprite.svg#heart"></use>
+          </svg>
+        </div>
+        <span>Избранное</span>
+      </a>
+
+      <a class="header__link-2 link-2 box-icon" href="#">
+        <div class="box-icon__inner">
+          <div class="box-icon__number">3</div>
+          <svg aria-hidden="true" width="36" height="36">
+            <use xlink:href="/design/images/symbol/sprite.svg#cart"></use>
+          </svg>
+        </div>
+        <span>20 888.50 р.</span>
+      </a>
+    </div><!--/header__bottom-line-->
+  </div><!--/container-->
+</header>
+
+
+<main class="main">
+  <div class="container">
+    <!-- /////////////////////////////////////////////////// agitation -->
+    <section class="agitation">
+      <h1 class="visually-hidden">Slam | Разработка как спорт. Важен только результат</h1>
+      <div class="agitation__swiper-container swiper-container">
+        <ul class="agitation__swiper-wrapper swiper-wrapper list-reset">
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img" src="../design/images/agitation-slider/slide-1.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер первого экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="../design/images/agitation-slider/slide-2.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер второго экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="../design/images/agitation-slider/slide-3.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер третьего экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="../design/images/agitation-slider/slide-4.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер четвертого экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="../design/images/agitation-slider/slide-5.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер пятого экрана</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="agitation__swiper-button-prev swiper-button-prev">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="agitation__swiper-button-next swiper-button-next">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div><!--/agitation__swiper-container-->
+    </section>
+
+    <!-- /////////////////////////////////////////////////// promo -->
+    <section class="promo">
+      <h2 class="promo__title title">Promo block</h2>
+      <div class="product">
+        <div class="product__swiper-contaner swiper-container">
+          <ul class="product__swiper-wrapper swiper-wrapper list-reset">
+
+            <li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-1.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-2.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные.
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-3.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">8.98 р.</span>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card card--empty">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-4.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">Отсутствует</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">2.98 р.</span>
+          <span class="card__price-old">4.00 р.</span>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-5.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-6.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-7.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-8.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-9.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-10.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-11.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-12.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-13.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-14.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-15.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-16.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-17.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-18.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-19.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-20.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-21.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-22.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-23.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-24.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-25.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-26.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-27.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-28.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-29.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-30.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-31.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-32.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-33.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-34.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-35.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-36.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-37.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-38.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-39.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-40.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-41.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-42.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-43.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-44.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-45.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-46.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-47.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-48.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-49.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+<li class="product__swiper-slide swiper-slide">
+  <div class="product__card card">
+    <div class="card__box-label">
+      <span class="card__label card__label--yellow">Акция -25%</span>
+      <span class="card__label card__label--green">Новинка</span>
+      <span class="card__label card__label--mint">Рекомендуем</span>
+    </div>
+
+    <button class="card__favorite box-icon btn-reset" aria-label="favorite product">
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart"></use>
+      </svg>
+
+      <svg aria-hidden="true" width="26" height="26">
+        <use xlink:href="./design/images/symbol/sprite.svg#heart-active"></use>
+      </svg>
+    </button>
+
+    <div class="card__info">
+      <div class="card__wrap-img">
+        <img class="card__img swiper-lazy" src="#" data-src="./design/images/product/p-50.png" alt="img">
+      </div>
+      <div class="card__block-status-code">
+        <div class="card__status">В наличии</div>
+        <a class="card__code link-stretched" href="#">Код: 4744481010818</a>
+      </div>
+      <p class="card__desc">
+        Консервы пастеризованные. Бульон куриный жидкий., 350мл Консервы пастеризованные. Тест текст еще текст
+      </p>
+      <div class="card__box-price-cart">
+        <div class="card__price">
+          <span class="card__price-new">500.20 р.</span>
+          <span class="card__price-old">600.20 р.</span>
+        </div>
+        <div class="card__cart box-icon box-icon--not-hover btn-reset">
+          <div class="box-icon__inner">
+            <div class="box-icon__number">3</div>
+            <svg aria-hidden="true" width="36" height="36">
+              <use xlink:href="./design/images/symbol/sprite.svg#cart"></use>
+            </svg>
+          </div>
+        </div>
+      </div><!--/card__box-price-cart-->
+    </div><!--/card__info-->
+
+    <div class="card__footer">
+
+      <div class="card__number number">
+        <button class="number__btn number__btn--minus btn-reset box-icon" aria-label="button minus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#minus"></use>
+          </svg>
+        </button>
+        <input class="number__control" type="number" readonly name="number" value="0">
+        <button class="number__btn number__btn--plus btn-reset box-icon" type="button" aria-label="button plus">
+          <svg aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div><!--/number-->
+
+      <div class="card__box-btn">
+        <button class="card__btn btn btn--secondary">Купить в 1 клик</button>
+        <button class="card__btn btn btn--primary">В корзину</button>
+      </div>
+    </div>
+
+  </div>
+</li>
+
+
+          </ul>
+
+          <div class="product__swiper-pagination swiper-pagination"></div>
+
+        </div><!--/product__swiper-contaner-->
+
+        <div class="product__swiper-button-prev swiper-button-prev swiper-button-prev--orange">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="product__swiper-button-next swiper-button-next swiper-button-next--orange">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div><!--/product-->
+    </section>
+
+    <!-- /////////////////////////////////////////////////// form -->
+    <section>
+      <h3 class="title title--size--md">Form style</h3>
+      <form class="form" action="#">
+        <div class="form__col">
+          <div class="radio-group">
+            <input class="radio-group__input visually-hidden" name="radio" value="raio" type="radio" checked id="radio">
+            <label class="radio-group__label" for="radio" data-js="checkbox-label">В корзину</label>
+          </div>
+          <div class="radio-group">
+            <input class="radio-group__input visually-hidden" name="radio" value="raio2" type="radio" id="radio2">
+            <label class="radio-group__label" for="radio2" data-js="checkbox-label">В корзину</label>
+          </div>
+        </div>
+
+        <div class="form__col">
+          <div class="checkbox-group">
+            <input class="checkbox-group__input visually-hidden" type="checkbox" checked id="checkbox">
+            <label class="checkbox-group__label" for="checkbox" data-js="checkbox-label">В корзину</label>
+          </div>
+          <div class="checkbox-group">
+            <input class="checkbox-group__input visually-hidden" type="checkbox" id="checkbox2">
+            <label class="checkbox-group__label" for="checkbox2" data-js="checkbox-label">В корзину</label>
+          </div>
+        </div>
+      </form>
+    </section>
+</div><!--/container-->
+</main>
+
+  <script src="./design/js/libs.min.js"></script>
+  <script src="./design/js/main.min.js"></script>
+</body>
+</html>
+
