@@ -5,131 +5,370 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Pay now</title>
   <meta name="description" content="description">
-  <link rel="icon" href="design/img/favicon/favicon.png">
+  <link rel="icon" href="./design/images/favicon/favicon.png">
 
-  <!-- Custom Browsers Color Start -->
-  <!-- <meta name="theme-color" content="#fff"> -->
+  <!-- Custom Browsers Color -->
+   <meta name="theme-color" content="#0b1129">
 
-  <!-- <link rel="preload" href="design/css/libs.min.css" as="style">
-  <link rel="preload" href="design/css/main.min.css" as="style"> -->
+  <link rel="preload" as="font" crossorigin="anonymous" href="./design/font/GothamPro/GothamPro.woff2">
+  <link rel="preload" as="font" crossorigin="anonymous" href="./design/font/GothamPro/GothamPro-Bold.woff2">
 
-  <link rel="stylesheet" href="design/css/libs.min.css">
-  <link rel="stylesheet" href="design/css/main.min.css">
+  <link rel="stylesheet" href="./design/css/libs.min.css">
+  <link rel="stylesheet" href="./design/css/main.min.css">
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+
 <header class="header">
   <div class="container">
-    <div class="header__top header__top_checkout">
-      <a class="header__logo" href="#">
-        <img src="./design/img/logo/logo.png" alt="logo">
+    <div class="header__top-line">
+      <a class="header__logo-link" href="#">
+        <img src="./design/images/logo/logo-dark.svg" alt="img" width="186" height="61" data-header-logo>
       </a>
-    </div><!--/header__top-->
 
-  </div><!--/container-->
+      <form class="header__search-form" action="#" data-search-form>
+        <button type="button" class="header__open-search _dark box-icon" aria-label="button open search input" data-open-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input class="header__search-control _dark" type="text" name="search-text" data-search-control disabled>
+        <button type="button" class="header__close-search _dark box-icon" data-close-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="header__nav-user nav-user">
+        <ul class="nav-user__list">
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">Log In | Register</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">Contact Us</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /header__top-line -->
+
+  </div><!-- /container -->
+
 </header>
 
-<main class="main">
-  <div class="container">
-  <ul class="breadcrumb list-reset">
-    <li class="breadcrumb__item">
-      <a class="breadcrumb__link link" href="#">Home</a>
-    </li>
-    <li class="breadcrumb__item">All Vendors</li>
-  </ul>
-</div>
-  <!-- //////////////////////////////////////////////////// paynow -->
-  <section class="cart section">
-    <div class="container">
-      <h1 class="title title-2_mb_lg">Your Product List</h1>
-      <table class="cart__table table">
-        <thead class="cart__table-thead">
-          <tr>
-            <th>Item Description</th>
-            <th>Qty</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="cart__td-exam">
-              <a href="#" class="link link_fw_500">NS0-159</a>
-              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
-            </td>
-            <td class="cart__td-qty">
-              2
-            </td>
-            <td class="cart__td-price">$89.99</td>
-          </tr>
-          <tr>
-            <td class="cart__td-exam">
-              <a href="#" class="link link_fw_500">NS0-159</a>
-              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
-            </td>
-            <td class="cart__td-qty">
-              2
-            </td>
-            <td class="cart__td-price">$89.99</td>
-          </tr>
-          <tr>
-            <td class="cart__td-exam">
-              <a href="#" class="link link_fw_500">NS0-159</a>
-              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
-            </td>
-            <td class="cart__td-qty">
-              2
-            </td>
-            <td class="cart__td-price">$89.99</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3" class="cart__td-total">
-              <span class="cart__total">Total $394.95</span>              
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </div><!--/container-->    
-  </section>
 
-  <section class="paynow section section_lite_grey">
+<main class="main">
+  <!-- ////////////////////////////////////// breadcrumbs -->
+<div class="breadcrumbs container">
+  <ul class="breadcrumbs__list">
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="#">Test Inside</a>
+    </li>
+    <li class="breadcrumbs__item">
+      All products
+    </li>
+  </ul>
+</div><!-- /breadcrumbs -->
+
+
+  <section>
     <div class="container">
-      <h2 class="title-2 title-2_mb_sm">There are several alternatives for completing your transaction:</h2>
-      <div class="paynow__step">
-        <h3 class="paynow__step-title">Step 1</h3>
-        <p>It is very important that you contact your bank to inform them that you are planning to make an online purchase from "Training Solutions Ltd" for $394.95, before trying any of the following options. Asking your bank to authorize your next transaction, with a simple phone call, typically resolves any online purchase problems. Please also ensure you are entering all of your details in correctly, before submitting.
-        </p>
-      </div>
-      <div class="paynow__step">
-        <h3 class="paynow__step-title">Step 2</h3>
-        <p><a class="link" href="#">Go to Payment Page and try your CC details again</a> Before trying your card again for payment it is highly recommended that you inform your bank that you are going to make an online purchase from "Training Solutions Ltd" for $394.95. Ask the bank to authorize the transaction as you are trying to make a purchase again. Make sure that you are filling all the information correctly.</p>
-      </div>
-      <div class="paynow__step">
-        <h3 class="paynow__step-title">Step 3</h3>
-        <p>If you are still encountering problems making a payment after contacting your bank, verifying your information, and attemping the above 4 options, then please contact out <a class="link" href="#">Payment Assistance Center</a> .</p>
-        <a class="paywnow__btn-assistance btn btn_secondary btn_lg" href="#">Payment Assistance</a>
-      </div>
-    </div><!--/container-->
+      <h1 class="title _md _mb_lg">Review Your Order</h1>
+      <div class="main-box">
+        <!-- //////////////////////////////////////////// cart -->
+        <div class="main-box__content">
+
+          <div class="white-box _mb_lg">
+            <div class="table-2">
+              <div class="table-2__row _head _lite-blue">
+                <div class="table-2__cell _h _product">
+                  <span class="title _xs">Your Product List</span>
+                </div>
+                <div class="table-2__cell _h _qty d-md-none">
+                  <span class="title _xs">QTY</span>
+                </div>
+                <div class="table-2__cell _h _price d-md-none">
+                  <span class="title _xs">Price</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+
+              
+              <div class="table-2__row">
+                <div class="table-2__cell _product">
+                  <span><a class="link" href="#">CompTIA A+ Certification Exam: Core 1</a></span>
+                </div>
+                <div class="table-2__cell _qty d-md-none">
+                  <span><a class="link" href="#">1</a></span>
+                </div>
+                <div class="table-2__cell _price">
+                  <span class="d-none d-md-inline">Price</span> <span>$129</span>
+                </div>
+              </div><!-- /table-2__row -->
+              
+              <div class="table-2__row">
+                <div class="table-2__cell _product">
+                  <span><a class="link" href="#">CompTIA A+ Certification Exam: Core 1</a></span>
+                </div>
+                <div class="table-2__cell _qty d-md-none">
+                  <span><a class="link" href="#">1</a></span>
+                </div>
+                <div class="table-2__cell _price">
+                  <span class="d-none d-md-inline">Price</span> <span>$129</span>
+                </div>
+              </div><!-- /table-2__row -->
+              
+
+              <div class="table-2__row">
+                <div class="table-2__cell _total">
+<!--                  <span class="table-2__subtotal">Sub-total: $119.99</span>-->
+<!--                  <span class="table-2__discount">Discount: $24.00</span>-->
+                  <span class="table-2__total">Total: $95.99</span>
+                </div>
+              </div><!-- /table-2__row _head -->
+            </div><!-- /table-2 -->
+          </div><!--/white-box-->
+
+          <div class="step">
+            <h2 class="step__title title _sm">Step 1</h2>
+            <p class="step__text">It is very important that you contact your bank to inform them that you are planning to make an online
+              purchase from "Training Solutions Ltd" for $89.99, before trying any of the following options. Asking your
+              bank to authorize your next transaction, with a simple phone call, typically resolves any online purchase
+              problems. Please also ensure you are entering all of your details in correctly, before submitting. </p>
+          </div>
+
+          <div class="step">
+            <h2 class="step__title title _sm">Step 2</h2>
+            <p class="step__subtitle">Credit and Debit Card Options</p>
+
+            <div class="step__white-box white-box">
+              <p class="step__option"><b>Option 1</b></p>
+              <p class="step__text">Try your Card through a Secondary Bank. You will be redirected to Secondary Bank page for making the
+                payment and then returned here to receive/download your products. This option is only valid for Visa,
+                Mastercard and American Express cards. </p>
+              <div class="step__wrap-btn">
+                <button class="step__btn btn _primary">Pay Now</button>
+              </div>
+              <div class="step__wrap-img _mb_lg">
+                <img class="step__img" src="./design/images/cards/cards-3.svg" width="167" height="32" alt="img">
+              </div>
+
+              <p class="step__text">Note: The charges on your Credit/Debit Card Statement will appear as paid to 'Learning Tools' - our
+                partner in accepting payments.</p>
+            </div>
+
+            <div class="step__white-box white-box">
+              <p class="step__option"><b>Option 2</b></p>
+              <p class="step__text"><b>Go to Payment Page and try your CC details again</b>. Since you have informed the bank it should
+                work fine. You can pay using the following credit or debit cards: Visa, Mastercard, Diners Club,
+                American Express, Maestro and JCB cards.</p>
+              <div class="step__wrap-img">
+                <img class="step__img" src="./design/images/cards/cards-6.svg" width="341" height="42" alt="img">
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /main-box__content -->
+
+        <!-- ///////////////////////////////////////////////// aside -->
+<aside class="main-box__aside  aside">
+  <div class="aside__box">
+    <h3 class="aside__title title _sm _ta_center">Vendors Included</h3>
+    <ul class="aside__v-includ-list">
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+    </ul>
+    <div class="aside__wrap-view-all">
+      <a class="aside__view-all link _blue" href="#">View All Vendors</a>
+    </div>
+  </div><!-- /aside__box -->
+
+  <div class="aside__box">
+    <h3 class="aside__title title _sm _ta_center">Why Choose TestInside</h3>
+    <ul class="aside__choose-list list">
+      <li class="list__item">Over 6 years experience Incredible <b>99.3%&nbsp;Pass&nbsp;Rate</b></li>
+      <li class="list__item"><b>3218</b> Questions and Answers <b>24/7&nbsp;Support</b></li>
+      <li class="list__item"><b>108</b> Preparation Labs</li>
+      <li class="list__item"><b>34</b> Professional Exam Content Writers</li>
+      <li class="list__item"><b>97,902 satisfied customers</b></li>
+      <li class="list__item"><b>3390 FREE demo</b> downloads available</li>
+      <li class="list__item"><b>2 weeks of preparation</b> before you can pass your exam</li>
+      <li class="list__item"><b>78 percent</b> more cost effective than traditional training</li>
+    </ul>
+  </div><!-- /aside__box -->
+</aside><!-- /main-box__aside -->
+
+
+      </div><!-- /main-box -->
+    </div><!-- /container -->
   </section>
 
 </main>
 
 <footer class="footer">
-  <div class="footer__copyright">
-    <div class="container">
-      Copyright &copy; 2006-2020 passguide.com , All Rights Reserved. Passguide.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
-    </div>
-  </div>
+  <div class="footer__container container">
+    <div class="footer__desc">
+      <p class="footer__copyright">
+        Copyright © 2005-2021<br>
+        Test-inside.com All Rights Reserved.
+      </p>
+      <p class="footer__text">Test-inside.com Materials do not contain actual questions and answers from Cisco's Certification Exams.</p>
+    </div><!-- /footer__desc -->
+
+    <ul class="footer__menu">
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Home</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Demo</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Admission Tests</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Bundles</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Bundles</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Contact Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">FAQ</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Guarantee</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Privacy</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Terms & Conditions</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Sitemap</a>
+      </li>
+    </ul>
+  </div><!-- /container -->
 </footer>
+
 <button class="up btn-reset" data-btn="up" aria-label="scroll page to top">
-  <svg class="up__icon icon" aria-hidden="true">
-    <use xlink:href="./design/img/symbol/sprite.svg#arrow"></use>
+  <svg class="up__icon" aria-hidden="true">
+    <use xlink:href="./design/images/symbol/sprite.svg#double-arrow"></use>
   </svg>
 </button>
-  <script src="design/js/jquery-3.5.1.min.js"></script>
-  <script src="design/js/libs.min.js"></script>
-  <script src="design/js/main.min.js"></script>
+
+  <script src="./design/js/libs.min.js"></script>
+  <script src="./design/js/main.min.js"></script>
 </body>
 </html>
+

@@ -5,694 +5,750 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>FAQ</title>
   <meta name="description" content="description">
-  <link rel="icon" href="design/img/favicon/favicon.png">
+  <link rel="icon" href="./design/images/favicon/favicon.png">
 
-  <!-- Custom Browsers Color Start -->
-  <!-- <meta name="theme-color" content="#fff"> -->
+  <!-- Custom Browsers Color -->
+   <meta name="theme-color" content="#0b1129">
 
-  <!-- <link rel="preload" href="design/css/libs.min.css" as="style">
-  <link rel="preload" href="design/css/main.min.css" as="style"> -->
+  <link rel="preload" as="font" crossorigin="anonymous" href="./design/font/GothamPro/GothamPro.woff2">
+  <link rel="preload" as="font" crossorigin="anonymous" href="./design/font/GothamPro/GothamPro-Bold.woff2">
 
-  <link rel="stylesheet" href="design/css/libs.min.css">
-  <link rel="stylesheet" href="design/css/main.min.css">
+  <link rel="stylesheet" href="./design/css/libs.min.css">
+  <link rel="stylesheet" href="./design/css/main.min.css">
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+
 <header class="header">
   <div class="container">
-    <div class="header__top">
-      <div class="header__box-m-btn">
-        <button class="header__m-btn btn" data-m-btn="open">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#gumburger"></use>
-          </svg>
-        </button>
-        <button class="header__m-btn btn" data-m-btn="search">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#search"></use>
-          </svg>
-        </button>
-      </div>
-      <a class="header__logo" href="#">
-        <img src="./design/img/logo/logo.png" alt="logo">
+    <div class="header__top-line">
+      <a class="header__logo-link" href="#" data-header-logo>
+        <img src="./design/images/logo/logo-dark.svg" alt="img" width="186" height="61">
       </a>
-      <form class="header__search d-lg-none" action="#">
-        <input class="header__search-control form-control" type="text" placeholder="Select a vendor">
-        <button class="header__search-btn btn">Search</button>
-      </form>
-      <div class="header__sign-in" data-el="header__sign-in">
-        <a class="header__sign-in-link header__sign-in-link_green" href="#">Log In</a>
-        or
-        <a class="header__sign-in-link header__sign-in-link_blue" href="#">Register Now</a>
-      </div>
-      <div class="header__box-m-btn">
-        <a href="#" class="header__m-btn btn">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#cart"></use>
-          </svg>
-        </a>
-        <a href="#" class="header__m-btn btn">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#user"></use>
-          </svg>
-        </a>
-      </div>
-    </div><!--/header__top-->
 
-    <div class="header__m-search-wrap" data-el="m-search-wrap">
-      <div class="header__m-search">
-        <form class="header__search" action="#">
-          <input class="header__search-control form-control" type="text" placeholder="Select a vendor">
-          <button class="header__search-btn btn">Search</button>
-        </form>
-      </div>
-    </div>
-    
-    <nav class="header__nav" data-el="header__nav">
-      <button class="header__nav-btn btn" data-m-btn="close">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="./design/img/symbol/sprite.svg#close"></use>
+      <form class="header__search-form" action="#" data-search-form>
+        <button type="button" class="header__open-search _dark box-icon" aria-label="button open search input" data-open-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input class="header__search-control _dark" type="text" name="search-text" data-search-control disabled>
+        <button type="button" class="header__close-search _dark box-icon" data-close-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="header__nav-user nav-user">
+        <ul class="nav-user__list">
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">Log In | Register</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">Contact Us</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /header__top-line -->
+  </div><!-- /container -->
+
+  <div class="header__bottom-line">
+    <div class="header__bottom-line-container container">
+      <nav class="header__nav-main nav-main">
+        <ul class="nav-main__list">
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-main__item _dropdown">
+            <a class="nav-main__link nav-link" href="#">Certifications</a>
+            <nav class="nav-main__subnav subnav">
+              <ul class="subnav__list">
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+              </ul>
+            </nav>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Demo</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Bundles</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">FAQ</a>
+          </li>
+          <li>
+            <a class="nav-main__link nav-link" href="#">Corporate Accounts</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Member Center</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Shopping Cart</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__btn-menu box-icon" aria-label="mobile menu" data-btn-open-menu>
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#menu"></use>
         </svg>
       </button>
 
-        <ul class="header__menu menu list-reset">
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link header__menu-link_current menu__link" href="#">Home</a>
+    </div><!-- /container -->
+  </div><!-- /header__bottom-line-->
+
+  <nav class="m-nav" data-m-nav>
+    <div class="m-nav__box" data-m-nav-box>
+      <a class="m-nav__logo-link" href="#">
+        <img src="./design/images/logo/logo-dark.svg" alt="img" width="186" height="61">
+      </a>
+      <button class="m-nav__btn-close" aria-label="close mobile menu" data-btn-close-menu>
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <div class="m-nav__box-nav-list">
+        <ul class="m-nav__list">
+          <li class="m-nav__item">
+            <a class="m-nav__link _current" href="#">Home</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Certification</a>
-            <ul class="header__submenu submenu list-reset">
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-            </ul>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Certifications</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Demo</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Demo</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Bundle</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Bundles</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">FAQ</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">FAQ</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Carporate Account</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Corporate Accounts</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Member Center</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Member Center</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Shopping Cart</a>
-          </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Contact Us</a>
-          </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">About Us</a>
-          </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Site Map</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Shopping Cart</a>
           </li>
         </ul>
-    </nav>
-  </div><!--/container-->
+
+        <ul class="m-nav__list">
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Log In | Register</a>
+          </li>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Contact Us</a>
+          </li>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div><!--/m-nav__inner-->
+  </nav><!--/m-nav-->
 </header>
 
+
 <main class="main">
-  <div class="container">
-  <ul class="breadcrumb list-reset">
-    <li class="breadcrumb__item">
-      <a class="breadcrumb__link link" href="#">Home</a>
+  <!-- ////////////////////////////////////// breadcrumbs -->
+<div class="breadcrumbs container">
+  <ul class="breadcrumbs__list">
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="#">Test Inside</a>
     </li>
-    <li class="breadcrumb__item">All Vendors</li>
+    <li class="breadcrumbs__item">
+      All products
+    </li>
   </ul>
-</div>
-  <!-- //////////////////////////////////////////////////// faq -->
-  <section class="faq section">
+</div><!-- /breadcrumbs -->
+
+
+  <section class="section">
     <div class="container">
-      <h1 class="title title_mb_md">Test-Inside - Frequently Asked Questions</h1>
-      <div class="faq__wrap-quest">
-        <div class="faq__quest-row row">
-          <div class="faq__quest-col col">
-            <h2 class="title-2 title-2_mb_sm">Product Questions</h2>
-            <ol class="faq__quest-list">
-              <li class="faq__quest-item"><a class="link" href="#prod-1">What does TestInside Q&A detail?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-2">Can I pass an exam with TestInside Q&A only?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-3">Are your updates free?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-4">Is it possible to extend the update period of an expired product?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-5">How often are your products updated?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-6">How do I know that there has been an update?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-7">Your products sound interesting, but I'd like to try before I buy. Do you have any demos?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-8">I want a sample of another TestInside product. Is this possible?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-9">What is the quality of the TestInside products?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-10">How is the quality of the TestInside products achieved?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#prod-11">I think I have found an incorrect answer in one of your products/I don't understand one of questions/One of the questions seems incorrect. What should I do?</a></li>
-            </ol>
-          </div><!--/faq__quest-col-->
-          <div class="faq__quest-col col">
-            <h2 class="title-2 title-2_mb_sm">Purchase Questions</h2>
-            <ol class="faq__quest-list">
-              <li class="faq__quest-item"><a class="link" href="#purch-1">How do I pay for the products?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-2">Do you share your customer information database with any third parties?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-3">How do I make an online purchase?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-4">I am not able to add products to my Shopping Cart. What is wrong?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-5">How are the goods delivered?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-6">How do I return the products I have purchased?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-7">How do I ask for a refund?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-8">How do I cancel a purchase?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-9">How long does it take for you to respond to my emails?</a></li>
-              <li class="faq__quest-item"><a class="link" href="#purch-10">What is certification?</a></li>
-            </ol>
-          </div><!--/faq__quest-col-->
-        </div><!--/faq__quest-->
-      </div>
+      <h1 class="section__title title _md">Test-Inside - Frequently Asked Questions</h1>
+      <div class="main-box">
+        <div class="faq main-box__content">
+          <h2 class="faq__title title _sm">Product Questions</h2>
+          <ul class="faq__accordion accordion" data-accordion>
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div>
+                  <span class="accordion__title">What does TestInside Q&A detail?</span>
+                </div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>TestInside Q&A contains simulated exam questions with the most accurate answers. With our Q&A you should be able to pass the certification exam at your first attempt. More information can be found on our products page.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">Can I pass an exam with TestInside Q&A only?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Yes, it is possible.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">Are your updates free?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Free updates are available for 90 dates after the purchase. After 90 days the product is considered expired and is removed from the member zone of the user.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">Is it possible to extend the update period of an expired product?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Expired products can be repurchased at 30% discount from within your member zone.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How often are your products updated? </span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Our products are reviewed and updated on a continuous basis. The certification vendors often change the skills being tested in the exams, so we frequently change our study guides to accurately reflect the current exams.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How do I know that there has been an update?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>There are several ways:</p>
+                <ul>
+                  <li>The New Releases section on <a class="link _blue" href="http://www.test-inside.com">www.test-inside.com</a>. You will notice the rapid updates here. TestInside makes several updates every day.</li>
+                  <li>Status on a purchased product can be found on the download page in the member zone.</li>
+                  <li>Date of latest release can also be found on the products page.</li>
+                  <li>TestInside also sends out information on updates on a regular basis in TestInside newsletter, usually once every two weeks.</li>
+                  <li>Registered TestInside users receive the Newsletter.</li>
+                  <li>In general, you should always check for a new update 3-4 days before you plan to take the exam.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">Your products sound interesting, but I'd like to try before I buy. Do you have any demos?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Yes we do. On our samples page you will find examples of our Practice exams. There are samples of some exams from all the certificates we cover. Further requests for samples can be provided. Please, e-mail <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com</a> and state which sample you would like to receive.
+                </p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">I want a sample of another TestInside product. Is this possible?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Yes, we can provide samples of all our products. Just mail your sample request to <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com</a> and you will reveive any sample you want promptly.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">What is the quality of the TestInside products?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Our goal is the have at least 95% exam coverage and at least 95% accuracy.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How is the quality of the TestInside products achieved?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>TestInside experts verify the answers and provide explanations. Especially providing explanations increases the accuracy of the answers.</p>
+                <p>We also receive customer feedback on our products. So, we constantly have to review our products. This guarantees a high quality.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">I think I have found an incorrect answer in one of your products/I don't
+                  understand one of questions/One of the questions seems
+                  incorrect. What should I do?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Feedback on specific questions should be send to <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com</a>. You should state</p>
+                <ol>
+                  <li>Exam number and version.</li>
+                  <li>Question number.</li>
+                  <li>Login ID.</li>
+                </ol>
+                <p>We will answer your feedback promptly.</p>
+              </div>
+            </li>
+          </ul>
+
+          <h2 class="faq__title title _sm">Purchase Questions</h2>
+          <ul class="faq__accordion accordion">
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How do I pay for the products?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>There are currently four ways to pay. Most customers use online payment with credit card. If no credit card is available Bank Wire or Western Union Money Transfer can also be used.</p>
+                <p>Paypal. You can use the <a class="link _blue" href="http://www.paypal.com">www.paypal.com</a> and register an account on that website.</p>
+                <p>Bank wire. We only accept bank wire for larger purchases, typically at least 5 products. There will be some delay, typically between 3 and 8 days for the bank wire to come through.</p>
+                <p>If you are interested in bank wire payment, please contact <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com</a> for further instructions.</p>
+                <p>Western Union. We accept Western Union Money Transfer for any purchase. They payment is very quick, typically within 5 minutes.</p>
+                <p>You will have the products available within some hours after the money transfer.</p>
+                <p>Use the <a class="link _blue" href="http://www.westernunion.com">www.westernunion.com</a> site to locate a office close to you (Find Agent Location).</p>
+                <p>If you are interested in Western Union payment, please contact <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com</a> for further instructions.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">Do you share your customer information database with any third parties?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>At TestInside we hate spam mail as much as everyone else, and we respect your right to privacy. Therefore we will never share any information about our customers with a third-party. The only email you will receive will come from us, and you can inform us at anytime if you want to be removed from our mail list.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How do I make an online purchase?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Select the appropriate products from the TestInside products page. Add them to your shopping cart. Select Purchase Items.</p>
+                <p>If this is the first purchase at TestInside and you are not a registered user, you will be register yourself at TestInside.</p>
+                <p>After the purchase the products can be accessed from your Member Zone.</p>
+                <p>If you want more detailed instructions mail <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com</a>.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">I am not able to add products to my Shopping Cart. What is wrong?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Ensure that your cookies are enabled. To be able to make online purchases at TestInside cookies must be enabled..</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How are the goods delivered?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>All purchases are downloaded from the internet or by e-mail. You will have access to your purchases 30 minutes after we receive your money.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How do I return the products I have purchased?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>As all products are delivered in digital format it is not necessary to return the goods.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How do I ask for a refund?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Contact <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com.</a></p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How do I cancel a purchase?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Contact <a class="link _blue" href="mailto:sales@test-inside.com">sales@test-inside.com.</a></p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">How long does it take for you to respond to my emails?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>Most emails are answered within 12 hours. All emails are answered within 24 hours.</p>
+              </div>
+            </li>
+
+            <li class="accordion__item">
+              <button class="accordion__btn" data-accordion-btn>
+                <div><span class="accordion__title">What is certification?</span></div>
+                <svg class="accordion__icon" aria-hidden="true">
+                  <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+                </svg>
+              </button>
+              <div class="accordion__text" data-accordion-text>
+                <p>The certification is your way to success. People with work experience have no way to prove that they have learned certain skills. So vendors test the the person's skills and upon passing a required test, they are awarded certain credentials. Here are just a few.</p>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /main-box__content -->
+
+        <!-- ///////////////////////////////////////////////// aside -->
+<aside class="main-box__aside  aside">
+  <div class="aside__box">
+    <h3 class="aside__title title _sm _ta_center">Vendors Included</h3>
+    <ul class="aside__v-includ-list">
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+        <li class="aside__v-includ-item">
+          <a class="link _underline" href="#">Alcatel-Lucent</a>
+        </li>
+      
+    </ul>
+    <div class="aside__wrap-view-all">
+      <a class="aside__view-all link _blue" href="#">View All Vendors</a>
+    </div>
+  </div><!-- /aside__box -->
+
+  <div class="aside__box">
+    <h3 class="aside__title title _sm _ta_center">Why Choose TestInside</h3>
+    <ul class="aside__choose-list list">
+      <li class="list__item">Over 6 years experience Incredible <b>99.3%&nbsp;Pass&nbsp;Rate</b></li>
+      <li class="list__item"><b>3218</b> Questions and Answers <b>24/7&nbsp;Support</b></li>
+      <li class="list__item"><b>108</b> Preparation Labs</li>
+      <li class="list__item"><b>34</b> Professional Exam Content Writers</li>
+      <li class="list__item"><b>97,902 satisfied customers</b></li>
+      <li class="list__item"><b>3390 FREE demo</b> downloads available</li>
+      <li class="list__item"><b>2 weeks of preparation</b> before you can pass your exam</li>
+      <li class="list__item"><b>78 percent</b> more cost effective than traditional training</li>
+    </ul>
+  </div><!-- /aside__box -->
+</aside><!-- /main-box__aside -->
 
 
-      <div class="faq__answ">
-        <h2 class="title-2 title-2_mb_sm">Product Questions</h2>
-        <ol class="faq__answ-list">
-          <li class="faq__answ-item" id="prod-1">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">What does TestInside Q&A detail?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>TestInside Q&A contains simulated exam questions with the most accurate answers. With our Q&A you should be able to pass the certification exam at your first attempt. More information can be found on our products page.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-2">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">Can I pass an exam with TestInside Q&A only?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Yes, it is possible.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-3">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">Are your updates free?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Free updates are available for 90 dates after the purchase. After 90 days the product is considered expired and is removed from the member zone of the user.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-4">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">Is it possible to extend the update period of an expired product?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Expired products can be repurchased at 30% discount from within your member zone.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-5">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How often are your products updated?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Our products are reviewed and updated on a continuous basis. The certification vendors often change the skills being tested in the exams, so we frequently change our study guides to accurately reflect the current exams.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-6">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How do I know that there has been an update?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>There are several ways:</p>
-              <ul>
-                <li>The New Releases section on <a class="link" href="http://www.test-inside.com/">www.test-inside.com</a>. You will notice the rapid updates here. TestInside makes several updates every day.</li>
-                <li>Status on a purchased product can be found on the download page in the member zone.</li>
-                <li>Date of latest release can also be found on the products page.</li>
-                <li>TestInside also sends out information on updates on a regular basis in TestInside newsletter, usually once every two weeks.</li>
-                <li>Registered TestInside users receive the Newsletter.</li>
-                <li>In general, you should always check for a new update 3-4 days before you plan to take the exam.</li>
-              </ul><br>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-7">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">Your products sound interesting, but I'd like to try before I buy.
-                Do you have any demos?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Yes we do. On our samples page you will find examples of our Practice exams. There are samples of some exams from all the certificates we cover. Further requests for samples can be provided. Please, e-mail <a class="link" href="mailto:sales@test-inside.com">sales@test-inside.com</a> and state which sample you would like to receive.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-8">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">I want a sample of another TestInside product. Is this possible?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Yes, we can provide samples of all our products. Just mail your sample request to <a class="link" href="mailto:sales@test-inside.com">sales@test-inside.com</a> and you will reveive any sample you want promptly.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-9">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">What is the quality of the TestInside products?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Our goal is the have at least 95% exam coverage and at least 95% accuracy.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-10">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How is the quality of the TestInside products achieved?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>TestInside experts verify the answers and provide explanations. Especially providing explanations increases the accuracy of the answers.</p>
-              <p>We also receive customer feedback on our products. So, we constantly have to review our products. This guarantees a high quality.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="prod-11">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">I think I have found an incorrect answer in one of your products/I don't understand one of questions/One of the questions seems incorrect. What should I do?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Feedback on specific questions should be send to sales@test-inside.com. You should state</p>
-              <ol>
-                <li>Exam number and version.</li>
-                <li>Question number.</li>
-                <li>Login ID.</li>
-              </ol><br>
-              <p>We will answer your feedback promptly.</p>
-            </div>
-          </li>
-        </ol>
-      </div><!--/faq__answ-->
-
-      <div class="faq__answ">
-        <h2 class="title-2">Purchase Questions</h2>
-        <ol class="faq__answ-list">
-          <li class="faq__answ-item" id="purch-1">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How do I pay for the products?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>There are currently four ways to pay. Most customers use online payment with credit card. If no credit card is available Bank Wire or Western Union Money Transfer can also be used.</p>
-              <p>Paypal. You can use the <a class="link" href="http://www.paypal.com">www.paypal.com</a> and register an account on that website.</p>
-              <p>Bank wire. We only accept bank wire for larger purchases, typically at least 5 products. There will be some delay, typically between 3 and 8 days for the bank wire to come through.</p>
-              <p>If you are interested in bank wire payment, please contact <a class="link" href="mailto:sales@test-inside.com">sales@test-inside.com</a> for further instructions.</p>
-              <p>Western Union. We accept Western Union Money Transfer for any purchase. They payment is very quick, typically within 5 minutes.</p>
-              <p>You will have the products available within some hours after the money transfer.</p>
-              <p>Use the <a class="link" href="http://www.westernunion.com">www.westernunion.com</a> site to locate a office close to you (Find Agent Location).</p>
-              <p>If you are interested in Western Union payment, please contact <a class="link" href="mailto:sales@test-inside.com">sales@test-inside.com</a> for further instructions.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-2">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">Do you share your customer information database with any third parties?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>At TestInside we hate spam mail as much as everyone else, and we respect your right to privacy. Therefore we will never share any information about our customers with a third-party. The only email you will receive will come from us, and you can inform us at anytime if you want to be removed from our mail list.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-3">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How do I make an online purchase?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Select the appropriate products from the TestInside products page. Add them to your shopping cart. Select Purchase Items. If this is the first purchase at TestInside and you are not a registered user, you will be register yourself at TestInside.</p>
-              <p>After the purchase the products can be accessed from your Member Zone.</p>
-              <p>If you want more detailed instructions mail <a class="link" href="mailto:sales@test-inside.com">sales@test-inside.com</a>.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-4">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">I am not able to add products to my Shopping Cart. What is wrong?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Ensure that your cookies are enabled. To be able to make online purchases at TestInside cookies must be enabled.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-5">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How are the goods delivered?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>All purchases are downloaded from the internet or by e-mail. You will have access to your purchases 30 minutes after we receive your money.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-6">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How do I return the products I have purchased?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>As all products are delivered in digital format it is not necessary to return the goods.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-7">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How do I ask for a refund?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Contact <a class="link" href="mailto:sales@test-inside.com">sales@test-inside.com</a></p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-8">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How do I cancel a purchase?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Contact <a class="link" href="mailto:sales@test-inside.com">sales@test-inside.com</a></p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-9">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">How long does it take for you to respond to my emails?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>Most emails are answered within 12 hours. All emails are answered within 24 hours.</p>
-            </div>
-          </li>
-          <li class="faq__answ-item" id="purch-10">
-            <div class="faq__answ-q">
-              <p class="text text_fw_500">What is certification?</p>
-            </div>
-            <div class="faq__answ-a">
-              <p>The certification is your way to success. People with work experience have no way to prove that they have learned certain skills. So vendors test the the person's skills and upon passing a required test, they are awarded certain credentials. Here are just a few.</p>
-            </div>
-          </li>
-        </ol>
-      </div><!--/faq__answ-->
-    </div><!--/container-->
+      </div><!-- /main-box -->
+    </div><!-- /container -->
   </section>
 
-  <!-- //////////////////////////////////////////// vendors included -->
-<section class="vend-includ section section_lite_grey">
+  <!-- /////////////////////////////////////////////////////// find exam -->
+<section class="find-exam">
   <div class="container">
-    <h2 class="title-2 title-2_mb_md">Vendors Included</h2>
-    <ul class="vend-includ__list list-reset">
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Adobe</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Alcatel-Lucent</a>
-        </li>
-        <li class="vend-includ__item">
-          <a class="vend-includ__link link" href="#">Apple</a>
-        </li>
-      
-    </ul>
-  </div>
+    <h2 class="find-exam__title title _white _ta_center">Find your IT exam free demo</h2>
+    <form class="find-exam__form" action="#">
+      <div class="find-exam__form-group form-group">
+        <select class="form-control _lg _lite" name="vendor" id="vendor" data-selectric>
+          <option value="0" selected class="form-control__placeholder">Select a vendor</option>
+          <option value="1">text 1</option>
+          <option value="2">text 2</option>
+          <option value="3">text 3</option>
+          <option value="4">text 4</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+        </select>
+      </div><!-- /find-exam__form-group -->
+
+      <div class="find-exam__form-group form-group">
+        <select class="form-control _lg _lite" name="exam" id="exam" data-selectric>
+          <option value="0" selected class="form-control__placeholder">Select an exam</option>
+          <option value="1">text 1</option>
+          <option value="2">text 2</option>
+          <option value="3">text 3</option>
+          <option value="4">text 4</option>
+          <option value="5">text 5</option>
+        </select>
+      </div><!-- /find-exam__form-group -->
+
+      <button class="find-exam__btn btn _lite">Find Your Exam</button>
+    </form>
+  </div><!-- /container -->
 </section>
-  <!-- ////////////////////////////////////////// why choose -->
-<section class="why-choose section section_lite_blue">
-  <div class="container">
-    <h2 class="title-2 title-2_mb_md">
-      Why Choose TestInside
-    </h2>
-    <ul class="benefits list-reset">
-      <li class="benefits__item box-style">
-        5 Years experience with Almost 50,000 Satisified Customers
-      </li>
-      <li class="benefits__item box-style">
-        Free updates: To ensure that you always get most updated questions, we provide 90 days of updates absolutely free!
-      </li>
-      <li class="benefits__item box-style">
-        Instant download after purchase, with 24/7 Customer Support.
-      </li>
-      <li class="benefits__item benefits__item_lg box-style">
-        Questions & Answers are based on real exam questions, formatted questions and accurate answers provided by experts!
-      </li>
-      <li class="benefits__item benefits__item_lg box-style">
-        Real exam environment testing engine, covers drag and drop, simulations, type in questions - train yourself for the real exam!
-      </li>
-    </ul>
-  </div>
-</section>
-  <!-- ////////////////////////////////////////////////////////// our clients -->
-<section class="our-clients section section_lite_grey">
-  <div class="container">
-    <h2 class="title-2 title-2_mb_md">Helping Over 520 Companies To Get Their Staff Certified</h2>
-    <div class="our-clients__wrap-all-logos d-lg-none">
-      <img src="./design/img/ui/companies/companies.png" alt="alt">
-    </div>
-    <ul class="our-clients__list list-reset d-none d-lg-flex row">
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/1.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/2.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/3.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/4.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/5.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/6.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/7.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/8.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/9.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/10.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/11.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/12.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/13.png" alt="alt">
-      </li>
-      <li class="our-clients__item col">
-        <img src="./design/img/ui/companies/14.png" alt="alt">
-      </li>
-    </ul>
-  </div>
-</section>
+
+
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <nav class="footer__nav">
-      <ul class="footer__menu menu list-reset">
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Home</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Bundle Exam</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">All Exams</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Testing Engine</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Licensing</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Guarantee</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Testimonials</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Cookie Policy</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">FAQ's</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-    <img class="footer__cards" src="./design/img/cards/cards.png" alt="cards">
-  </div><!--/container-->
-  <div class="footer__copyright">
-    <div class="container">
-      Copyright &copy; 2006-2020 passguide.com , All Rights Reserved. Passguide.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
-    </div>
-  </div>
+  <div class="footer__container container">
+    <div class="footer__desc">
+      <p class="footer__copyright">
+        Copyright © 2005-2021<br>
+        Test-inside.com All Rights Reserved.
+      </p>
+      <p class="footer__text">Test-inside.com Materials do not contain actual questions and answers from Cisco's Certification Exams.</p>
+    </div><!-- /footer__desc -->
+
+    <ul class="footer__menu">
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Home</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Demo</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Admission Tests</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Bundles</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Bundles</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Contact Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">FAQ</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Guarantee</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Privacy</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Terms & Conditions</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Sitemap</a>
+      </li>
+    </ul>
+  </div><!-- /container -->
 </footer>
-  <script src="design/js/jquery-3.5.1.min.js"></script>
-  <script src="design/js/libs.min.js"></script>
-  <script src="design/js/main.min.js"></script>
+
+<button class="up btn-reset" data-btn="up" aria-label="scroll page to top">
+  <svg class="up__icon" aria-hidden="true">
+    <use xlink:href="./design/images/symbol/sprite.svg#double-arrow"></use>
+  </svg>
+</button>
+
+  <script src="./design/js/libs.min.js"></script>
+  <script src="./design/js/main.min.js"></script>
 </body>
 </html>
+

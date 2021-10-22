@@ -9,15 +9,14 @@
   <meta name="description" content="description">
   <link rel="icon" href="./design/images/favicon/favicon.png">
 
-  <!-- Custom Browsers Color Start -->
-  <!-- <meta name="theme-color" content="#fff"> -->
-
-  <link rel="preload" href="./design/font/GothamPro/GothamPro.woff2" as="font" crossorigin="">
-  <link rel="preload" href="./design/font/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="">
-  <link rel="preload" href="./design/font/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro.woff2" as="font" crossorigin>
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin>
 
   <link rel="stylesheet" href="./design/css/libs.min.css">
   <link rel="stylesheet" href="./design/css/main.min.css">
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 
@@ -185,7 +184,7 @@
 
       <div class="header__box-hamburger-cart">
         <button class="header__hamburger" aria-label="button hamburger" data-js="btn-hamburger">
-          <svg class="header__icon" aria-hidden="true">
+          <svg class="header__icon" width="24" height="18" aria-hidden="true">
             <use xlink:href="./design/images/symbol/sprite.svg#hamburger"></use>
           </svg>
         </button>
@@ -253,70 +252,20 @@
 
 
 <main class="main">
-    <!-- ////////////////////////////////////////////////////////// agitation -->
-  <section class="agitation">
-    <div class="container">
-      <div class="agitation__banner">
-        <div class="agitation__money-back">100% Money Back Guarantee</div>
-        <h1 class="agitation__title title">Pass ALL your exams - for just $129</h1>
-        <ul class="agitation__list list">
-          <li class="list__item">Unlimited lifetime access for one low fee</li>
-          <li class="list__item">Over 1,250 exams and counting</li>
-          <li class="list__item">The actual questions, with answers</li>
-          <li class="list__item">Future exams and updates included</li>
-          <li class="list__item">99% pass rate</li>
-          <li class="list__item">Over 100,000 satisfied customers</li>
-          <li class="list__item">No extra charges, EVER</li>
-          <li class="list__item">Money-back guarantee</li>
-        </ul>
-        <div class="agitation__wrap-btn">
-          <a class="btn btn--green" href="#">Join Now</a>
-        </div>
-      </div>
-    </div><!--/container-->
-  </section>
-
-
   <div class="container">
-    <!-- ////////////////////////////////////////////////////////// download-->
-<section class="download">
-  <form class="download__form" action="#">
-    <h2 class="download__title">Download<br> Exams Now:</h2>
-    <div class="download__box-form-group">
-      <div class="download__form-group form-group">
-        <label class="visually-hidden" for="vendor">Select vendor</label>
-        <select class="download__form-control form-control" data-js="selectric" name="vendor" id="vendor">
-          <option value="1">Select Vendor</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-          <option value="4">Four</option>
-          <option value="5">Five</option>
-        </select>
-      </div><!--/dowlonad__form-group-->
-      <div class="download__form-group form-group">
-        <label class="visually-hidden" for="certification">Select certification</label>
-        <select class="download__form-control form-control" data-js="selectric" name="certification" id="certification">
-          <option value="1">Select Certification</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-          <option value="4">Four</option>
-          <option value="5">Five</option>
-        </select>
-      </div><!--/download__form-group-->
-      <div class="download__form-group form-group">
-        <label class="visually-hidden" for="exam">Select exam</label>
-        <select class="download__form-control form-control" data-js="selectric" name="exam" id="exam">
-          <option value="1">Select Exam</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-          <option value="4">Four</option>
-          <option value="5">Five</option>
-        </select>
-      </div><!--/download__form-group-->
-    </div>
-    <button class="download__btn btn btn--violet">GO</button>
-  </form>
-</section>
+
+    <!-- ////////////////////////////////// breadcrumbs -->
+<ul class="breadcrumbs">
+  <li class="breadcrumbs__item">
+    <a class="breadcrumbs__link" href="#">Home</a>
+  </li>
+  <li class="breadcrumbs__item">
+    <a class="breadcrumbs__link" href="#">CompTia</a>
+  </li>
+  <li class="breadcrumbs__item">
+    N10-07
+  </li>
+</ul>
 
 
     <!-- ////////////////////////////////////////////////////////// main-box -->
@@ -407,11 +356,11 @@
         <div class="side-box">
   <h3 class="side-box__title">These companies use<br> Actual Answers</h3>
   <div class="side-box__companies">
-    <img class="side-box__companies-img" width="246" height="65" src="./design/images/ui/companies-1.png" alt="companies-1">
-    <img class="side-box__companies-img" width="235" height="53" src="./design/images/ui/companies-2.png" alt="companies-2">
-    <img class="side-box__companies-img" width="238" height="76" src="./design/images/ui/companies-3.png" alt="companies-3">
-    <img class="side-box__companies-img" width="208" height="61" src="./design/images/ui/companies-4.png" alt="companies-4">
-    <img class="side-box__companies-img" width="228" height="45" src="./design/images/ui/companies-5.png" alt="companies-5">
+    <img class="side-box__companies-img" width="246" height="66" src="./design/images/ui/companies-1.png" alt="companies-1">
+    <img class="side-box__companies-img" width="246" height="58" src="./design/images/ui/companies-2.png" alt="companies-2">
+    <img class="side-box__companies-img" width="246" height="41" src="./design/images/ui/companies-3.png" alt="companies-3">
+    <img class="side-box__companies-img" width="246" height="69" src="./design/images/ui/companies-4.png" alt="companies-4">
+    <img class="side-box__companies-img" width="246" height="51" src="./design/images/ui/companies-5.png" alt="companies-5">
   </div>
 </div>
 
@@ -472,7 +421,6 @@
   </svg>
 </button>
 
-  <script src="./design/js/jquery-3.5.1.min.js"></script>
   <script src="./design/js/libs.min.js"></script>
   <script src="./design/js/main.min.js"></script>
 </body>

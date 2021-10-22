@@ -5,315 +5,546 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Demo</title>
   <meta name="description" content="description">
-  <link rel="icon" href="design/img/favicon/favicon.png">
+  <link rel="icon" href="./design/images/favicon/favicon.png">
 
-  <!-- Custom Browsers Color Start -->
-  <!-- <meta name="theme-color" content="#fff"> -->
+  <!-- Custom Browsers Color -->
+   <meta name="theme-color" content="#0b1129">
 
-  <!-- <link rel="preload" href="design/css/libs.min.css" as="style">
-  <link rel="preload" href="design/css/main.min.css" as="style"> -->
+  <link rel="preload" as="font" crossorigin="anonymous" href="./design/font/GothamPro/GothamPro.woff2">
+  <link rel="preload" as="font" crossorigin="anonymous" href="./design/font/GothamPro/GothamPro-Bold.woff2">
 
-  <link rel="stylesheet" href="design/css/libs.min.css">
-  <link rel="stylesheet" href="design/css/main.min.css">
+  <link rel="stylesheet" href="./design/css/libs.min.css">
+  <link rel="stylesheet" href="./design/css/main.min.css">
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+
 <header class="header">
   <div class="container">
-    <div class="header__top">
-      <div class="header__box-m-btn">
-        <button class="header__m-btn btn" data-m-btn="open">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#gumburger"></use>
-          </svg>
-        </button>
-        <button class="header__m-btn btn" data-m-btn="search">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#search"></use>
-          </svg>
-        </button>
-      </div>
-      <a class="header__logo" href="#">
-        <img src="./design/img/logo/logo.png" alt="logo">
+    <div class="header__top-line">
+      <a class="header__logo-link" href="#" data-header-logo>
+        <img src="./design/images/logo/logo-dark.svg" alt="img" width="186" height="61">
       </a>
-      <form class="header__search d-lg-none" action="#">
-        <input class="header__search-control form-control" type="text" placeholder="Select a vendor">
-        <button class="header__search-btn btn">Search</button>
-      </form>
-      <div class="header__sign-in" data-el="header__sign-in">
-        <a class="header__sign-in-link header__sign-in-link_green" href="#">Log In</a>
-        or
-        <a class="header__sign-in-link header__sign-in-link_blue" href="#">Register Now</a>
-      </div>
-      <div class="header__box-m-btn">
-        <a href="#" class="header__m-btn btn">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#cart"></use>
-          </svg>
-        </a>
-        <a href="#" class="header__m-btn btn">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="./design/img/symbol/sprite.svg#user"></use>
-          </svg>
-        </a>
-      </div>
-    </div><!--/header__top-->
 
-    <div class="header__m-search-wrap" data-el="m-search-wrap">
-      <div class="header__m-search">
-        <form class="header__search" action="#">
-          <input class="header__search-control form-control" type="text" placeholder="Select a vendor">
-          <button class="header__search-btn btn">Search</button>
-        </form>
-      </div>
-    </div>
-    
-    <nav class="header__nav" data-el="header__nav">
-      <button class="header__nav-btn btn" data-m-btn="close">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="./design/img/symbol/sprite.svg#close"></use>
+      <form class="header__search-form" action="#" data-search-form>
+        <button type="button" class="header__open-search _dark box-icon" aria-label="button open search input" data-open-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input class="header__search-control _dark" type="text" name="search-text" data-search-control disabled>
+        <button type="button" class="header__close-search _dark box-icon" data-close-search>
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="header__nav-user nav-user">
+        <ul class="nav-user__list">
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">Log In | Register</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">Contact Us</a>
+          </li>
+          <li class="nav-user__item">
+            <a class="nav-user__link nav-link _dark" href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /header__top-line -->
+  </div><!-- /container -->
+
+  <div class="header__bottom-line">
+    <div class="header__bottom-line-container container">
+      <nav class="header__nav-main nav-main">
+        <ul class="nav-main__list">
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-main__item _dropdown">
+            <a class="nav-main__link nav-link" href="#">Certifications</a>
+            <nav class="nav-main__subnav subnav">
+              <ul class="subnav__list">
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+                  <li>
+                    <a class="subnav__link nav-link" href="#">11g</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">CISSP</a>
+                  </li>
+                  <li>
+                    <a class="subnav__link nav-link" href="#">VCP6-DCV</a>
+                  </li>
+                
+              </ul>
+            </nav>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Demo</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Bundles</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">FAQ</a>
+          </li>
+          <li>
+            <a class="nav-main__link nav-link" href="#">Corporate Accounts</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Member Center</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link nav-link" href="#">Shopping Cart</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__btn-menu box-icon" aria-label="mobile menu" data-btn-open-menu>
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#menu"></use>
         </svg>
       </button>
 
-        <ul class="header__menu menu list-reset">
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link header__menu-link_current menu__link" href="#">Home</a>
+    </div><!-- /container -->
+  </div><!-- /header__bottom-line-->
+
+  <nav class="m-nav" data-m-nav>
+    <div class="m-nav__box" data-m-nav-box>
+      <a class="m-nav__logo-link" href="#">
+        <img src="./design/images/logo/logo-dark.svg" alt="img" width="186" height="61">
+      </a>
+      <button class="m-nav__btn-close" aria-label="close mobile menu" data-btn-close-menu>
+        <svg aria-hidden="true">
+          <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <div class="m-nav__box-nav-list">
+        <ul class="m-nav__list">
+          <li class="m-nav__item">
+            <a class="m-nav__link _current" href="#">Home</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Certification</a>
-            <ul class="header__submenu submenu list-reset">
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">11g</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">CISSP</a>
-                </li>
-                <li class="submenu__item">
-                  <a class="submenu__link" href="#">VCP6-DCV</a>
-                </li>
-              
-            </ul>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Certifications</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Demo</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Demo</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Bundle</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Bundles</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">FAQ</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">FAQ</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Carporate Account</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Corporate Accounts</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Member Center</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Member Center</a>
           </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Shopping Cart</a>
-          </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Contact Us</a>
-          </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">About Us</a>
-          </li>
-          <li class="header__menu-item menu__item">
-            <a class="header__menu-link menu__link" href="#">Site Map</a>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Shopping Cart</a>
           </li>
         </ul>
-    </nav>
-  </div><!--/container-->
+
+        <ul class="m-nav__list">
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Log In | Register</a>
+          </li>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">Contact Us</a>
+          </li>
+          <li class="m-nav__item">
+            <a class="m-nav__link" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div><!--/m-nav__inner-->
+  </nav><!--/m-nav-->
 </header>
 
+
 <main class="main">
-
-  <div class="container">
-  <ul class="breadcrumb list-reset">
-    <li class="breadcrumb__item">
-      <a class="breadcrumb__link link" href="#">Home</a>
+  <!-- ////////////////////////////////////// breadcrumbs -->
+<div class="breadcrumbs container">
+  <ul class="breadcrumbs__list">
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="#">Test Inside</a>
     </li>
-    <li class="breadcrumb__item">All Vendors</li>
+    <li class="breadcrumbs__item">
+      All products
+    </li>
   </ul>
-</div>
-  <!-- //////////////////////////////////////////////////// samples -->
-  <section class="samples section">
-    <div class="container container_narrow">
-      <h1 class="title title_mb_md">Try our material</h1>
-      <div class="samples__block">
-        <div class="samples__box-content">
-          <p>Get a free sample of any exam Questions and Answers on the web site</p>
-          <ul class="samples__list list">
-            <li class="list__item">Exam Engine with customizable criteria</li>
-            <li class="list__item">Score comparison and improvement check</li>
-            <li class="list__item">Immediate Download after Payment</li>
-            <li class="list__item">Tested and verified malware-free software</li>
-          </ul>
-          <form class="samples__form form" action="#">
-            <div class="form__row">
-              <div class="form__col form__col_2 form-group">
-                <select class="form-control" name="vendor" data-lib="selectric">
-                  <option value="" disabled selected>Select a vendor...</option>
-                  <option value="two">two</option>
-                  <option value="three">three</option>
-                  <option value="three">four</option>
-                </select>
-              </div>
-  
-              <div class="form__col form__col_2 form-group">
-                <select class="form-control" name="exam" data-lib="selectric">
-                  <option value="" disabled selected>Select an exam...</option>
-                  <option value="two">two</option>
-                  <option value="three">three</option>
-                  <option value="three">four</option>
-                </select>
-              </div>
-  
-              <div class="form__col form__col_2 form-group">
-                <input class="form-control" type="email" placeholder="Enter your email address">
-              </div>
-              <div class="form__col form__col_2 form-group">
-                <button class="btn btn_primary btn_lg">Download Demo</button>
-              </div>
-            </div>
-          </form>
+</div><!-- /breadcrumbs -->
 
-        </div><!--/samples__box-content-->
-        <figure class="samples__box-img d-lg-none">
-          <img src="./design/img/book/tryDemo2.jpg" alt="tryDemo2">
-        </figure>
-      </div><!--/samples__block-->
+
+  <!-- /////////////////////////////////////////// prod -->
+  <section class="s-prod _sm_pb-0">
+    <div class="container">
+      <h1 class="s-prod__title title _md">Try our material</h1>
+      <div class="s-prod__form">
+        <div class="s-prod__main">
+          <div class="s-prod__prod demo">
+            <div class="demo__wrap-img">
+              <img class="demo__img" src="./design/images/course/demo.png" alt="img" width="513" height="399">
+            </div>
+            <div class="demo__desc">
+              <h3 class="demo__title">Get a free sample of any exam Questions and Answers on the web site</h3>
+              <ul class="demo__list list">
+                <li class="list__item">Exam Engine with customizable criteria</li>
+                <li class="list__item">Score comparison and improvement check</li>
+                <li class="list__item">Immediate Download after Payment</li>
+                <li class="list__item">Tested and verified malware-free software.</li>
+              </ul>
+            </div><!--/prod__desc-->
+          </div><!--/prod-->
+        </div><!--/s-prod__main-->
+
+        <div class="s-prod__sidebox">
+          <form class="form-demo" action="#">
+            <h3 class="form-demo__title title _md _white">Choose an exam to sample:</h3>
+            <div class="form-demo__form-group form-group">
+              <select class="form-control _lg _lite" name="vendor" id="vendor" data-selectric>
+                <option value="0" selected class="form-control__placeholder">Select a vendor</option>
+                <option value="1">text 1</option>
+                <option value="2">text 2</option>
+                <option value="3">text 3</option>
+                <option value="4">text 4</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+              </select>
+            </div><!-- /find-exam__form-group -->
+            <div class="form-demo__form-group form-group">
+              <select class="form-control _lg _lite" name="exam" id="exam" data-selectric>
+                <option value="0" selected class="form-control__placeholder">Select an exam</option>
+                <option value="1">text 1</option>
+                <option value="2">text 2</option>
+                <option value="3">text 3</option>
+                <option value="4">text 4</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+                <option value="5">text 5</option>
+              </select>
+            </div><!-- /find-exam__form-group -->
+            <div class="form-demo__form-group form-group">
+              <input class="form-control _lg _lite" placeholder="Enter your email address" type="text">
+            </div>
+            <button class="form-demo__btn btn _primary">Download Demo</button>
+          </form>
+        </div><!--/s-prod__sidebox-->
+      </div><!--/s-prod__inner-->
     </div><!--/container-->
   </section>
 
-  <!-- /////////////////////////////////////////////////////  -->
-  <!-- <section class="reviews section">
+    <!-- /////////////////////////////////////////////////////// reviews -->
+  <section class="s-reviews">
+    <div class="container">
+      <h2 class="s-reviews__title title _md _ta_center">Success with TestInside SY0-501 Exam Questions</h2>
+      <div class="reviews">
+        <div class="reviews__swiper-container swiper-container" data-reviews-swiper>
+          <ul class="reviews__swiper-wrapper swiper-wrapper">
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+              <li class="reviews-card swiper-slide">
+                <div class="reviews-card__wrap-img">
+                  <img class="reviews-card__img" src="./design/images/avatar/ava-1.jpg" alt="img" width="88" height="88">
+                </div>
+                <div class="reviews-card__rating-list">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                  <img class="reviews-card__rating-img" width="43" height="42" src="./design/images/icon/star.svg" alt="img">
+                </div>
+                <div class="reviews-card__text">
+                  <b>Wonderful Program Comptia</b><br>
+                  I just wanted to write a quick email to let you know that I passed the exam Comptia !!! I also wanted to thank you and all of your tutors. Test-inside program is amazing! You and your entire staff are so wonderful and helpful and I will definitely recommend your program to everyone I know that is planning on taking a future Comptia exam. I have a great job that was basically dependent on whether or not I passed and I did. I actually have a court appearance next week after I get sworn in! Thank you again, <b>Lisa Gunter</b>
+                </div><!-- /reviews-card__text -->
+              </li>
+            
+          </ul>
 
-  </section> -->
-  
+          <div class="reviews__swiper-pagination swiper-pagination"></div>
+        </div><!-- /reviews__swiper-container -->
+        <div class="reviews__swiper-button-prev swiper-button-prev">
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <div class="reviews__swiper-button-next swiper-button-next">
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+      </div><!-- /reviews -->
+    </div><!-- /container -->
+  </section>
+
+
+  <!-- /////////////////////////////////////////////////////// find exam -->
+<section class="find-exam">
+  <div class="container">
+    <h2 class="find-exam__title title _white _ta_center">Find your IT exam free demo</h2>
+    <form class="find-exam__form" action="#">
+      <div class="find-exam__form-group form-group">
+        <select class="form-control _lg _lite" name="vendor" id="vendor" data-selectric>
+          <option value="0" selected class="form-control__placeholder">Select a vendor</option>
+          <option value="1">text 1</option>
+          <option value="2">text 2</option>
+          <option value="3">text 3</option>
+          <option value="4">text 4</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+          <option value="5">text 5</option>
+        </select>
+      </div><!-- /find-exam__form-group -->
+
+      <div class="find-exam__form-group form-group">
+        <select class="form-control _lg _lite" name="exam" id="exam" data-selectric>
+          <option value="0" selected class="form-control__placeholder">Select an exam</option>
+          <option value="1">text 1</option>
+          <option value="2">text 2</option>
+          <option value="3">text 3</option>
+          <option value="4">text 4</option>
+          <option value="5">text 5</option>
+        </select>
+      </div><!-- /find-exam__form-group -->
+
+      <button class="find-exam__btn btn _lite">Find Your Exam</button>
+    </form>
+  </div><!-- /container -->
+</section>
+
+
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <nav class="footer__nav">
-      <ul class="footer__menu menu list-reset">
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Home</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Bundle Exam</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">All Exams</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Testing Engine</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Licensing</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Guarantee</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Testimonials</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Cookie Policy</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">FAQ's</a>
-        </li>
-        <li class="footer__menu-item menu__item">
-          <a class="footer__menu-link menu__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-    <img class="footer__cards" src="./design/img/cards/cards.png" alt="cards">
-  </div><!--/container-->
-  <div class="footer__copyright">
-    <div class="container">
-      Copyright &copy; 2006-2020 passguide.com , All Rights Reserved. Passguide.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
-    </div>
-  </div>
+  <div class="footer__container container">
+    <div class="footer__desc">
+      <p class="footer__copyright">
+        Copyright © 2005-2021<br>
+        Test-inside.com All Rights Reserved.
+      </p>
+      <p class="footer__text">Test-inside.com Materials do not contain actual questions and answers from Cisco's Certification Exams.</p>
+    </div><!-- /footer__desc -->
+
+    <ul class="footer__menu">
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Home</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Demo</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Admission Tests</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Bundles</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Bundles</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Contact Us</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">FAQ</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Guarantee</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Privacy</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Terms & Conditions</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link link _underline" href="#">Sitemap</a>
+      </li>
+    </ul>
+  </div><!-- /container -->
 </footer>
-  <script src="design/js/jquery-3.5.1.min.js"></script>
-  <script src="design/js/libs.min.js"></script>
-  <script src="design/js/main.min.js"></script>
+
+<button class="up btn-reset" data-btn="up" aria-label="scroll page to top">
+  <svg class="up__icon" aria-hidden="true">
+    <use xlink:href="./design/images/symbol/sprite.svg#double-arrow"></use>
+  </svg>
+</button>
+
+  <script src="./design/js/libs.min.js"></script>
+  <script src="./design/js/main.min.js"></script>
 </body>
 </html>
+

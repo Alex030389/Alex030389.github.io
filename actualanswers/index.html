@@ -9,25 +9,24 @@
   <meta name="description" content="description">
   <link rel="icon" href="./design/images/favicon/favicon.png">
 
-  <!-- Custom Browsers Color Start -->
-  <!-- <meta name="theme-color" content="#fff"> -->
-
-  <link rel="preload" href="./design/font/GothamPro/GothamPro.woff2" as="font" crossorigin="">
-  <link rel="preload" href="./design/font/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="">
-  <link rel="preload" href="./design/font/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="./design/font/GothamPro/GothamPro.woff2" as="font" crossorigin>
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="./design/font/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin>
 
   <link rel="stylesheet" href="./design/css/libs.min.css">
   <link rel="stylesheet" href="./design/css/main.min.css">
+
+  <script src="./design/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 
 
 <div class="container">
-  <h1>RealTests</h1>
+  <h1>Actual Answers</h1>
   <hr>
-  <!-- <h2>MODALS</h2>
-  <button style="margin: 8px" data-btn="modal" data-mfp-src="#modal-1">modal</button>
-  <hr> -->
+  <h2>MODALS</h2>
+  <button style="margin: 8px" data-btn-modal data-mfp-src="#modal-money-back">modal</button>
+  <hr>
 
   <h2>PAGES</h2><!------------------------------------------->
 
@@ -45,7 +44,13 @@
       <a href="cert-one-product.html">Certification one product</a>
     </li>
     <li>
+      <a href="cert-one-product-join-now.html">Certification one product + join now block</a>
+    </li>
+    <li>
       <a href="cert-many-products.html">Certification many products</a>
+    </li>
+    <li>
+      <a href="exams.html">Exams</a>
     </li>
     <li>
       <a href="exam.html">Exam</a>
@@ -72,21 +77,34 @@
       <a href="search-results.html">Search Results</a>
     </li>
     <li>
+      <a href="not-found.html">Not found</a>
+    </li>
+    <li>
       <a href="sitemap.html">Sitemap</a>
     </li>
     <li>
       <a href="admission-tests.html">Admission Tests</a>
     </li>
-
-    <!--
+    <li>
+      <a href="guarantee.html">Guarantee</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+    </li>
+    <li>
+      <a href="thankyou.html">Thank you</a>
+    </li>
     <li>
       <a href="404.html">404</a>
-    </li> -->
+    </li>
   </ol>
   <hr>
 
   <h2>PAY</h2><!------------------------------------------->
   <ol>
+    <li>
+      <a href="cart.html">Cart</a>
+    </li>
     <li>
       <a href="checkout.html">Сheckout</a>
     </li>
@@ -99,13 +117,22 @@
   <h2>USER ACCOUNT</h2><!------------------------------------------->
   <ol>
     <li>
-      <a href="u-products.html">My productse</a>
+      <a href="u-products.html">My products</a>
+    </li>
+    <li>
+      <a href="u-no-products.html">No products</a>
     </li>
     <li>
       <a href="u-orders.html">Order/invoice</a>
     </li>
     <li>
+      <a href="u-no-orders.html">No order/invoice</a>
+    </li>
+    <li>
       <a href="u-settings.html">Account settings</a>
+    </li>
+    <li>
+      <a href="invoice.html">Invoice</a>
     </li>
     <!-- <li>
       <a href="invoice.html">invoice</a>
@@ -114,21 +141,32 @@
   <hr>
 </div>
 
-<div class="modal mfp-hide" id="modal-1">
-  <div class="modal__header">
-    <span>modal header</span>
-    <button class="modal__btn-close btn-reset">
-      <svg class="icon-close" aria-hidden="true">
-        <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
-      </svg>
-    </button>
-  </div><!--/modal__header-->
-  <div class="modal__body">
-    modal body
+<!-- ///////////////////////////////////////////////// modal money back -->
+<div class="modal mfp-hide" id="modal-money-back">
+  <button class="modal__btn-close btn-reset">
+    <svg aria-hidden="true">
+      <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+    </svg>
+  </button>
+  <p class="modal__header title">
+    Actual Answers 100% Pass Guarantee
+  </p<!--/modal__header-->
+
+  <div class="modal__body text-content">
+    <p>Our guarantee is very simple: If you do not pass your next exam, we will refund 100% of your membership fee and close your account.</p>
+    <p>We can offer this guarantee because if you use our actual exam questions and answers, passing is a virtual certainty.</p>
+    <p><b>The only limitations are:</b></p>
+    <ul>
+      <li>You cannot have written and failed the exam within 7 days of joining. (That is, you must have taken a reasonable length of time to study.)</li>
+      <li>You must ask for your refund within 30 days of joining.</li>
+      <li>You must send us a scanned copy of the exam transcript as proof of failure.</li>
+      <li>Guarantee policy is not applicable to Training Courses, Avaya, CISSP, EMC, HP, Microsoft, Oracle, PMI, SAP and SSCP exams.*</li>
+    </ul>
+    <p>To claim a refund, please contact us and have your failed transcript ready.</p>
+    <p><i>* We do not provide the actual questions and answers for these exams. Rather, we provide similar practice questions and answers, that cover the same topics. For this reason, these exams are excluded from the guarantee.</i></p>
   </div><!--/modal__body-->
 </div><!--modal-->
 
-  <script src="./design/js/jquery-3.5.1.min.js"></script>
   <script src="./design/js/libs.min.js"></script>
   <script src="./design/js/main.min.js"></script>
 </body>
